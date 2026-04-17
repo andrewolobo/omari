@@ -1,0 +1,409 @@
+2026-04-17 11:48:18.615 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 11:48:18.657 | INFO     | bot:get_bot_application:371 - Telegram bot handlers registered.
+2026-04-17 11:48:19.389 | INFO     | __main__:main:105 - Telegram bot started.
+2026-04-17 11:48:19.390 | INFO     | __main__:main:115 - All services running. Press Ctrl-C to stop.
+2026-04-17 11:48:19.390 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 11:48:19.390 | INFO     | queue_processor:run_queue_processor:88 - Queue processor started — max concurrent downloads: 2
+2026-04-17 11:48:20.367 | INFO     | database:add_download:100 - Queued [TV] 'Hacks S05E02 720p WEB H264 JFF' via rss
+2026-04-17 11:48:20.368 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Hacks S05E02 720p WEB H264 JFF'
+2026-04-17 11:48:20.369 | INFO     | database:add_download:100 - Queued [TV] 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' via rss
+2026-04-17 11:48:20.369 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB'
+2026-04-17 11:48:20.369 | INFO     | database:add_download:100 - Queued [TV] 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' via rss
+2026-04-17 11:48:20.370 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB'
+2026-04-17 11:48:20.370 | INFO     | database:add_download:100 - Queued [TV] 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-17 11:48:20.370 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 11:48:20.372 | INFO     | database:add_download:100 - Queued [TV] 'Hacks S05E02 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.372 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Hacks S05E02 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.372 | INFO     | database:add_download:100 - Queued [TV] 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.372 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.373 | INFO     | database:add_download:100 - Queued [TV] 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.373 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.373 | INFO     | database:add_download:100 - Queued [TV] 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' via rss
+2026-04-17 11:48:20.374 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY'
+2026-04-17 11:48:20.374 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' via rss
+2026-04-17 11:48:20.374 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson'
+2026-04-17 11:48:20.375 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.375 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.376 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-17 11:48:20.376 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 11:48:20.377 | INFO     | database:add_download:100 - Queued [TV] 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' via rss
+2026-04-17 11:48:20.377 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 11:48:20.378 | INFO     | database:add_download:100 - Queued [TV] 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.378 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.379 | INFO     | database:add_download:100 - Queued [TV] 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' via rss
+2026-04-17 11:48:20.379 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264'
+2026-04-17 11:48:20.380 | INFO     | database:add_download:100 - Queued [TV] 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' via rss
+2026-04-17 11:48:20.380 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb'
+2026-04-17 11:48:20.381 | INFO     | database:add_download:100 - Queued [TV] 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-17 11:48:20.382 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 11:48:20.383 | INFO     | database:add_download:100 - Queued [TV] 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-17 11:48:20.383 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 11:48:20.383 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' via rss
+2026-04-17 11:48:20.383 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF'
+2026-04-17 11:48:20.385 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' via rss
+2026-04-17 11:48:20.385 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF'
+2026-04-17 11:48:20.385 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.386 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.386 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.386 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.387 | INFO     | database:add_download:100 - Queued [TV] 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' via rss
+2026-04-17 11:48:20.388 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR'
+2026-04-17 11:48:20.389 | INFO     | database:add_download:100 - Queued [TV] 'Rooster S01E06 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.389 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Rooster S01E06 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.391 | INFO     | database:add_download:100 - Queued [TV] 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' via rss
+2026-04-17 11:48:20.391 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 11:48:20.392 | INFO     | database:add_download:100 - Queued [TV] 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' via rss
+2026-04-17 11:48:20.392 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 11:48:20.393 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' via rss
+2026-04-17 11:48:20.393 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB'
+2026-04-17 11:48:20.395 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' via rss
+2026-04-17 11:48:20.395 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB'
+2026-04-17 11:48:20.396 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.396 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.397 | INFO     | database:add_download:100 - Queued [TV] 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.397 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.398 | INFO     | database:add_download:100 - Queued [TV] 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.398 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.399 | INFO     | database:add_download:100 - Queued [TV] 'hacks s05e01 720p web h264 sylix' via rss
+2026-04-17 11:48:20.399 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'hacks s05e01 720p web h264 sylix'
+2026-04-17 11:48:20.401 | INFO     | database:add_download:100 - Queued [TV] 'monarch legacy of monsters s02e07 720p web h264 sylix' via rss
+2026-04-17 11:48:20.401 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'monarch legacy of monsters s02e07 720p web h264 sylix'
+2026-04-17 11:48:20.402 | INFO     | database:add_download:100 - Queued [TV] 'Hacks S05E01 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.402 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Hacks S05E01 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.403 | INFO     | database:add_download:100 - Queued [TV] 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' via rss
+2026-04-17 11:48:20.403 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 11:48:20.404 | INFO     | database:add_download:100 - Queued [TV] 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' via rss
+2026-04-17 11:48:20.404 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY'
+2026-04-17 11:48:20.406 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E01 REPACK 720p WEB H264 JFF' via rss
+2026-04-17 11:48:20.406 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E01 REPACK 720p WEB H264 JFF'
+2026-04-17 11:48:20.408 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-17 11:48:20.408 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 11:48:20.409 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-17 11:48:20.409 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 11:48:20.410 | INFO     | database:add_download:100 - Queued [TV] 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' via rss
+2026-04-17 11:48:20.410 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 11:48:20.411 | INFO     | database:add_download:100 - Queued [TV] 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' via rss
+2026-04-17 11:48:20.411 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB'
+2026-04-17 11:48:20.413 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.413 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.414 | INFO     | database:add_download:100 - Queued [TV] 'The Boys S05E02 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.414 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'The Boys S05E02 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.415 | INFO     | database:add_download:100 - Queued [TV] 'Daredevil Born Again S02E04 720p WEB H264 JFF' via rss
+2026-04-17 11:48:20.415 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Daredevil Born Again S02E04 720p WEB H264 JFF'
+2026-04-17 11:48:20.416 | INFO     | database:add_download:100 - Queued [TV] 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.416 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.418 | INFO     | database:add_download:100 - Queued [TV] 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' via rss
+2026-04-17 11:48:20.418 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR'
+2026-04-17 11:48:20.419 | INFO     | database:add_download:100 - Queued [TV] 'Rooster S01E05 1080p WEB h264 ETHEL' via rss
+2026-04-17 11:48:20.420 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Rooster S01E05 1080p WEB h264 ETHEL'
+2026-04-17 11:48:20.421 | INFO     | database:add_download:100 - Queued [TV] 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' via rss
+2026-04-17 11:48:20.421 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb'
+2026-04-17 11:48:20.424 | INFO     | database:add_download:100 - Queued [TV] 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' via rss
+2026-04-17 11:48:20.424 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb'
+2026-04-17 11:48:20.425 | INFO     | database:add_download:100 - Queued [TV] 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' via rss
+2026-04-17 11:48:20.425 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 11:48:20.426 | INFO     | database:add_download:100 - Queued [TV] 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' via rss
+2026-04-17 11:48:20.427 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY'
+2026-04-17 11:48:20.427 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 50 new item(s) queued.
+2026-04-17 11:48:29.386 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 11:48:29.386 | INFO     | queue_processor:_process_item:152 - Started: 'Hacks S05E02 720p WEB H264 JFF'
+2026-04-17 11:48:29.387 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 11:48:29.389 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 11:48:29.389 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB'
+2026-04-17 11:48:29.390 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 11:48:33.390 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 11:48:33.390 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv' — starting download
+2026-04-17 11:48:33.390 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 0.0% | ↓ 1 KB/s | peers: 4
+2026-04-17 11:48:33.392 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 11:48:33.392 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 11:48:33.392 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 0.0% | ↓ 20 KB/s | peers: 3
+2026-04-17 11:48:38.390 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 0.1% | ↓ 122 KB/s | peers: 9
+2026-04-17 11:48:38.393 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 0.4% | ↓ 528 KB/s | peers: 17
+2026-04-17 11:48:43.391 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 0.7% | ↓ 790 KB/s | peers: 12
+2026-04-17 11:48:43.393 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 1.6% | ↓ 2508 KB/s | peers: 39
+2026-04-17 11:48:48.391 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 1.5% | ↓ 1489 KB/s | peers: 14
+2026-04-17 11:48:48.394 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 2.5% | ↓ 2720 KB/s | peers: 44
+2026-04-17 11:48:53.392 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 2.3% | ↓ 1700 KB/s | peers: 15
+2026-04-17 11:48:53.394 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 4.0% | ↓ 4060 KB/s | peers: 46
+2026-04-17 11:48:58.392 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 3.2% | ↓ 1848 KB/s | peers: 16
+2026-04-17 11:48:58.395 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 5.5% | ↓ 4269 KB/s | peers: 51
+2026-04-17 11:49:03.393 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 4.0% | ↓ 1754 KB/s | peers: 17
+2026-04-17 11:49:03.395 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 6.9% | ↓ 4510 KB/s | peers: 55
+2026-04-17 11:49:08.393 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 4.9% | ↓ 1781 KB/s | peers: 20
+2026-04-17 11:49:08.396 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 8.5% | ↓ 4676 KB/s | peers: 61
+2026-04-17 11:49:13.393 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 5.8% | ↓ 1827 KB/s | peers: 21
+2026-04-17 11:49:13.396 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 10.1% | ↓ 4846 KB/s | peers: 66
+2026-04-17 11:49:18.394 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 6.6% | ↓ 1644 KB/s | peers: 20
+2026-04-17 11:49:18.396 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 11.7% | ↓ 4827 KB/s | peers: 78
+2026-04-17 11:49:23.395 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 7.5% | ↓ 1763 KB/s | peers: 22
+2026-04-17 11:49:23.397 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 13.5% | ↓ 5278 KB/s | peers: 81
+2026-04-17 11:49:28.395 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 8.3% | ↓ 1855 KB/s | peers: 23
+2026-04-17 11:49:28.397 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.3% | ↓ 5367 KB/s | peers: 82
+2026-04-17 11:49:33.396 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 9.1% | ↓ 1867 KB/s | peers: 22
+2026-04-17 11:49:33.398 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 17.1% | ↓ 5395 KB/s | peers: 83
+2026-04-17 11:49:38.396 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 9.9% | ↓ 1749 KB/s | peers: 28
+2026-04-17 11:49:38.398 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 18.9% | ↓ 5525 KB/s | peers: 87
+2026-04-17 11:49:43.396 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 10.6% | ↓ 1509 KB/s | peers: 27
+2026-04-17 11:49:43.399 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 20.7% | ↓ 5511 KB/s | peers: 91
+2026-04-17 11:49:48.397 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 11.2% | ↓ 1379 KB/s | peers: 27
+2026-04-17 11:49:48.399 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 22.5% | ↓ 5599 KB/s | peers: 97
+2026-04-17 11:49:53.398 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 11.8% | ↓ 1321 KB/s | peers: 28
+2026-04-17 11:49:53.400 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 24.4% | ↓ 5562 KB/s | peers: 95
+2026-04-17 11:49:58.398 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 12.1% | ↓ 991 KB/s | peers: 27
+2026-04-17 11:49:58.400 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 26.2% | ↓ 5654 KB/s | peers: 97
+2026-04-17 11:50:03.398 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 12.4% | ↓ 727 KB/s | peers: 26
+2026-04-17 11:50:03.401 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 28.3% | ↓ 6033 KB/s | peers: 97
+2026-04-17 11:50:08.399 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 12.8% | ↓ 737 KB/s | peers: 26
+2026-04-17 11:50:08.401 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 30.3% | ↓ 5700 KB/s | peers: 100
+2026-04-17 11:50:13.399 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 13.2% | ↓ 928 KB/s | peers: 31
+2026-04-17 11:50:13.401 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 32.3% | ↓ 6090 KB/s | peers: 102
+2026-04-17 11:50:18.400 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 13.7% | ↓ 922 KB/s | peers: 31
+2026-04-17 11:50:18.402 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 34.3% | ↓ 5979 KB/s | peers: 102
+2026-04-17 11:50:23.400 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 14.0% | ↓ 830 KB/s | peers: 32
+2026-04-17 11:50:23.403 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 36.4% | ↓ 6130 KB/s | peers: 104
+2026-04-17 11:50:28.401 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 14.5% | ↓ 1038 KB/s | peers: 31
+2026-04-17 11:50:28.403 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 38.5% | ↓ 6359 KB/s | peers: 105
+2026-04-17 11:50:33.401 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 14.8% | ↓ 749 KB/s | peers: 32
+2026-04-17 11:50:33.403 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 40.5% | ↓ 6259 KB/s | peers: 105
+2026-04-17 11:50:38.402 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 15.2% | ↓ 888 KB/s | peers: 30
+2026-04-17 11:50:38.404 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 42.7% | ↓ 6645 KB/s | peers: 107
+2026-04-17 11:50:43.403 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 15.6% | ↓ 773 KB/s | peers: 34
+2026-04-17 11:50:43.404 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 44.6% | ↓ 5804 KB/s | peers: 109
+2026-04-17 11:50:48.403 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 15.9% | ↓ 685 KB/s | peers: 34
+2026-04-17 11:50:48.405 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 46.7% | ↓ 6217 KB/s | peers: 112
+2026-04-17 11:50:53.404 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 16.2% | ↓ 749 KB/s | peers: 34
+2026-04-17 11:50:53.405 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 48.8% | ↓ 6418 KB/s | peers: 113
+2026-04-17 11:50:58.405 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 16.5% | ↓ 588 KB/s | peers: 35
+2026-04-17 11:50:58.405 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 50.8% | ↓ 5894 KB/s | peers: 113
+2026-04-17 11:51:03.405 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 16.7% | ↓ 491 KB/s | peers: 35
+2026-04-17 11:51:03.406 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 52.7% | ↓ 6246 KB/s | peers: 113
+2026-04-17 11:51:08.406 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 16.9% | ↓ 476 KB/s | peers: 35
+2026-04-17 11:51:08.406 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 55.0% | ↓ 6450 KB/s | peers: 113
+2026-04-17 11:51:13.406 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 17.0% | ↓ 446 KB/s | peers: 34
+2026-04-17 11:51:13.406 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 57.0% | ↓ 6297 KB/s | peers: 114
+2026-04-17 11:51:18.407 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 17.2% | ↓ 435 KB/s | peers: 36
+2026-04-17 11:51:18.407 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 59.2% | ↓ 6420 KB/s | peers: 116
+2026-04-17 11:51:23.407 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 17.4% | ↓ 447 KB/s | peers: 35
+2026-04-17 11:51:23.407 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 61.4% | ↓ 6551 KB/s | peers: 117
+2026-04-17 11:51:28.407 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 17.6% | ↓ 365 KB/s | peers: 34
+2026-04-17 11:51:28.408 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 63.5% | ↓ 6527 KB/s | peers: 118
+2026-04-17 11:51:33.408 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 17.7% | ↓ 318 KB/s | peers: 34
+2026-04-17 11:51:33.408 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 65.3% | ↓ 6128 KB/s | peers: 120
+2026-04-17 11:51:38.408 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 17.9% | ↓ 352 KB/s | peers: 37
+2026-04-17 11:51:38.409 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 67.4% | ↓ 6020 KB/s | peers: 125
+2026-04-17 11:51:43.409 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 18.1% | ↓ 403 KB/s | peers: 35
+2026-04-17 11:51:43.409 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 69.6% | ↓ 6321 KB/s | peers: 126
+2026-04-17 11:51:48.409 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 18.4% | ↓ 505 KB/s | peers: 36
+2026-04-17 11:51:48.410 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 71.9% | ↓ 6872 KB/s | peers: 127
+2026-04-17 11:51:53.409 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 18.6% | ↓ 491 KB/s | peers: 34
+2026-04-17 11:51:53.410 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 74.4% | ↓ 7441 KB/s | peers: 125
+2026-04-17 11:51:58.410 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 18.7% | ↓ 391 KB/s | peers: 37
+2026-04-17 11:51:58.410 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 76.9% | ↓ 7395 KB/s | peers: 126
+2026-04-17 11:52:03.410 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 18.8% | ↓ 274 KB/s | peers: 35
+2026-04-17 11:52:03.411 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 79.1% | ↓ 7084 KB/s | peers: 129
+2026-04-17 11:52:08.411 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 81.3% | ↓ 6873 KB/s | peers: 133
+2026-04-17 11:52:08.411 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.0% | ↓ 298 KB/s | peers: 36
+2026-04-17 11:52:13.412 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 83.6% | ↓ 6881 KB/s | peers: 134
+2026-04-17 11:52:13.412 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.1% | ↓ 290 KB/s | peers: 35
+2026-04-17 11:52:18.412 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 85.8% | ↓ 6886 KB/s | peers: 138
+2026-04-17 11:52:18.412 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.2% | ↓ 221 KB/s | peers: 35
+2026-04-17 11:52:23.413 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 88.2% | ↓ 7202 KB/s | peers: 134
+2026-04-17 11:52:23.413 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.3% | ↓ 283 KB/s | peers: 34
+2026-04-17 11:52:28.413 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 90.6% | ↓ 7126 KB/s | peers: 135
+2026-04-17 11:52:28.413 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.5% | ↓ 414 KB/s | peers: 34
+2026-04-17 11:52:33.414 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 93.4% | ↓ 8049 KB/s | peers: 136
+2026-04-17 11:52:33.414 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.7% | ↓ 460 KB/s | peers: 34
+2026-04-17 11:52:38.415 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 96.1% | ↓ 8037 KB/s | peers: 137
+2026-04-17 11:52:38.415 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 19.9% | ↓ 371 KB/s | peers: 35
+2026-04-17 11:52:43.415 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 98.6% | ↓ 8022 KB/s | peers: 137
+2026-04-17 11:52:43.415 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 20.1% | ↓ 430 KB/s | peers: 39
+2026-04-17 11:52:48.416 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 99.9% | ↓ 5429 KB/s | peers: 138
+2026-04-17 11:52:48.416 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 20.9% | ↓ 1497 KB/s | peers: 36
+2026-04-17 11:52:53.416 | INFO     | torrent:_run_download_loop:281 - Download complete: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 11:52:53.417 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 22.9% | ↓ 3535 KB/s | peers: 36
+2026-04-17 11:52:53.417 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 11:52:53.418 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 11:52:53.418 | INFO     | queue_processor:_process_item:185 - Uploading to Dropbox: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 11:52:53.531 | DEBUG    | dropbox_sync:_upload_file:143 - Uploading (chunked, 1.40 GB): ./downloads\INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv → /Shows/Current/INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv
+2026-04-17 11:52:54.358 | DEBUG    | database:increment_retry:157 - Retry count → 1 | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 11:52:54.359 | WARNING  | queue_processor:_handle_retry:233 - Pipeline error (attempt 1/3) for 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB': AuthError: AuthError('ba46c3e597a3459e913c913669e1f4e1', AuthError('invalid_access_token', None))
+2026-04-17 11:52:54.359 | INFO     | queue_processor:_handle_retry:240 - Retrying 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' in 30s…
+2026-04-17 11:52:58.417 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 25.7% | ↓ 4998 KB/s | peers: 35
+2026-04-17 11:53:03.418 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 29.0% | ↓ 6624 KB/s | peers: 37
+2026-04-17 11:53:08.419 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 32.1% | ↓ 6749 KB/s | peers: 40
+2026-04-17 11:53:13.419 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 35.4% | ↓ 7021 KB/s | peers: 37
+2026-04-17 11:53:18.420 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 38.5% | ↓ 6936 KB/s | peers: 37
+2026-04-17 11:53:23.420 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 41.8% | ↓ 6999 KB/s | peers: 36
+2026-04-17 11:53:24.358 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 11:53:24.365 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 11:53:24.365 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB'
+2026-04-17 11:53:24.365 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 11:53:28.367 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 11:53:28.367 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 11:53:28.367 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 0.0% | ↓ 6 KB/s | peers: 11
+2026-04-17 11:53:28.421 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 44.2% | ↓ 5830 KB/s | peers: 35
+2026-04-17 11:53:33.367 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 0.4% | ↓ 908 KB/s | peers: 32
+2026-04-17 11:53:33.422 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 46.6% | ↓ 5312 KB/s | peers: 34
+2026-04-17 11:53:38.368 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 1.4% | ↓ 1849 KB/s | peers: 49
+2026-04-17 11:53:38.422 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 47.9% | ↓ 3784 KB/s | peers: 34
+2026-04-17 11:53:43.369 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 2.9% | ↓ 3158 KB/s | peers: 51
+2026-04-17 11:53:43.423 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 49.1% | ↓ 2979 KB/s | peers: 34
+2026-04-17 11:53:48.369 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 5.0% | ↓ 4692 KB/s | peers: 49
+2026-04-17 11:53:48.424 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 50.3% | ↓ 2790 KB/s | peers: 33
+2026-04-17 11:53:53.370 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 7.2% | ↓ 5609 KB/s | peers: 42
+2026-04-17 11:53:53.424 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 51.2% | ↓ 2317 KB/s | peers: 30
+2026-04-17 11:53:58.370 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 10.0% | ↓ 6841 KB/s | peers: 44
+2026-04-17 11:53:58.424 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 52.2% | ↓ 2275 KB/s | peers: 31
+2026-04-17 11:54:03.371 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 12.5% | ↓ 6579 KB/s | peers: 49
+2026-04-17 11:54:03.425 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 53.2% | ↓ 2196 KB/s | peers: 28
+2026-04-17 11:54:08.371 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.1% | ↓ 6848 KB/s | peers: 48
+2026-04-17 11:54:08.426 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 54.3% | ↓ 2275 KB/s | peers: 28
+2026-04-17 11:54:13.372 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 17.9% | ↓ 7282 KB/s | peers: 47
+2026-04-17 11:54:13.426 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 55.4% | ↓ 2375 KB/s | peers: 31
+2026-04-17 11:54:18.373 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 20.2% | ↓ 6518 KB/s | peers: 47
+2026-04-17 11:54:18.427 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 56.5% | ↓ 2487 KB/s | peers: 30
+2026-04-17 11:54:23.373 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 22.9% | ↓ 6961 KB/s | peers: 49
+2026-04-17 11:54:23.427 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 57.6% | ↓ 2355 KB/s | peers: 29
+2026-04-17 11:54:28.374 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 25.4% | ↓ 6694 KB/s | peers: 53
+2026-04-17 11:54:28.428 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 58.4% | ↓ 2073 KB/s | peers: 29
+2026-04-17 11:54:33.374 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 28.4% | ↓ 7520 KB/s | peers: 53
+2026-04-17 11:54:33.428 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 58.8% | ↓ 1263 KB/s | peers: 29
+2026-04-17 11:54:38.375 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 30.9% | ↓ 6937 KB/s | peers: 53
+2026-04-17 11:54:38.429 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 59.4% | ↓ 1245 KB/s | peers: 29
+2026-04-17 11:54:43.375 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 33.3% | ↓ 6498 KB/s | peers: 60
+2026-04-17 11:54:43.429 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 60.1% | ↓ 1429 KB/s | peers: 30
+2026-04-17 11:54:48.376 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 35.8% | ↓ 6566 KB/s | peers: 63
+2026-04-17 11:54:48.430 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 60.6% | ↓ 1316 KB/s | peers: 31
+2026-04-17 11:54:53.376 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 38.3% | ↓ 6488 KB/s | peers: 65
+2026-04-17 11:54:53.430 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 61.3% | ↓ 1436 KB/s | peers: 34
+2026-04-17 11:54:58.377 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 40.9% | ↓ 7044 KB/s | peers: 66
+2026-04-17 11:54:58.431 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 62.1% | ↓ 1608 KB/s | peers: 34
+2026-04-17 11:55:03.378 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 43.5% | ↓ 6973 KB/s | peers: 70
+2026-04-17 11:55:03.431 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 62.8% | ↓ 1645 KB/s | peers: 35
+2026-04-17 11:55:08.378 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 46.0% | ↓ 6448 KB/s | peers: 70
+2026-04-17 11:55:08.432 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 63.7% | ↓ 1781 KB/s | peers: 35
+2026-04-17 11:55:13.379 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 48.4% | ↓ 6702 KB/s | peers: 71
+2026-04-17 11:55:13.432 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 64.6% | ↓ 1861 KB/s | peers: 36
+2026-04-17 11:55:18.379 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 50.5% | ↓ 5775 KB/s | peers: 71
+2026-04-17 11:55:18.433 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.3% | ↓ 1634 KB/s | peers: 36
+2026-04-17 11:55:23.380 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 52.9% | ↓ 6389 KB/s | peers: 70
+2026-04-17 11:55:23.433 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 1424 KB/s | peers: 36
+2026-04-17 11:55:23.514 | INFO     | __main__:main:146 - Cancelling background tasks…
+2026-04-17 11:55:23.516 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 11:55:23.516 | INFO     | __main__:_reset_in_progress:71 - Reset stuck item to queued: 'Hacks S05E02 720p WEB H264 JFF' (was 'downloading')
+2026-04-17 11:55:23.518 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 11:55:23.518 | INFO     | __main__:_reset_in_progress:71 - Reset stuck item to queued: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (was 'downloading')
+2026-04-17 11:55:23.518 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 11:55:23.518 | INFO     | __main__:main:159 - Stopping Telegram bot…
+2026-04-17 11:55:24.139 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' — resetting to queued.
+2026-04-17 11:55:24.153 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 11:55:24.153 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'Hacks S05E02 720p WEB H264 JFF' — resetting to queued.
+2026-04-17 11:55:24.155 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 11:55:28.380 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 2443 KB/s | peers: 0
+2026-04-17 11:55:28.434 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 559 KB/s | peers: 0
+2026-04-17 11:55:33.380 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 800 KB/s | peers: 0
+2026-04-17 11:55:33.435 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 183 KB/s | peers: 0
+2026-04-17 11:55:38.381 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 262 KB/s | peers: 0
+2026-04-17 11:55:38.435 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 60 KB/s | peers: 0
+2026-04-17 11:55:43.381 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 86 KB/s | peers: 0
+2026-04-17 11:55:43.436 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 20 KB/s | peers: 0
+2026-04-17 11:55:48.382 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 28 KB/s | peers: 0
+2026-04-17 11:55:48.436 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 6 KB/s | peers: 0
+2026-04-17 11:55:53.382 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 12 KB/s | peers: 0
+2026-04-17 11:55:53.437 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 2 KB/s | peers: 0
+2026-04-17 11:55:58.383 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 4 KB/s | peers: 0
+2026-04-17 11:55:58.437 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 1 KB/s | peers: 0
+2026-04-17 11:56:03.383 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 1 KB/s | peers: 0
+2026-04-17 11:56:03.438 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:08.384 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:08.438 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:13.384 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:13.439 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:18.385 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:18.439 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:23.385 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:23.439 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:28.386 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:28.440 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:33.386 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:33.440 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:38.387 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:38.440 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:43.387 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:43.441 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:48.388 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:48.441 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:53.388 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:53.442 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:58.389 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:56:58.442 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:03.389 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:03.443 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:08.390 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:08.444 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:13.390 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:13.444 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:18.391 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:18.445 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:23.392 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:23.445 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:28.392 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:28.445 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:33.393 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:33.446 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:38.393 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:38.446 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:43.394 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:43.447 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:48.394 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:48.447 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:53.395 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:53.448 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:58.396 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:57:58.448 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:03.396 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:03.449 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:08.397 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:08.449 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:13.397 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:13.450 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:18.398 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:18.450 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:23.399 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:23.451 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:28.399 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:28.451 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:33.400 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:33.452 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:38.400 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:38.452 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:43.401 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:43.453 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:48.401 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:48.453 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:53.402 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:53.454 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:58.402 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:58:58.454 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:03.403 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:03.455 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:08.403 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:08.456 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:13.404 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:13.456 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:18.404 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:18.457 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:23.405 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:23.458 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:28.405 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:28.458 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:33.405 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:33.459 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:38.406 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:38.459 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:43.406 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:43.460 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:48.407 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:48.460 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:53.407 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
+2026-04-17 11:59:53.461 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0

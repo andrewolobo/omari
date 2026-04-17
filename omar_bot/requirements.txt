@@ -1,0 +1,12 @@
+python-telegram-bot==20.7
+tinydb==4.8.0
+feedparser==6.0.11
+dropbox==11.36.2
+python-dotenv
+aiofiles
+loguru
+
+# libtorrent is NOT pip-installable on all platforms.
+# Linux:   sudo apt-get install python3-libtorrent
+# Windows: use a pre-built wheel — https://github.com/arvidn/libtorrent/releases
+# libtorrent==2.0.9
