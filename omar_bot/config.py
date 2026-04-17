@@ -94,6 +94,22 @@ DROPBOX_APP_SECRET: str = _require("DROPBOX_APP_SECRET")
 # value serves as a static fallback for pre-linked deployments.
 DROPBOX_REFRESH_TOKEN: str = _optional("DROPBOX_REFRESH_TOKEN", default="")
 
+# REDIRECT_URI must match exactly what is registered in the Dropbox App Console
+# under "Redirect URIs" (e.g. http://yourhost:8080/auth/dropbox/callback).
+DROPBOX_REDIRECT_URI: str = _require("DROPBOX_REDIRECT_URI")
+
+# ---------------------------------------------------------------------------
+# API server (FastAPI / uvicorn — serves the OAuth2 callback endpoint)
+# ---------------------------------------------------------------------------
+
+# Base URL the bot advertises to users in Telegram, e.g. http://yourhost:8080.
+# Must share the same host:port as DROPBOX_REDIRECT_URI.
+OAUTH_BASE_URL: str = _optional("OAUTH_BASE_URL", default="http://localhost:8080")
+
+# Interface and port uvicorn binds to.
+API_HOST: str = _optional("API_HOST", default="0.0.0.0")
+API_PORT: int = _int("API_PORT", default=8080)
+
 # ---------------------------------------------------------------------------
 # RSS
 # ---------------------------------------------------------------------------

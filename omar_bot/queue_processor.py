@@ -35,6 +35,7 @@ from typing import Callable
 from loguru import logger
 from telegram import Bot
 
+import auth_store
 import config
 from bot import notify_user
 from database import get_download, get_downloads_by_status, increment_retry, update_status
@@ -90,7 +91,20 @@ async def run_queue_processor(tm: TorrentManager, bot: Bot) -> None:
         f"max concurrent downloads: {config.MAX_CONCURRENT_DOWNLOADS}"
     )
 
+    _warned_unlinked = False
+
     while True:
+        if not auth_store.is_linked():
+            if not _warned_unlinked:
+                logger.warning(
+                    "Queue processor: Dropbox is not linked — "
+                    "downloads are paused until authorisation is complete."
+                )
+                _warned_unlinked = True
+            await asyncio.sleep(_POLL_INTERVAL)
+            continue
+
+        _warned_unlinked = False  # Reset so we log again if token is ever revoked.
         queued = get_downloads_by_status("queued")
 
         for item in queued:

@@ -44,7 +44,7 @@ import config
 # Constants
 # ---------------------------------------------------------------------------
 
-CHUNK_SIZE = 100 * 1024 * 1024  # 100 MB per chunk
+CHUNK_SIZE = 15 * 1024 * 1024  # 100 MB per chunk
 MAX_RETRIES = 5                  # Maximum RateLimitError retries per chunk call
 
 

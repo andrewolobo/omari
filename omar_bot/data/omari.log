@@ -407,3 +407,1010 @@
 2026-04-17 11:59:48.460 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
 2026-04-17 11:59:53.407 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.0% | ↓ 0 KB/s | peers: 0
 2026-04-17 11:59:53.461 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.9% | ↓ 0 KB/s | peers: 0
+2026-04-17 21:53:24.437 | WARNING  | __main__:main:93 - Dropbox is not linked. Send /start to the Telegram bot to authorize your Dropbox account before queuing downloads.
+2026-04-17 21:53:24.454 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 21:53:24.480 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 21:53:25.145 | INFO     | __main__:main:111 - Telegram bot started.
+2026-04-17 21:53:25.146 | INFO     | __main__:main:122 - All services running. Press Ctrl-C to stop.
+2026-04-17 21:53:25.147 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 21:53:25.147 | INFO     | queue_processor:run_queue_processor:88 - Queue processor started — max concurrent downloads: 2
+2026-04-17 21:53:25.148 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 21:53:25.167 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:53:25.167 | INFO     | queue_processor:_process_item:152 - Started: 'Hacks S05E02 720p WEB H264 JFF'
+2026-04-17 21:53:25.167 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:53:25.168 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:53:25.168 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:53:25.168 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:53:26.210 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 21:53:26.211 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 21:53:26.211 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 21:53:26.211 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 21:53:26.212 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 21:53:26.212 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 21:53:26.212 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 21:53:26.212 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 21:53:26.213 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 21:53:26.213 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 21:53:26.213 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 21:53:26.214 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 21:53:26.214 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 21:53:26.214 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 21:53:26.214 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 21:53:26.215 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 21:53:26.215 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 21:53:26.215 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 21:53:26.215 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 21:53:26.216 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 21:53:26.216 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 21:53:26.216 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 21:53:26.217 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 21:53:26.217 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 21:53:26.217 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 21:53:26.218 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 21:53:26.218 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 21:53:26.218 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 21:53:26.218 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 21:53:26.219 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 21:53:26.220 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 21:53:26.220 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 21:53:26.220 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 21:53:26.220 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 21:53:26.221 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 21:53:26.221 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 21:53:26.221 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 21:53:26.221 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 21:53:26.222 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 21:53:26.222 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 21:53:26.222 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 21:53:26.222 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 21:53:26.223 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 21:53:26.223 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 21:53:26.223 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 21:53:26.223 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 21:53:26.223 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 21:53:26.225 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 21:53:26.225 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 21:53:26.225 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 21:53:26.225 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 21:53:29.170 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:53:29.170 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv' — starting download
+2026-04-17 21:53:29.170 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 45.9% | ↓ 56 KB/s | peers: 12
+2026-04-17 21:53:33.172 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:53:33.172 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 21:53:33.172 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 11.0% | ↓ 1 KB/s | peers: 4
+2026-04-17 21:53:34.171 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 64.9% | ↓ 206 KB/s | peers: 15
+2026-04-17 21:53:38.173 | INFO     | torrent:_run_download_loop:281 - Download complete: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:53:38.173 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:53:38.175 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:53:38.175 | INFO     | queue_processor:_process_item:185 - Uploading to Dropbox: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:53:38.176 | DEBUG    | database:increment_retry:157 - Retry count → 2 | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:53:38.176 | WARNING  | queue_processor:_handle_retry:233 - Pipeline error (attempt 2/3) for 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': RuntimeError: Dropbox is not linked. Send /start to the Telegram bot to authorize your Dropbox account.
+2026-04-17 21:53:38.176 | INFO     | queue_processor:_handle_retry:240 - Retrying 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' in 120s…
+2026-04-17 21:53:39.172 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 65.5% | ↓ 957 KB/s | peers: 19
+2026-04-17 21:53:44.172 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 66.6% | ↓ 1918 KB/s | peers: 21
+2026-04-17 21:53:49.173 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 67.9% | ↓ 2459 KB/s | peers: 20
+2026-04-17 21:53:52.002 | INFO     | __main__:main:153 - Cancelling background tasks…
+2026-04-17 21:53:52.003 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:53:52.004 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'Hacks S05E02 720p WEB H264 JFF' (was 'downloading')
+2026-04-17 21:53:52.005 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:53:52.005 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' (was 'uploading')
+2026-04-17 21:53:52.005 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 21:53:52.005 | INFO     | __main__:main:167 - Stopping Telegram bot…
+2026-04-17 21:53:52.495 | INFO     | __main__:main:172 - Shutdown complete.
+2026-04-17 21:53:52.495 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'Hacks S05E02 720p WEB H264 JFF' — resetting to queued.
+2026-04-17 21:53:52.497 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:53:54.174 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 68.7% | ↓ 2032 KB/s | peers: 0
+2026-04-17 21:54:29.689 | WARNING  | __main__:main:93 - Dropbox is not linked. Send /start to the Telegram bot to authorize your Dropbox account before queuing downloads.
+2026-04-17 21:54:29.698 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 21:54:29.725 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 21:54:30.565 | INFO     | __main__:main:111 - Telegram bot started.
+2026-04-17 21:54:30.566 | INFO     | __main__:main:122 - All services running. Press Ctrl-C to stop.
+2026-04-17 21:54:30.566 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 21:54:30.566 | INFO     | queue_processor:run_queue_processor:88 - Queue processor started — max concurrent downloads: 2
+2026-04-17 21:54:30.568 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 21:54:30.588 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:54:30.588 | INFO     | queue_processor:_process_item:152 - Started: 'Hacks S05E02 720p WEB H264 JFF'
+2026-04-17 21:54:30.589 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:54:30.589 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:54:30.589 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:54:30.591 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:54:30.700 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 21:54:30.701 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 21:54:30.701 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 21:54:30.701 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 21:54:30.701 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 21:54:30.701 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 21:54:30.702 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 21:54:30.702 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 21:54:30.702 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 21:54:30.703 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 21:54:30.703 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 21:54:30.703 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 21:54:30.703 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 21:54:30.704 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 21:54:30.704 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 21:54:30.704 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 21:54:30.704 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 21:54:30.704 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 21:54:30.706 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 21:54:30.706 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 21:54:30.706 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 21:54:30.706 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 21:54:30.706 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 21:54:30.707 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 21:54:30.707 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 21:54:30.707 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 21:54:30.708 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 21:54:30.708 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 21:54:30.708 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 21:54:30.709 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 21:54:30.709 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 21:54:30.709 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 21:54:30.709 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 21:54:30.709 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 21:54:30.709 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 21:54:30.711 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 21:54:30.711 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 21:54:30.711 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 21:54:30.711 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 21:54:30.712 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 21:54:30.712 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 21:54:30.712 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 21:54:30.713 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 21:54:30.713 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 21:54:30.713 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 21:54:30.714 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 21:54:30.714 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 21:54:30.714 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 21:54:30.714 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 21:54:30.715 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 21:54:30.715 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 21:54:32.557 | INFO     | bot:start_command:137 - Dropbox auth link sent to user 114324923.
+2026-04-17 21:54:34.592 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:54:34.592 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv' — starting download
+2026-04-17 21:54:34.592 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 32.4% | ↓ 14 KB/s | peers: 5
+2026-04-17 21:54:37.594 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:54:37.594 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 21:54:37.594 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 6.3% | ↓ 5 KB/s | peers: 5
+2026-04-17 21:54:39.593 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 68.2% | ↓ 174 KB/s | peers: 13
+2026-04-17 21:54:42.578 | INFO     | api:auth_start:94 - OAuth2 flow started for Telegram user 114324923 (CSRF: uzEDyYxP…)
+2026-04-17 21:54:42.595 | INFO     | torrent:_run_download_loop:281 - Download complete: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:54:42.595 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:54:42.598 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:54:42.598 | INFO     | queue_processor:_process_item:185 - Uploading to Dropbox: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:54:42.601 | DEBUG    | database:increment_retry:157 - Retry count → 3 | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:54:42.601 | WARNING  | queue_processor:_handle_retry:233 - Pipeline error (attempt 3/3) for 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': RuntimeError: Dropbox is not linked. Send /start to the Telegram bot to authorize your Dropbox account.
+2026-04-17 21:54:42.601 | INFO     | queue_processor:_handle_retry:240 - Retrying 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' in 300s…
+2026-04-17 21:54:44.593 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 69.7% | ↓ 2294 KB/s | peers: 22
+2026-04-17 21:54:49.594 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 71.1% | ↓ 2815 KB/s | peers: 26
+2026-04-17 21:54:54.595 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 72.0% | ↓ 2145 KB/s | peers: 24
+2026-04-17 21:54:55.883 | INFO     | __main__:main:153 - Cancelling background tasks…
+2026-04-17 21:54:55.885 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:54:55.885 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'Hacks S05E02 720p WEB H264 JFF' (was 'downloading')
+2026-04-17 21:54:55.888 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:54:55.888 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' (was 'uploading')
+2026-04-17 21:54:55.888 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 21:54:55.888 | INFO     | __main__:main:167 - Stopping Telegram bot…
+2026-04-17 21:54:56.397 | INFO     | __main__:main:172 - Shutdown complete.
+2026-04-17 21:54:56.398 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'Hacks S05E02 720p WEB H264 JFF' — resetting to queued.
+2026-04-17 21:54:56.411 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:54:59.595 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 72.6% | ↓ 1562 KB/s | peers: 0
+2026-04-17 21:57:05.028 | WARNING  | __main__:main:93 - Dropbox is not linked. Send /start to the Telegram bot to authorize your Dropbox account before queuing downloads.
+2026-04-17 21:57:05.038 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 21:57:05.057 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 21:57:05.694 | INFO     | __main__:main:111 - Telegram bot started.
+2026-04-17 21:57:05.694 | INFO     | __main__:main:122 - All services running. Press Ctrl-C to stop.
+2026-04-17 21:57:05.695 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 21:57:05.695 | INFO     | queue_processor:run_queue_processor:88 - Queue processor started — max concurrent downloads: 2
+2026-04-17 21:57:05.697 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 21:57:05.716 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 21:57:05.716 | INFO     | queue_processor:_process_item:152 - Started: 'Hacks S05E02 720p WEB H264 JFF'
+2026-04-17 21:57:05.716 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:57:05.717 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:57:05.717 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:57:05.718 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:57:05.843 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 21:57:05.843 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 21:57:05.843 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 21:57:05.844 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 21:57:05.844 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 21:57:05.844 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 21:57:05.845 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 21:57:05.845 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 21:57:05.845 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 21:57:05.846 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 21:57:05.846 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 21:57:05.846 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 21:57:05.846 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 21:57:05.847 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 21:57:05.847 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 21:57:05.847 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 21:57:05.847 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 21:57:05.849 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 21:57:05.849 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 21:57:05.849 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 21:57:05.849 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 21:57:05.849 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 21:57:05.850 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 21:57:05.850 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 21:57:05.850 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 21:57:05.850 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 21:57:05.851 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 21:57:05.851 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 21:57:05.851 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 21:57:05.851 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 21:57:05.852 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 21:57:05.852 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 21:57:05.852 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 21:57:05.852 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 21:57:05.853 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 21:57:05.853 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 21:57:05.853 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 21:57:05.854 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 21:57:05.854 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 21:57:05.854 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 21:57:05.855 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 21:57:05.855 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 21:57:05.855 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 21:57:05.855 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 21:57:05.856 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 21:57:05.856 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 21:57:05.856 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 21:57:05.856 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 21:57:05.857 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 21:57:05.857 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 21:57:05.857 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 21:57:09.719 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:57:09.719 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv' — starting download
+2026-04-17 21:57:09.719 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 26.5% | ↓ 18 KB/s | peers: 7
+2026-04-17 21:57:12.721 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:57:12.721 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 21:57:12.721 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 14.6% | ↓ 14 KB/s | peers: 4
+2026-04-17 21:57:14.720 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 71.8% | ↓ 71 KB/s | peers: 15
+2026-04-17 21:57:14.870 | INFO     | bot:start_command:137 - Dropbox auth link sent to user 114324923.
+2026-04-17 21:57:17.723 | INFO     | torrent:_run_download_loop:281 - Download complete: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:57:17.723 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:57:17.725 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:57:17.725 | INFO     | queue_processor:_process_item:185 - Uploading to Dropbox: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:57:17.727 | DEBUG    | database:increment_retry:157 - Retry count → 4 | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:57:17.727 | WARNING  | queue_processor:_handle_retry:233 - Pipeline error (attempt 4/3) for 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': RuntimeError: Dropbox is not linked. Send /start to the Telegram bot to authorize your Dropbox account.
+2026-04-17 21:57:17.727 | ERROR    | queue_processor:_handle_retry:244 - Permanently failed after 3 retries: 'INVINCIBLE S03E01 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 21:57:17.728 | DEBUG    | database:update_status:126 - Status → 'failed' | magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…
+2026-04-17 21:57:17.729 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 21:57:17.729 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB'
+2026-04-17 21:57:17.729 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 21:57:19.720 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 72.5% | ↓ 767 KB/s | peers: 21
+2026-04-17 21:57:20.731 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 21:57:20.731 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 21:57:20.732 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 38.3% | ↓ 3 KB/s | peers: 6
+2026-04-17 21:57:22.622 | INFO     | api:auth_start:94 - OAuth2 flow started for Telegram user 114324923 (CSRF: cz5FtljT…)
+2026-04-17 21:57:24.721 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 74.0% | ↓ 2547 KB/s | peers: 23
+2026-04-17 21:57:25.732 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 50.8% | ↓ 592 KB/s | peers: 11
+2026-04-17 21:57:28.297 | INFO     | api:auth_callback:179 - Dropbox account linked for Telegram user 114324923.
+2026-04-17 21:57:29.721 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 75.3% | ↓ 2583 KB/s | peers: 24
+2026-04-17 21:57:30.733 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 51.6% | ↓ 1530 KB/s | peers: 17
+2026-04-17 21:57:34.722 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 76.6% | ↓ 2803 KB/s | peers: 24
+2026-04-17 21:57:35.733 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 52.5% | ↓ 2080 KB/s | peers: 23
+2026-04-17 21:57:39.723 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 77.9% | ↓ 2809 KB/s | peers: 25
+2026-04-17 21:57:40.734 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 53.4% | ↓ 2282 KB/s | peers: 30
+2026-04-17 21:57:44.723 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 79.3% | ↓ 3062 KB/s | peers: 25
+2026-04-17 21:57:45.734 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 54.3% | ↓ 2391 KB/s | peers: 35
+2026-04-17 21:57:49.723 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 80.5% | ↓ 2798 KB/s | peers: 25
+2026-04-17 21:57:50.734 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 55.2% | ↓ 2455 KB/s | peers: 37
+2026-04-17 21:57:54.724 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 81.5% | ↓ 2243 KB/s | peers: 25
+2026-04-17 21:57:55.735 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 56.2% | ↓ 2621 KB/s | peers: 37
+2026-04-17 21:57:59.724 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 82.2% | ↓ 1826 KB/s | peers: 24
+2026-04-17 21:58:00.735 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 57.2% | ↓ 2530 KB/s | peers: 36
+2026-04-17 21:58:04.725 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 82.9% | ↓ 1635 KB/s | peers: 24
+2026-04-17 21:58:05.736 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 58.2% | ↓ 2595 KB/s | peers: 36
+2026-04-17 21:58:09.725 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 83.8% | ↓ 1728 KB/s | peers: 25
+2026-04-17 21:58:10.736 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 59.0% | ↓ 2295 KB/s | peers: 35
+2026-04-17 21:58:14.726 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 84.8% | ↓ 2220 KB/s | peers: 26
+2026-04-17 21:58:15.736 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 60.1% | ↓ 2655 KB/s | peers: 34
+2026-04-17 21:58:19.726 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 86.1% | ↓ 2473 KB/s | peers: 27
+2026-04-17 21:58:20.736 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 61.7% | ↓ 3789 KB/s | peers: 35
+2026-04-17 21:58:24.727 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 87.1% | ↓ 2462 KB/s | peers: 29
+2026-04-17 21:58:25.737 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 63.3% | ↓ 4202 KB/s | peers: 36
+2026-04-17 21:58:29.727 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 88.2% | ↓ 2466 KB/s | peers: 29
+2026-04-17 21:58:30.737 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 64.6% | ↓ 3724 KB/s | peers: 36
+2026-04-17 21:58:34.728 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 89.2% | ↓ 2095 KB/s | peers: 27
+2026-04-17 21:58:35.738 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 65.6% | ↓ 2889 KB/s | peers: 36
+2026-04-17 21:58:39.728 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 90.0% | ↓ 1971 KB/s | peers: 27
+2026-04-17 21:58:40.738 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 66.3% | ↓ 2255 KB/s | peers: 36
+2026-04-17 21:58:44.729 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 90.8% | ↓ 1921 KB/s | peers: 26
+2026-04-17 21:58:45.739 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 67.2% | ↓ 2261 KB/s | peers: 37
+2026-04-17 21:58:49.730 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 91.6% | ↓ 1869 KB/s | peers: 26
+2026-04-17 21:58:50.739 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 68.2% | ↓ 2585 KB/s | peers: 37
+2026-04-17 21:58:54.730 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 92.2% | ↓ 1552 KB/s | peers: 26
+2026-04-17 21:58:55.740 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 69.4% | ↓ 2895 KB/s | peers: 37
+2026-04-17 21:58:59.731 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 92.6% | ↓ 1095 KB/s | peers: 26
+2026-04-17 21:59:00.741 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 70.4% | ↓ 2949 KB/s | peers: 38
+2026-04-17 21:59:04.731 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 93.0% | ↓ 950 KB/s | peers: 26
+2026-04-17 21:59:05.741 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 71.8% | ↓ 3217 KB/s | peers: 38
+2026-04-17 21:59:09.731 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 93.5% | ↓ 987 KB/s | peers: 25
+2026-04-17 21:59:10.742 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 73.0% | ↓ 3305 KB/s | peers: 36
+2026-04-17 21:59:14.732 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 94.1% | ↓ 1271 KB/s | peers: 25
+2026-04-17 21:59:15.742 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 74.1% | ↓ 3089 KB/s | peers: 36
+2026-04-17 21:59:19.733 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 94.8% | ↓ 1399 KB/s | peers: 26
+2026-04-17 21:59:20.742 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 75.3% | ↓ 3253 KB/s | peers: 37
+2026-04-17 21:59:24.733 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 95.4% | ↓ 1419 KB/s | peers: 28
+2026-04-17 21:59:25.743 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 76.5% | ↓ 3002 KB/s | peers: 37
+2026-04-17 21:59:29.734 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 96.2% | ↓ 1653 KB/s | peers: 27
+2026-04-17 21:59:30.743 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 77.5% | ↓ 2845 KB/s | peers: 39
+2026-04-17 21:59:34.734 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 96.7% | ↓ 1379 KB/s | peers: 27
+2026-04-17 21:59:35.744 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 78.4% | ↓ 2563 KB/s | peers: 38
+2026-04-17 21:59:39.735 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 97.3% | ↓ 1270 KB/s | peers: 26
+2026-04-17 21:59:40.744 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 79.5% | ↓ 2842 KB/s | peers: 37
+2026-04-17 21:59:44.735 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 97.8% | ↓ 1168 KB/s | peers: 26
+2026-04-17 21:59:45.745 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 81.1% | ↓ 3815 KB/s | peers: 36
+2026-04-17 21:59:49.735 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 98.2% | ↓ 1072 KB/s | peers: 27
+2026-04-17 21:59:50.746 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 82.4% | ↓ 3575 KB/s | peers: 36
+2026-04-17 21:59:54.736 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 98.7% | ↓ 1023 KB/s | peers: 28
+2026-04-17 21:59:55.746 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 83.6% | ↓ 3232 KB/s | peers: 35
+2026-04-17 21:59:59.737 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 99.1% | ↓ 907 KB/s | peers: 28
+2026-04-17 22:00:00.747 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 84.6% | ↓ 3078 KB/s | peers: 35
+2026-04-17 22:00:04.737 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 99.6% | ↓ 1066 KB/s | peers: 29
+2026-04-17 22:00:05.747 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 86.1% | ↓ 3607 KB/s | peers: 35
+2026-04-17 22:00:09.738 | DEBUG    | torrent:_run_download_loop:297 - 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv': 99.9% | ↓ 889 KB/s | peers: 30
+2026-04-17 22:00:10.747 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 87.7% | ↓ 3982 KB/s | peers: 36
+2026-04-17 22:00:14.738 | INFO     | torrent:_run_download_loop:281 - Download complete: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv'
+2026-04-17 22:00:14.738 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv'
+2026-04-17 22:00:14.740 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 22:00:14.740 | INFO     | queue_processor:_process_item:185 - Uploading to Dropbox: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv'
+2026-04-17 22:00:14.780 | DEBUG    | dropbox_sync:_upload_file:143 - Uploading (chunked, 1.01 GB): ./downloads\Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv → /Shows/Current/Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv
+2026-04-17 22:00:15.748 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 89.3% | ↓ 4148 KB/s | peers: 37
+2026-04-17 22:00:20.748 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 90.5% | ↓ 3612 KB/s | peers: 37
+2026-04-17 22:00:25.749 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 91.2% | ↓ 2301 KB/s | peers: 38
+2026-04-17 22:00:30.750 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 91.9% | ↓ 1963 KB/s | peers: 37
+2026-04-17 22:00:35.750 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 93.0% | ↓ 2656 KB/s | peers: 37
+2026-04-17 22:00:40.750 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 94.3% | ↓ 3205 KB/s | peers: 37
+2026-04-17 22:00:45.751 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 95.2% | ↓ 2800 KB/s | peers: 38
+2026-04-17 22:00:50.751 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 95.9% | ↓ 2072 KB/s | peers: 38
+2026-04-17 22:00:55.752 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 96.8% | ↓ 2392 KB/s | peers: 39
+2026-04-17 22:01:00.752 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 98.0% | ↓ 2905 KB/s | peers: 39
+2026-04-17 22:01:05.753 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 99.2% | ↓ 3210 KB/s | peers: 39
+2026-04-17 22:01:10.753 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 99.7% | ↓ 2176 KB/s | peers: 40
+2026-04-17 22:01:15.754 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 99.9% | ↓ 1402 KB/s | peers: 39
+2026-04-17 22:01:20.755 | INFO     | torrent:_run_download_loop:281 - Download complete: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:01:20.755 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:01:20.769 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:01:20.770 | INFO     | queue_processor:_process_item:185 - Uploading to Dropbox: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:01:20.778 | DEBUG    | dropbox_sync:_upload_file:143 - Uploading (chunked, 1.23 GB): ./downloads\INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv → /Shows/Current/INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv
+2026-04-17 22:12:06.384 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 22:12:06.385 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 22:12:06.385 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 22:12:06.385 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 22:12:06.385 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 22:12:06.386 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 22:12:06.386 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 22:12:06.386 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 22:12:06.387 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 22:12:06.387 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 22:12:06.387 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 22:12:06.387 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 22:12:06.388 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 22:12:06.388 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 22:12:06.388 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 22:12:06.388 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 22:12:06.389 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 22:12:06.389 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 22:12:06.389 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 22:12:06.389 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 22:12:06.389 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 22:12:06.389 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 22:12:06.390 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 22:12:06.390 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 22:12:06.390 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 22:12:06.391 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 22:12:06.391 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 22:12:06.391 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 22:12:06.391 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 22:12:06.392 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 22:12:06.392 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 22:12:06.392 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 22:12:06.392 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 22:12:06.393 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 22:12:06.393 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 22:12:06.393 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 22:12:06.393 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 22:12:06.394 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 22:12:06.394 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 22:12:06.395 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 22:12:06.395 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 22:12:06.395 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 22:12:06.395 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 22:12:06.396 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 22:12:06.396 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 22:12:06.396 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 22:12:06.396 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 22:12:06.397 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 22:12:06.397 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 22:12:06.397 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 22:12:06.397 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 22:12:33.380 | INFO     | dropbox_sync:_upload_file:192 - Uploaded and cleaned up: ./downloads\Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv
+2026-04-17 22:12:33.380 | INFO     | dropbox_sync:_sync_blocking:276 - Dropbox sync complete for: 'Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv'
+2026-04-17 22:12:33.386 | DEBUG    | database:update_status:126 - Status → 'completed' | magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…
+2026-04-17 22:12:33.386 | INFO     | queue_processor:_process_item:197 - Pipeline complete: 'Hacks S05E02 720p WEB H264 JFF'
+2026-04-17 22:12:33.387 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…
+2026-04-17 22:12:33.388 | INFO     | queue_processor:_process_item:152 - Started: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-17 22:12:33.388 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 22:12:36.390 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 22:12:36.390 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv' — starting download
+2026-04-17 22:12:36.390 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 0.0% | ↓ 2 KB/s | peers: 10
+2026-04-17 22:12:41.391 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 0.2% | ↓ 284 KB/s | peers: 27
+2026-04-17 22:12:46.392 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 0.6% | ↓ 1077 KB/s | peers: 35
+2026-04-17 22:12:51.393 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 0.9% | ↓ 904 KB/s | peers: 44
+2026-04-17 22:12:56.393 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 1.5% | ↓ 1436 KB/s | peers: 45
+2026-04-17 22:13:01.393 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 1.8% | ↓ 1040 KB/s | peers: 46
+2026-04-17 22:13:06.394 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 2.4% | ↓ 1429 KB/s | peers: 43
+2026-04-17 22:13:11.394 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.1% | ↓ 1824 KB/s | peers: 41
+2026-04-17 22:13:12.940 | INFO     | __main__:main:153 - Cancelling background tasks…
+2026-04-17 22:13:12.942 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…
+2026-04-17 22:13:12.942 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (was 'downloading')
+2026-04-17 22:13:12.943 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:13:12.943 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' (was 'uploading')
+2026-04-17 22:13:12.943 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 22:13:12.944 | INFO     | __main__:main:167 - Stopping Telegram bot…
+2026-04-17 22:13:13.751 | INFO     | __main__:main:172 - Shutdown complete.
+2026-04-17 22:13:13.753 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' — resetting to queued.
+2026-04-17 22:13:13.766 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:13:13.766 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' — resetting to queued.
+2026-04-17 22:13:13.767 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…
+2026-04-17 22:13:16.395 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 1122 KB/s | peers: 0
+2026-04-17 22:13:21.396 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 368 KB/s | peers: 0
+2026-04-17 22:13:26.396 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 120 KB/s | peers: 0
+2026-04-17 22:13:31.397 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 39 KB/s | peers: 0
+2026-04-17 22:13:36.397 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 13 KB/s | peers: 0
+2026-04-17 22:13:41.398 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 4 KB/s | peers: 0
+2026-04-17 22:13:46.399 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 1 KB/s | peers: 0
+2026-04-17 22:13:51.399 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:13:56.400 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:14:01.400 | DEBUG    | torrent:_run_download_loop:297 - 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB-DL DDP5 1 Atmos H 264-FLUX[EZTVx.to].mkv': 3.3% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:14:02.823 | INFO     | dropbox_sync:_upload_file:192 - Uploaded and cleaned up: ./downloads\INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv
+2026-04-17 22:14:02.823 | INFO     | dropbox_sync:_sync_blocking:276 - Dropbox sync complete for: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:14:35.215 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 22:14:35.234 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 22:14:35.992 | INFO     | __main__:main:111 - Telegram bot started.
+2026-04-17 22:14:35.992 | INFO     | __main__:main:122 - All services running. Press Ctrl-C to stop.
+2026-04-17 22:14:35.993 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 22:14:35.993 | INFO     | queue_processor:run_queue_processor:88 - Queue processor started — max concurrent downloads: 1
+2026-04-17 22:14:35.994 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 22:14:36.015 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:14:36.015 | INFO     | queue_processor:_process_item:152 - Started: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:14:36.016 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 22:14:36.261 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 22:14:36.261 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 22:14:36.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 22:14:36.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 22:14:36.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 22:14:36.263 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 22:14:36.263 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 22:14:36.263 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 22:14:36.263 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 22:14:36.264 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 22:14:36.264 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 22:14:36.264 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 22:14:36.264 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 22:14:36.264 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 22:14:36.265 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 22:14:36.265 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 22:14:36.265 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 22:14:36.266 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 22:14:36.266 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 22:14:36.266 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 22:14:36.266 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 22:14:36.267 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 22:14:36.267 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 22:14:36.267 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 22:14:36.268 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 22:14:36.268 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 22:14:36.268 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 22:14:36.268 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 22:14:36.269 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 22:14:36.269 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 22:14:36.269 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 22:14:36.269 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 22:14:36.269 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 22:14:36.270 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 22:14:36.270 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 22:14:36.270 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 22:14:36.270 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 22:14:36.271 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 22:14:36.271 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 22:14:36.271 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 22:14:36.271 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 22:14:36.272 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 22:14:36.272 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 22:14:36.273 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 22:14:36.273 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 22:14:36.273 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 22:14:36.273 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 22:14:36.274 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 22:14:36.274 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 22:14:36.274 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 22:14:36.274 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 22:14:40.019 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 22:14:40.019 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 22:14:40.019 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 0.0% | ↓ 17 KB/s | peers: 8
+2026-04-17 22:14:45.020 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 0.9% | ↓ 1594 KB/s | peers: 25
+2026-04-17 22:14:50.020 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 2.1% | ↓ 2705 KB/s | peers: 46
+2026-04-17 22:14:55.021 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 3.6% | ↓ 3465 KB/s | peers: 50
+2026-04-17 22:15:00.021 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 5.2% | ↓ 3929 KB/s | peers: 55
+2026-04-17 22:15:05.022 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 6.9% | ↓ 4354 KB/s | peers: 58
+2026-04-17 22:15:10.023 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 8.4% | ↓ 4150 KB/s | peers: 59
+2026-04-17 22:15:15.023 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 10.0% | ↓ 4071 KB/s | peers: 58
+2026-04-17 22:15:20.024 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 11.6% | ↓ 4211 KB/s | peers: 58
+2026-04-17 22:15:25.024 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 13.1% | ↓ 4263 KB/s | peers: 57
+2026-04-17 22:15:30.025 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 14.9% | ↓ 4502 KB/s | peers: 57
+2026-04-17 22:15:33.093 | INFO     | __main__:main:153 - Cancelling background tasks…
+2026-04-17 22:15:33.097 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:15:33.097 | INFO     | __main__:_reset_in_progress:73 - Reset stuck item to queued: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' (was 'downloading')
+2026-04-17 22:15:33.097 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 22:15:33.097 | INFO     | __main__:main:167 - Stopping Telegram bot…
+2026-04-17 22:15:33.343 | WARNING  | queue_processor:_process_item:207 - Task cancelled: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — resetting to queued.
+2026-04-17 22:15:33.356 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:15:35.026 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 3429 KB/s | peers: 0
+2026-04-17 22:15:40.026 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 1124 KB/s | peers: 0
+2026-04-17 22:15:45.026 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 368 KB/s | peers: 0
+2026-04-17 22:15:50.027 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 121 KB/s | peers: 0
+2026-04-17 22:15:55.028 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 40 KB/s | peers: 0
+2026-04-17 22:16:00.028 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 13 KB/s | peers: 0
+2026-04-17 22:16:05.029 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 4 KB/s | peers: 0
+2026-04-17 22:16:10.030 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 1 KB/s | peers: 0
+2026-04-17 22:16:15.030 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:20.030 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:25.031 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:30.032 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:35.032 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:40.032 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:45.033 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:50.033 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:16:55.034 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:00.034 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:05.035 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:10.035 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:15.036 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:20.036 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:25.036 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:30.037 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:35.037 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:40.038 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:45.039 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:50.039 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:17:55.039 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:00.040 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:05.041 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:10.041 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:15.042 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:20.042 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:25.043 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:30.044 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:35.044 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:40.045 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:45.045 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:50.045 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:18:55.046 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:00.046 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:05.047 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:10.047 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:15.048 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:20.048 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:25.049 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:30.050 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:35.050 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:40.051 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:45.051 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:50.052 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:19:55.053 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:00.054 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:05.054 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:10.055 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:15.055 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:20.056 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:25.056 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:30.057 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:35.057 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:40.058 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:45.058 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:50.059 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:20:55.059 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:00.060 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:05.061 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:10.061 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:15.062 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:20.062 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:25.063 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:30.063 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:35.064 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:40.064 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:45.065 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:50.065 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:21:55.065 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:00.066 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:05.067 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:10.067 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:15.068 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:20.069 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:25.069 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:30.069 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:35.070 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:40.070 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:45.071 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:50.071 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:22:55.072 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:00.072 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:05.073 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:10.073 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:15.073 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:20.074 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:25.075 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:30.075 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:35.075 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:40.077 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:45.077 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:50.077 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:23:55.078 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:00.078 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:05.079 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:10.079 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:15.079 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:20.080 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:25.080 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:30.081 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:35.082 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:40.082 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:45.083 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:50.083 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:24:55.084 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:00.084 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:05.085 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:10.086 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:15.086 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:20.087 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:25.087 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:30.088 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:35.089 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:40.089 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:45.090 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:50.090 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:25:55.091 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:00.092 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:05.092 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:10.093 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:15.093 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:20.093 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:25.094 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:30.094 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:35.094 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:40.095 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:45.096 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:50.096 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:26:55.097 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.8% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:27:14.641 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 22:27:14.671 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 22:27:15.293 | INFO     | __main__:main:134 - Telegram bot started.
+2026-04-17 22:27:15.294 | INFO     | __main__:main:151 - All services running. Press Ctrl-C to stop.
+2026-04-17 22:27:15.295 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 22:27:15.295 | INFO     | queue_processor:run_queue_processor:89 - Queue processor started — max concurrent downloads: 1
+2026-04-17 22:27:15.296 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 22:27:15.316 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:27:15.316 | INFO     | queue_processor:_process_item:166 - Started: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:27:15.316 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 22:27:16.250 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 22:27:16.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 22:27:16.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 22:27:16.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 22:27:16.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 22:27:16.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 22:27:16.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 22:27:16.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 22:27:16.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 22:27:16.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 22:27:16.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 22:27:16.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 22:27:16.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 22:27:16.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 22:27:16.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 22:27:16.255 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 22:27:16.255 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 22:27:16.255 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 22:27:16.255 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 22:27:16.256 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 22:27:16.256 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 22:27:16.256 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 22:27:16.256 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 22:27:16.256 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 22:27:16.256 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 22:27:16.257 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 22:27:16.257 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 22:27:16.257 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 22:27:16.257 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 22:27:16.258 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 22:27:16.258 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 22:27:16.258 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 22:27:16.259 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 22:27:16.259 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 22:27:16.259 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 22:27:16.259 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 22:27:16.260 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 22:27:16.260 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 22:27:16.260 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 22:27:16.260 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 22:27:16.261 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 22:27:16.261 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 22:27:16.261 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 22:27:16.261 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 22:27:16.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 22:27:16.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 22:27:16.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 22:27:16.262 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 22:27:16.263 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 22:27:16.263 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 22:27:16.263 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 22:27:19.318 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 22:27:19.318 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 22:27:19.318 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 60.9% | ↓ 22 KB/s | peers: 8
+2026-04-17 22:27:24.319 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 13.7% | ↓ 888 KB/s | peers: 24
+2026-04-17 22:27:29.320 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 15.9% | ↓ 4025 KB/s | peers: 42
+2026-04-17 22:27:34.321 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 18.9% | ↓ 6318 KB/s | peers: 49
+2026-04-17 22:27:39.321 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 22.0% | ↓ 7899 KB/s | peers: 53
+2026-04-17 22:27:44.321 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 25.0% | ↓ 7989 KB/s | peers: 57
+2026-04-17 22:27:49.322 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 27.7% | ↓ 7436 KB/s | peers: 58
+2026-04-17 22:27:49.445 | INFO     | __main__:main:182 - Cancelling background tasks…
+2026-04-17 22:27:49.447 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:27:49.447 | INFO     | __main__:_reset_in_progress:105 - Reset stuck item to queued: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' (was 'downloading')
+2026-04-17 22:27:49.447 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 22:27:49.447 | INFO     | __main__:main:196 - Stopping Telegram bot…
+2026-04-17 22:27:49.730 | WARNING  | queue_processor:_process_item:221 - Task cancelled: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — resetting to queued.
+2026-04-17 22:27:49.740 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:27:54.323 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 27.8% | ↓ 2840 KB/s | peers: 0
+2026-04-17 22:27:59.323 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 27.8% | ↓ 930 KB/s | peers: 0
+2026-04-17 22:28:04.324 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 27.8% | ↓ 305 KB/s | peers: 0
+2026-04-17 22:28:52.828 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 22:28:52.850 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 22:28:53.466 | INFO     | __main__:main:134 - Telegram bot started.
+2026-04-17 22:28:53.660 | INFO     | __main__:_send:82 - Sent Dropbox auth prompt to user 114324923.
+2026-04-17 22:28:53.949 | WARNING  | __main__:_send:84 - Could not notify user 987654321 of unlinked state: Chat not found
+2026-04-17 22:28:53.949 | INFO     | __main__:main:151 - All services running. Press Ctrl-C to stop.
+2026-04-17 22:28:53.950 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 22:28:53.950 | INFO     | queue_processor:run_queue_processor:89 - Queue processor started — max concurrent downloads: 1
+2026-04-17 22:28:53.950 | WARNING  | queue_processor:run_queue_processor:99 - Queue processor: Dropbox is not linked — downloads are paused until authorisation is complete.
+2026-04-17 22:28:53.951 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 22:28:54.079 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 22:28:54.079 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 22:28:54.079 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 22:28:54.080 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 22:28:54.080 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 22:28:54.080 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 22:28:54.080 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 22:28:54.080 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 22:28:54.082 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 22:28:54.082 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 22:28:54.082 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 22:28:54.083 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 22:28:54.083 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 22:28:54.083 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 22:28:54.083 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 22:28:54.084 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 22:28:54.084 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 22:28:54.084 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 22:28:54.084 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 22:28:54.084 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 22:28:54.084 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 22:28:54.085 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 22:28:54.085 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 22:28:54.085 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 22:28:54.086 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 22:28:54.086 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 22:28:54.086 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 22:28:54.086 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 22:28:54.087 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 22:28:54.087 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 22:28:54.087 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 22:28:54.087 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 22:28:54.088 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 22:28:54.088 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 22:28:54.088 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 22:28:54.088 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 22:28:54.088 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 22:28:54.089 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 22:28:54.089 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 22:28:54.089 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 22:28:54.089 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 22:28:54.090 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 22:28:54.090 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 22:28:54.090 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 22:28:54.091 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 22:28:54.091 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 22:28:54.091 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 22:28:54.092 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 22:28:54.092 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 22:28:54.092 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 22:28:54.092 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 22:29:04.894 | INFO     | api:auth_start:94 - OAuth2 flow started for Telegram user 114324923 (CSRF: 5u1fZlK1…)
+2026-04-17 22:29:09.468 | INFO     | api:auth_callback:179 - Dropbox account linked for Telegram user 114324923.
+2026-04-17 22:29:13.958 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:29:13.958 | INFO     | queue_processor:_process_item:166 - Started: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv'
+2026-04-17 22:29:13.959 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 22:29:16.961 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 22:29:16.961 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — starting download
+2026-04-17 22:29:16.961 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 32.4% | ↓ 23 KB/s | peers: 5
+2026-04-17 22:29:21.962 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 25.6% | ↓ 311 KB/s | peers: 19
+2026-04-17 22:29:26.963 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 27.0% | ↓ 2244 KB/s | peers: 38
+2026-04-17 22:29:31.963 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 29.2% | ↓ 4523 KB/s | peers: 53
+2026-04-17 22:29:36.964 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 31.8% | ↓ 6174 KB/s | peers: 54
+2026-04-17 22:29:41.964 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 34.3% | ↓ 6513 KB/s | peers: 63
+2026-04-17 22:29:46.965 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 36.8% | ↓ 6580 KB/s | peers: 62
+2026-04-17 22:29:51.965 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 39.6% | ↓ 7176 KB/s | peers: 60
+2026-04-17 22:29:56.966 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 42.1% | ↓ 6781 KB/s | peers: 59
+2026-04-17 22:30:01.966 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 44.3% | ↓ 6154 KB/s | peers: 59
+2026-04-17 22:30:06.967 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 46.7% | ↓ 6315 KB/s | peers: 59
+2026-04-17 22:30:09.117 | INFO     | __main__:main:182 - Cancelling background tasks…
+2026-04-17 22:30:09.119 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:30:09.119 | INFO     | __main__:_reset_in_progress:105 - Reset stuck item to queued: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' (was 'downloading')
+2026-04-17 22:30:09.119 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 22:30:09.119 | INFO     | __main__:main:196 - Stopping Telegram bot…
+2026-04-17 22:30:09.216 | WARNING  | queue_processor:_process_item:221 - Task cancelled: 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv' — resetting to queued.
+2026-04-17 22:30:09.217 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…
+2026-04-17 22:30:11.967 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 4286 KB/s | peers: 0
+2026-04-17 22:30:16.968 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 1404 KB/s | peers: 0
+2026-04-17 22:30:21.969 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 460 KB/s | peers: 0
+2026-04-17 22:30:26.969 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 151 KB/s | peers: 0
+2026-04-17 22:30:31.969 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 49 KB/s | peers: 0
+2026-04-17 22:30:36.970 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 16 KB/s | peers: 0
+2026-04-17 22:30:41.970 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 5 KB/s | peers: 0
+2026-04-17 22:30:46.971 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 2 KB/s | peers: 0
+2026-04-17 22:30:51.971 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 1 KB/s | peers: 0
+2026-04-17 22:30:56.972 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:01.973 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:06.973 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:11.974 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:16.974 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:21.975 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:26.975 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:31.976 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:36.976 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:41.977 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:31:46.978 | DEBUG    | torrent:_run_download_loop:297 - 'INVINCIBLE S03E03 2021 1080p AMZN WEB-DL DDP5 1 H 264-HHWEB[EZTVx.to].mkv': 47.7% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:32:24.962 | INFO     | torrent:__init__:155 - TorrentManager: session started, save_path='./downloads'
+2026-04-17 22:32:24.984 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-17 22:32:25.601 | INFO     | __main__:main:134 - Telegram bot started.
+2026-04-17 22:32:25.602 | INFO     | __main__:main:151 - All services running. Press Ctrl-C to stop.
+2026-04-17 22:32:25.602 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-17 22:32:25.602 | INFO     | queue_processor:run_queue_processor:89 - Queue processor started — max concurrent downloads: 1
+2026-04-17 22:32:25.603 | INFO     | api:run_server:271 - API server starting on 0.0.0.0:8080
+2026-04-17 22:32:25.622 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…
+2026-04-17 22:32:25.622 | INFO     | queue_processor:_process_item:166 - Started: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 22:32:25.623 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 22:32:25.994 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-17 22:32:25.994 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-17 22:32:25.995 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-17 22:32:25.995 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-17 22:32:25.995 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-17 22:32:25.995 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-17 22:32:25.996 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-17 22:32:25.996 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-17 22:32:25.996 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-17 22:32:25.997 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-17 22:32:25.997 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-17 22:32:25.997 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-17 22:32:25.998 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-17 22:32:25.998 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-17 22:32:25.998 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-17 22:32:25.999 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-17 22:32:25.999 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-17 22:32:25.999 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-17 22:32:25.999 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-17 22:32:25.999 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-17 22:32:26.000 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-17 22:32:26.000 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-17 22:32:26.000 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-17 22:32:26.001 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-17 22:32:26.001 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-17 22:32:26.001 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-17 22:32:26.001 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-17 22:32:26.002 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-17 22:32:26.002 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-17 22:32:26.002 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-17 22:32:26.003 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-17 22:32:26.003 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-17 22:32:26.003 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-17 22:32:26.004 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-17 22:32:26.004 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-17 22:32:26.004 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-17 22:32:26.005 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-17 22:32:26.005 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-17 22:32:26.005 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-17 22:32:26.005 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-17 22:32:26.006 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-17 22:32:26.006 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-17 22:32:26.006 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-17 22:32:26.006 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-17 22:32:26.007 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-17 22:32:26.007 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-17 22:32:26.008 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-17 22:32:26.008 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-17 22:32:26.008 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-17 22:32:26.008 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-17 22:32:26.008 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-17 22:32:29.626 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 22:32:29.626 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv' — starting download
+2026-04-17 22:32:29.626 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 0.0% | ↓ 13 KB/s | peers: 10
+2026-04-17 22:32:34.627 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 0.7% | ↓ 940 KB/s | peers: 23
+2026-04-17 22:32:39.627 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 2.4% | ↓ 2346 KB/s | peers: 28
+2026-04-17 22:32:44.628 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 5.1% | ↓ 4253 KB/s | peers: 31
+2026-04-17 22:32:49.628 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 7.7% | ↓ 4878 KB/s | peers: 32
+2026-04-17 22:32:54.629 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 10.7% | ↓ 5616 KB/s | peers: 40
+2026-04-17 22:32:59.630 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 13.4% | ↓ 5543 KB/s | peers: 49
+2026-04-17 22:33:04.630 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 16.8% | ↓ 6345 KB/s | peers: 50
+2026-04-17 22:33:09.631 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 20.1% | ↓ 6759 KB/s | peers: 53
+2026-04-17 22:33:14.631 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 23.2% | ↓ 6267 KB/s | peers: 56
+2026-04-17 22:33:19.631 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 25.9% | ↓ 5708 KB/s | peers: 63
+2026-04-17 22:33:24.632 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 28.8% | ↓ 5799 KB/s | peers: 66
+2026-04-17 22:33:29.632 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 31.2% | ↓ 4879 KB/s | peers: 70
+2026-04-17 22:33:34.633 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 33.8% | ↓ 5086 KB/s | peers: 69
+2026-04-17 22:33:39.634 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 36.4% | ↓ 5114 KB/s | peers: 71
+2026-04-17 22:33:44.634 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 38.9% | ↓ 5024 KB/s | peers: 75
+2026-04-17 22:33:49.635 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 41.4% | ↓ 5153 KB/s | peers: 77
+2026-04-17 22:33:54.635 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 44.2% | ↓ 5385 KB/s | peers: 81
+2026-04-17 22:33:59.636 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 47.3% | ↓ 5915 KB/s | peers: 81
+2026-04-17 22:34:04.636 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 50.3% | ↓ 5928 KB/s | peers: 84
+2026-04-17 22:34:09.637 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 53.3% | ↓ 5880 KB/s | peers: 90
+2026-04-17 22:34:14.637 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 56.6% | ↓ 6218 KB/s | peers: 97
+2026-04-17 22:34:19.638 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 60.0% | ↓ 6927 KB/s | peers: 104
+2026-04-17 22:34:24.638 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 62.9% | ↓ 6105 KB/s | peers: 106
+2026-04-17 22:34:29.639 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 66.3% | ↓ 6375 KB/s | peers: 103
+2026-04-17 22:34:34.639 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 68.5% | ↓ 4953 KB/s | peers: 103
+2026-04-17 22:34:39.640 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 71.0% | ↓ 5154 KB/s | peers: 103
+2026-04-17 22:34:44.640 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 74.8% | ↓ 6808 KB/s | peers: 102
+2026-04-17 22:34:49.641 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 78.2% | ↓ 6859 KB/s | peers: 104
+2026-04-17 22:34:54.641 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 81.3% | ↓ 6519 KB/s | peers: 102
+2026-04-17 22:34:59.641 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 84.1% | ↓ 6131 KB/s | peers: 104
+2026-04-17 22:35:04.642 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 87.8% | ↓ 6699 KB/s | peers: 102
+2026-04-17 22:35:09.643 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 91.3% | ↓ 7089 KB/s | peers: 106
+2026-04-17 22:35:14.643 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 95.2% | ↓ 7488 KB/s | peers: 104
+2026-04-17 22:35:19.644 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 98.2% | ↓ 6683 KB/s | peers: 106
+2026-04-17 22:35:24.644 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv': 99.5% | ↓ 4080 KB/s | peers: 105
+2026-04-17 22:35:29.645 | INFO     | torrent:_run_download_loop:281 - Download complete: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv'
+2026-04-17 22:35:29.645 | INFO     | torrent:download_magnet:212 - Torrent handle removed for: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv'
+2026-04-17 22:35:29.646 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…
+2026-04-17 22:35:29.646 | INFO     | queue_processor:_process_item:199 - Uploading to Dropbox: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv'
+2026-04-17 22:35:29.659 | DEBUG    | dropbox_sync:_upload_file:143 - Uploading (chunked, 0.92 GB): ./downloads\Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv → /Podrick/Shows/Current/Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv
+2026-04-17 22:45:29.919 | INFO     | dropbox_sync:_upload_file:192 - Uploaded and cleaned up: ./downloads\Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv
+2026-04-17 22:45:29.920 | INFO     | dropbox_sync:_sync_blocking:276 - Dropbox sync complete for: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB-DL DDP5 1 H 264-FLUX[EZTVx.to].mkv'
+2026-04-17 22:45:29.924 | DEBUG    | database:update_status:126 - Status → 'completed' | magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…
+2026-04-17 22:45:29.924 | INFO     | queue_processor:_process_item:211 - Pipeline complete: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX'
+2026-04-17 22:45:29.927 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…
+2026-04-17 22:45:29.927 | INFO     | queue_processor:_process_item:166 - Started: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY'
+2026-04-17 22:45:29.928 | INFO     | torrent:download_magnet:197 - Torrent added, awaiting metadata…
+2026-04-17 22:45:32.929 | DEBUG    | torrent:_wait_for_metadata:249 - Metadata received.
+2026-04-17 22:45:32.929 | INFO     | torrent:download_magnet:203 - Metadata resolved: 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv' — starting download
+2026-04-17 22:45:32.930 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 0.0% | ↓ 20 KB/s | peers: 8
+2026-04-17 22:45:37.930 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 942 KB/s | peers: 18
+2026-04-17 22:45:37.944 | INFO     | __main__:main:182 - Cancelling background tasks…
+2026-04-17 22:45:37.946 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…
+2026-04-17 22:45:37.946 | INFO     | __main__:_reset_in_progress:105 - Reset stuck item to queued: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (was 'downloading')
+2026-04-17 22:45:37.946 | INFO     | torrent:shutdown:219 - TorrentManager: session paused.
+2026-04-17 22:45:37.946 | INFO     | __main__:main:196 - Stopping Telegram bot…
+2026-04-17 22:45:38.540 | INFO     | __main__:main:201 - Shutdown complete.
+2026-04-17 22:45:38.540 | WARNING  | queue_processor:_process_item:221 - Task cancelled: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' — resetting to queued.
+2026-04-17 22:45:38.542 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…
+2026-04-17 22:45:42.931 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 391 KB/s | peers: 0
+2026-04-17 22:45:47.931 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 128 KB/s | peers: 0
+2026-04-17 22:45:52.931 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 42 KB/s | peers: 0
+2026-04-17 22:45:57.932 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 14 KB/s | peers: 0
+2026-04-17 22:46:02.932 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 5 KB/s | peers: 0
+2026-04-17 22:46:07.933 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 1 KB/s | peers: 0
+2026-04-17 22:46:12.935 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:17.935 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:22.936 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:27.936 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:32.937 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:37.938 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:42.938 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:47.939 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:52.940 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:46:57.940 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:47:02.941 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:47:07.941 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0
+2026-04-17 22:47:12.942 | DEBUG    | torrent:_run_download_loop:297 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.5% | ↓ 0 KB/s | peers: 0

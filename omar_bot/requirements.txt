@@ -5,6 +5,8 @@ dropbox==11.36.2
 python-dotenv
 aiofiles
 loguru
+fastapi
+uvicorn[standard]
 
 # libtorrent is NOT pip-installable on all platforms.
 # Linux:   sudo apt-get install python3-libtorrent

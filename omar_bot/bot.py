@@ -2,7 +2,7 @@
 bot.py — Telegram command handlers and notification helpers.
 
 Commands:
-    /start                         — Link Dropbox account via OAuth2 (or confirm already linked).
+    /start                         — Link Dropbox account via OAuth2 redirect flow.
     /rent <magnet_uri> [tv|movie]  — Queue a magnet link for download.
     /status                        — List all active (queued/downloading/uploading) items.
     /list                          — Show the 10 most recent completed or failed items.
@@ -10,16 +10,19 @@ Commands:
     /help                          — Show available commands.
 
 Only Telegram user IDs listed in config.ALLOWED_USER_IDS may issue commands.
+
+Dropbox OAuth2 is handled via the redirect-URI flow (api.py). /start sends the
+user a link to the FastAPI endpoint; after Dropbox redirects back to the callback,
+the token is persisted by auth_store and the user is notified automatically.
 """
 
 import re
 from typing import Optional
 
-from dropbox.oauth import DropboxOAuth2FlowNoRedirect
 from loguru import logger
 from telegram import Bot, Update
 from telegram.constants import ParseMode
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 import auth_store
 import config
@@ -41,10 +44,6 @@ _MAGNET_RE = re.compile(
     r"^magnet:\?xt=urn:btih:([0-9a-fA-F]{40}|[A-Z2-7]{32})",
     re.IGNORECASE,
 )
-
-# In-progress Dropbox OAuth2 flows, keyed by Telegram user_id.
-# Populated by /start; consumed when the user pastes back the auth code.
-_pending_auth_flows: dict[int, DropboxOAuth2FlowNoRedirect] = {}
 
 # Statuses considered "active" for the /status command.
 _ACTIVE_STATUSES = ("queued", "downloading", "uploading")
@@ -106,11 +105,12 @@ def _format_record(record: dict) -> str:
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """
-    /start — Initiate Dropbox OAuth2 linking.
+    /start — Initiate Dropbox OAuth2 linking via the redirect-URI flow.
 
     If the account is already linked, confirms this and directs the user to
-    /help. Otherwise, generates a Dropbox authorization URL and instructs the
-    user to visit it and paste the resulting code back into the chat.
+    /help. Otherwise, sends a link to the FastAPI /auth/dropbox/start endpoint.
+    Dropbox will redirect back to /auth/dropbox/callback, which persists the
+    token and sends the user a confirmation message automatically.
     """
     if not _auth_check(update):
         await update.message.reply_text("Unauthorized.")
@@ -123,63 +123,18 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         return
 
     user_id = update.effective_user.id
-
-    if user_id in _pending_auth_flows:
-        await update.message.reply_text(
-            "Authorization already in progress. "
-            "Paste the code from the Dropbox page, "
-            "or run /start again to generate a fresh link."
-        )
-        return
-
-    flow = DropboxOAuth2FlowNoRedirect(
-        config.DROPBOX_APP_KEY,
-        config.DROPBOX_APP_SECRET,
-        token_access_type="offline",
+    auth_link = (
+        f"{config.OAUTH_BASE_URL}/auth/dropbox/start"
+        f"?telegram_user_id={user_id}"
     )
-    auth_url = flow.start()
-    _pending_auth_flows[user_id] = flow
 
     await update.message.reply_text(
         "To link your Dropbox account:\n"
-        f"1. Open this URL: {auth_url}\n"
-        "2. Click \"Allow\"\n"
-        "3. Copy the authorization code shown and paste it here."
+        f"1. Open this link: {auth_link}\n"
+        "2. Click \"Allow\" on the Dropbox page.\n"
+        "You'll receive a confirmation message here when done."
     )
-    logger.info(f"OAuth flow started for user {user_id}.")
-
-
-async def handle_auth_code(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """
-    MessageHandler for plain text (non-command) messages.
-
-    If the sender has a pending OAuth flow, treats the message as the
-    authorization code returned by Dropbox and completes the flow.
-    All other text messages are silently ignored.
-    """
-    if not _auth_check(update):
-        return
-
-    user_id = update.effective_user.id
-    flow = _pending_auth_flows.get(user_id)
-    if flow is None:
-        return  # No pending auth — ignore the message.
-
-    code = (update.message.text or "").strip()
-    try:
-        result = flow.finish(code)
-        auth_store.save_refresh_token(result.refresh_token)
-        del _pending_auth_flows[user_id]
-        await update.message.reply_text(
-            "✅ Dropbox linked successfully! You can now use /rent to queue downloads."
-        )
-        logger.info(f"Dropbox account linked for user {user_id}.")
-    except Exception as exc:
-        del _pending_auth_flows[user_id]
-        logger.warning(f"OAuth code exchange failed for user {user_id}: {exc}")
-        await update.message.reply_text(
-            "❌ Invalid authorization code. Please run /start again and paste the correct code."
-        )
+    logger.info(f"Dropbox auth link sent to user {user_id}.")
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -365,8 +320,6 @@ def get_bot_application():
     app.add_handler(CommandHandler("status", status_command))
     app.add_handler(CommandHandler("list",   list_command))
     app.add_handler(CommandHandler("cancel", cancel_command))
-    # Must be registered after command handlers so commands are not captured here.
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_auth_code))
 
     logger.info("Telegram bot handlers registered.")
     return app

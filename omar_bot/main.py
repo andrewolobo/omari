@@ -1,10 +1,11 @@
 """
 main.py — Entrypoint and graceful shutdown coordinator.
 
-Starts three concurrent tasks:
-    1. Telegram bot  — handles user commands via long-polling
-    2. RSS worker    — polls configured feeds every RSS_POLL_INTERVAL seconds
+Starts four concurrent tasks:
+    1. Telegram bot    — handles user commands via long-polling
+    2. RSS worker      — polls configured feeds every RSS_POLL_INTERVAL seconds
     3. Queue processor — downloads torrents and uploads to Dropbox
+    4. API server      — FastAPI/uvicorn serving the Dropbox OAuth2 callback endpoint
 
 Shutdown (SIGINT / SIGTERM / Ctrl-C):
     • All background tasks are cancelled.
@@ -24,6 +25,7 @@ import sys
 
 from loguru import logger
 
+import api
 import auth_store
 import config  # noqa: F401 — imported for side-effects (dir creation, validation)
 from bot import get_bot_application
@@ -50,6 +52,38 @@ logger.add(
     level="DEBUG",
     encoding="utf-8",
 )
+
+
+# ---------------------------------------------------------------------------
+# Startup helpers
+# ---------------------------------------------------------------------------
+
+async def _notify_unlinked(bot) -> None:
+    """
+    Send each authorised Telegram user their personal Dropbox auth link.
+
+    Called once at startup when no refresh token is present. Each user gets
+    their own link (embedding their user_id) so the OAuth callback can send
+    the confirmation message to the correct chat.
+    """
+    async def _send(user_id: str) -> None:
+        link = (
+            f"{config.OAUTH_BASE_URL}/auth/dropbox/start"
+            f"?telegram_user_id={user_id}"
+        )
+        try:
+            await bot.send_message(
+                chat_id=int(user_id),
+                text=(
+                    "⚠️ Dropbox is not linked — downloads are paused.\n\n"
+                    f"Tap to authorise: {link}"
+                ),
+            )
+            logger.info(f"Sent Dropbox auth prompt to user {user_id}.")
+        except Exception as exc:
+            logger.warning(f"Could not notify user {user_id} of unlinked state: {exc}")
+
+    await asyncio.gather(*[_send(uid) for uid in config.ALLOWED_USER_IDS])
 
 
 # ---------------------------------------------------------------------------
@@ -85,19 +119,14 @@ async def main() -> None:
     _reset_in_progress()
 
     # -----------------------------------------------------------------------
-    # Warn if Dropbox has not been linked yet.
-    # -----------------------------------------------------------------------
-    if not auth_store.is_linked():
-        logger.warning(
-            "Dropbox is not linked. Send /start to the Telegram bot to "
-            "authorize your Dropbox account before queuing downloads."
-        )
-
-    # -----------------------------------------------------------------------
     # Initialise shared resources.
     # -----------------------------------------------------------------------
     tm      = TorrentManager()
     bot_app = get_bot_application()
+
+    # Inject bot_app into the API module so the OAuth callback can send
+    # Telegram notifications after a successful token exchange.
+    api.bot_app = bot_app
 
     await bot_app.initialize()
     await bot_app.start()
@@ -107,10 +136,17 @@ async def main() -> None:
     bot = bot_app.bot
 
     # -----------------------------------------------------------------------
+    # Startup: notify all authorised users if Dropbox is not yet linked.
+    # -----------------------------------------------------------------------
+    if not auth_store.is_linked():
+        await _notify_unlinked(bot)
+
+    # -----------------------------------------------------------------------
     # Launch background tasks.
     # -----------------------------------------------------------------------
     rss_task   = asyncio.create_task(rss_worker(),                    name="rss_worker")
     queue_task = asyncio.create_task(run_queue_processor(tm, bot),    name="queue_processor")
+    api_task   = asyncio.create_task(api.run_server(),                name="api_server")
 
     logger.info("All services running. Press Ctrl-C to stop.")
 
@@ -146,8 +182,9 @@ async def main() -> None:
     logger.info("Cancelling background tasks…")
     rss_task.cancel()
     queue_task.cancel()
+    api_task.cancel()
 
-    await asyncio.gather(rss_task, queue_task, return_exceptions=True)
+    await asyncio.gather(rss_task, queue_task, api_task, return_exceptions=True)
 
     # Reset any items that were mid-flight when tasks were cancelled.
     _reset_in_progress()
