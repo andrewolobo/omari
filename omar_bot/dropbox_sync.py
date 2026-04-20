@@ -29,8 +29,16 @@ Design notes:
 import asyncio
 import os
 import time
+import warnings
 from pathlib import Path
 from typing import Optional
+
+# Dropbox SDK 11.x imports pkg_resources, which emits a deprecation warning.
+warnings.filterwarnings(
+    "ignore",
+    message=r"pkg_resources is deprecated as an API.*",
+    category=UserWarning,
+)
 
 import dropbox
 import dropbox.files
@@ -39,6 +47,7 @@ from loguru import logger
 
 import auth_store
 import config
+from torrent import parse_show_name
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -234,6 +243,13 @@ def _sync_blocking(local_target_name: str, media_type: str = "unknown") -> None:
     dbx = _make_client()
     base_path = os.path.join(config.DOWNLOAD_PATH, local_target_name)
     dest_root = _dropbox_root(media_type)
+
+    # For TV shows, nest inside a show-name subfolder so all episodes of the
+    # same series are grouped: /Shows/{Show Name}/{episode file or folder}
+    if media_type == "tv" and dest_root:
+        show_folder = parse_show_name(local_target_name)
+        dest_root = f"{dest_root}/{show_folder}"
+        logger.debug(f"TV show folder: {show_folder!r}")
 
     if not os.path.exists(base_path):
         raise FileNotFoundError(

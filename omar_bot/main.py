@@ -121,7 +121,16 @@ async def main() -> None:
     # -----------------------------------------------------------------------
     # Initialise shared resources.
     # -----------------------------------------------------------------------
-    tm      = TorrentManager()
+    try:
+        tm = TorrentManager()
+    except RuntimeError as exc:
+        logger.error(str(exc))
+        logger.error(
+            "Install the system package, then rerun. "
+            "Fedora: sudo dnf install rb_libtorrent-python3"
+        )
+        return
+
     bot_app = get_bot_application()
 
     # Inject bot_app into the API module so the OAuth callback can send
@@ -180,6 +189,13 @@ async def main() -> None:
     # Graceful shutdown sequence.
     # -----------------------------------------------------------------------
     logger.info("Cancelling background tasks…")
+
+    # Signal uvicorn to drain connections and run the ASGI lifespan shutdown
+    # hook *before* we cancel the task. Cancelling the task directly causes
+    # a CancelledError to propagate through Starlette's lifespan receive()
+    # which uvicorn logs as an ERROR traceback even though it is harmless.
+    await api.stop_server()
+
     rss_task.cancel()
     queue_task.cancel()
     api_task.cancel()

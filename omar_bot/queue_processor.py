@@ -86,6 +86,11 @@ async def run_queue_processor(tm: TorrentManager, bot: Bot) -> None:
     # the DB status to 'downloading'.
     active_ids: set[str] = set()
 
+    # Track every child task so we can cancel and await them explicitly on
+    # shutdown. Without this, child tasks outlive the outer coroutine and
+    # produce log output after "Shutdown complete."
+    child_tasks: set[asyncio.Task] = set()
+
     logger.info(
         f"Queue processor started — "
         f"max concurrent downloads: {config.MAX_CONCURRENT_DOWNLOADS}"
@@ -93,40 +98,52 @@ async def run_queue_processor(tm: TorrentManager, bot: Bot) -> None:
 
     _warned_unlinked = False
 
-    while True:
-        if not auth_store.is_linked():
-            if not _warned_unlinked:
-                logger.warning(
-                    "Queue processor: Dropbox is not linked — "
-                    "downloads are paused until authorisation is complete."
+    try:
+        while True:
+            if not auth_store.is_linked():
+                if not _warned_unlinked:
+                    logger.warning(
+                        "Queue processor: Dropbox is not linked — "
+                        "downloads are paused until authorisation is complete."
+                    )
+                    _warned_unlinked = True
+                await asyncio.sleep(_POLL_INTERVAL)
+                continue
+
+            _warned_unlinked = False  # Reset so we log again if token is ever revoked.
+            queued = get_downloads_by_status("queued")
+
+            for item in queued:
+                identifier = item["identifier"]
+                if identifier in active_ids:
+                    continue  # Task already running for this item.
+
+                active_ids.add(identifier)
+
+                async def _run(item: dict = item) -> None:
+                    try:
+                        await _process_item(sem, tm, bot, item)
+                    finally:
+                        active_ids.discard(item["identifier"])
+
+                task = asyncio.create_task(
+                    _run(),
+                    name=f"dl:{identifier[:16]}",
                 )
-                _warned_unlinked = True
+                child_tasks.add(task)
+                task.add_done_callback(child_tasks.discard)
+                task.add_done_callback(_log_task_exception)
+
             await asyncio.sleep(_POLL_INTERVAL)
-            continue
 
-        _warned_unlinked = False  # Reset so we log again if token is ever revoked.
-        queued = get_downloads_by_status("queued")
-
-        for item in queued:
-            identifier = item["identifier"]
-            if identifier in active_ids:
-                continue  # Task already running for this item.
-
-            active_ids.add(identifier)
-
-            async def _run(item: dict = item) -> None:
-                try:
-                    await _process_item(sem, tm, bot, item)
-                finally:
-                    active_ids.discard(item["identifier"])
-
-            task = asyncio.create_task(
-                _run(),
-                name=f"dl:{identifier[:16]}",
-            )
-            task.add_done_callback(_log_task_exception)
-
-        await asyncio.sleep(_POLL_INTERVAL)
+    finally:
+        # Cancel every in-flight download task and wait for its cleanup
+        # (DB reset, Telegram notification) before returning so all
+        # "Task cancelled" lines appear before main() logs "Shutdown complete."
+        if child_tasks:
+            for t in list(child_tasks):
+                t.cancel()
+            await asyncio.gather(*child_tasks, return_exceptions=True)
 
 
 # ---------------------------------------------------------------------------
