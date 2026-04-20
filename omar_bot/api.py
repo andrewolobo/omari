@@ -184,7 +184,7 @@ async def auth_callback(
             task = asyncio.create_task(
                 bot_app.bot.send_message(
                     chat_id=user_id,
-                    text="✅ Dropbox linked successfully! You can now use /rent to queue downloads.",
+                    text="Dropbox connected successfully! You can now use /rent to queue downloads.",
                 )
             )
             task.add_done_callback(
