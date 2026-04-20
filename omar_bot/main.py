@@ -29,7 +29,7 @@ import api
 import auth_store
 import config  # noqa: F401 — imported for side-effects (dir creation, validation)
 from bot import get_bot_application
-from database import get_downloads_by_status, update_status
+from database import get_downloads_by_status, update_status, backfill_episode_keys, prune_queued_episode_duplicates
 from queue_processor import run_queue_processor
 from rss_worker import rss_worker
 from torrent import TorrentManager
@@ -117,6 +117,12 @@ async def main() -> None:
     # Startup: reset any items left in transient states from a previous crash.
     # -----------------------------------------------------------------------
     _reset_in_progress()
+
+    # -----------------------------------------------------------------------
+    # Startup: backfill episode keys and prune any duplicate queued records.
+    # -----------------------------------------------------------------------
+    backfill_episode_keys()
+    prune_queued_episode_duplicates()
 
     # -----------------------------------------------------------------------
     # Initialise shared resources.

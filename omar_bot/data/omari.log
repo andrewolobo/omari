@@ -2913,3 +2913,970 @@
 2026-04-19 21:59:15.649 | INFO     | __main__:main:212 - Stopping Telegram bot…
 2026-04-19 21:59:19.121 | INFO     | __main__:main:217 - Shutdown complete.
 2026-04-19 21:59:37.945 | INFO     | __main__:_signal_handler:169 - Signal SIGINT received — shutting down…
+2026-04-20 10:00:47.295 | INFO     | torrent:__init__:215 - TorrentManager: session started, save_path='./downloads'
+2026-04-20 10:00:47.330 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-20 10:00:48.017 | INFO     | __main__:main:143 - Telegram bot started.
+2026-04-20 10:00:48.022 | INFO     | __main__:main:160 - All services running. Press Ctrl-C to stop.
+2026-04-20 10:00:48.023 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-20 10:00:48.023 | INFO     | queue_processor:run_queue_processor:94 - Queue processor started — max concurrent downloads: 1
+2026-04-20 10:00:48.024 | INFO     | api:run_server:293 - API server starting on 0.0.0.0:8080
+2026-04-20 10:00:48.047 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…
+2026-04-20 10:00:48.047 | INFO     | queue_processor:_process_item:183 - Started: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY'
+2026-04-20 10:00:48.048 | INFO     | torrent:download_magnet:257 - Torrent added, awaiting metadata…
+2026-04-20 10:00:49.220 | INFO     | database:add_download:100 - Queued [TV] 'Rooster S01E07 720p WEB H264 JFF' via rss
+2026-04-20 10:00:49.220 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Rooster S01E07 720p WEB H264 JFF'
+2026-04-20 10:00:49.222 | INFO     | database:add_download:100 - Queued [TV] 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU' via rss
+2026-04-20 10:00:49.222 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU'
+2026-04-20 10:00:49.224 | INFO     | database:add_download:100 - Queued [TV] 'Rooster S01E07 1080p WEB h264 ETHEL' via rss
+2026-04-20 10:00:49.224 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Rooster S01E07 1080p WEB h264 ETHEL'
+2026-04-20 10:00:49.225 | INFO     | database:add_download:100 - Queued [TV] 'Euphoria US S03E02 1080p WEB h264 ETHEL' via rss
+2026-04-20 10:00:49.226 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Euphoria US S03E02 1080p WEB h264 ETHEL'
+2026-04-20 10:00:49.227 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' via rss
+2026-04-20 10:00:49.227 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA'
+2026-04-20 10:00:49.229 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' via rss
+2026-04-20 10:00:49.229 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA'
+2026-04-20 10:00:49.230 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-20 10:00:49.230 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-20 10:00:49.232 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' via rss
+2026-04-20 10:00:49.232 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX'
+2026-04-20 10:00:49.234 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E07 720p WEB H264 JFF' via rss
+2026-04-20 10:00:49.234 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E07 720p WEB H264 JFF'
+2026-04-20 10:00:49.236 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' via rss
+2026-04-20 10:00:49.236 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA'
+2026-04-20 10:00:49.237 | INFO     | database:add_download:100 - Queued [TV] 'DTF St Louis S01E06 1080p WEB h264 ETHEL' via rss
+2026-04-20 10:00:49.238 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'DTF St Louis S01E06 1080p WEB h264 ETHEL'
+2026-04-20 10:00:49.239 | INFO     | database:add_download:100 - Queued [TV] 'dtf st louis s01e06 720p web h264 sylix' via rss
+2026-04-20 10:00:49.239 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'dtf st louis s01e06 720p web h264 sylix'
+2026-04-20 10:00:49.240 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 10:00:49.240 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 10:00:49.240 | DEBUG    | database:add_download:82 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 10:00:49.240 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 10:00:49.241 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 10:00:49.241 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 10:00:49.241 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 10:00:49.242 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 10:00:49.242 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 10:00:49.243 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 10:00:49.243 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 10:00:49.243 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 10:00:49.243 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 10:00:49.243 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 10:00:49.244 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 10:00:49.244 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 10:00:49.244 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 10:00:49.245 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 10:00:49.245 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 10:00:49.245 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 10:00:49.246 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 10:00:49.246 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 10:00:49.246 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 10:00:49.246 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 10:00:49.247 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 10:00:49.247 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 10:00:49.247 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 10:00:49.248 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 10:00:49.248 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 10:00:49.248 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 10:00:49.248 | DEBUG    | database:add_download:82 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 10:00:49.249 | DEBUG    | database:add_download:82 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 10:00:49.249 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 10:00:49.249 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 10:00:49.250 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 10:00:49.250 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 10:00:49.250 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 10:00:49.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 10:00:49.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 10:00:49.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 10:00:49.251 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 10:00:49.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 10:00:49.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 10:00:49.252 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 10:00:49.253 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 10:00:49.253 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 10:00:49.253 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 10:00:49.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 10:00:49.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 10:00:49.254 | DEBUG    | database:add_download:82 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 10:00:49.254 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 12 new item(s) queued.
+2026-04-20 10:00:52.091 | DEBUG    | torrent:_wait_for_metadata:318 - Metadata received.
+2026-04-20 10:00:52.093 | INFO     | torrent:download_magnet:263 - Metadata resolved: 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv' — starting download
+2026-04-20 10:00:52.093 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.0% | ↓ 0 KB/s | peers: 4
+2026-04-20 10:00:57.096 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 1.2% | ↓ 195 KB/s | peers: 11
+2026-04-20 10:01:02.107 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 4.1% | ↓ 2275 KB/s | peers: 22
+2026-04-20 10:01:07.107 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 9.7% | ↓ 4173 KB/s | peers: 26
+2026-04-20 10:01:12.117 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 16.1% | ↓ 5374 KB/s | peers: 28
+2026-04-20 10:01:17.123 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 22.2% | ↓ 5609 KB/s | peers: 28
+2026-04-20 10:01:22.133 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 27.1% | ↓ 5669 KB/s | peers: 27
+2026-04-20 10:01:27.147 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 32.8% | ↓ 5689 KB/s | peers: 27
+2026-04-20 10:01:32.161 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 39.4% | ↓ 6217 KB/s | peers: 27
+2026-04-20 10:01:37.167 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 46.8% | ↓ 6905 KB/s | peers: 27
+2026-04-20 10:01:42.177 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 55.3% | ↓ 7837 KB/s | peers: 27
+2026-04-20 10:01:47.187 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 63.3% | ↓ 7968 KB/s | peers: 27
+2026-04-20 10:01:52.198 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 70.3% | ↓ 7454 KB/s | peers: 28
+2026-04-20 10:01:57.213 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 77.7% | ↓ 7544 KB/s | peers: 28
+2026-04-20 10:02:02.219 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 85.6% | ↓ 7649 KB/s | peers: 31
+2026-04-20 10:02:07.230 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 93.2% | ↓ 7648 KB/s | peers: 31
+2026-04-20 10:02:12.239 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 96.4% | ↓ 4795 KB/s | peers: 32
+2026-04-20 10:02:17.253 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 98.4% | ↓ 2834 KB/s | peers: 33
+2026-04-20 10:02:22.256 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 99.5% | ↓ 2146 KB/s | peers: 33
+2026-04-20 10:02:27.257 | DEBUG    | torrent:_run_download_loop:369 - 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv': 100.0% | ↓ 1641 KB/s | peers: 33
+2026-04-20 10:02:32.264 | INFO     | torrent:_run_download_loop:353 - Download complete: 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv'
+2026-04-20 10:02:32.307 | INFO     | torrent:download_magnet:272 - Torrent handle removed for: 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv'
+2026-04-20 10:02:32.309 | DEBUG    | database:update_status:126 - Status → 'uploading' | magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…
+2026-04-20 10:02:32.310 | INFO     | queue_processor:_process_item:216 - Uploading to Dropbox: 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv'
+2026-04-20 10:02:32.310 | DEBUG    | dropbox_sync:_sync_blocking:252 - TV show folder: 'Scrubs.2026.'
+2026-04-20 10:02:32.350 | DEBUG    | dropbox_sync:_upload_file:152 - Uploading (chunked, 0.46 GB): ./downloads\Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv → /Podrick/Shows/Current/Scrubs.2026./Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv
+2026-04-20 10:07:43.606 | INFO     | dropbox_sync:_upload_file:201 - Uploaded and cleaned up: ./downloads\Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv
+2026-04-20 10:07:43.606 | INFO     | dropbox_sync:_sync_blocking:292 - Dropbox sync complete for: 'Scrubs.2026.S01E07.720p.HDTV.x264-SYNCOPY[EZTVx.to].mkv'
+2026-04-20 10:07:43.611 | DEBUG    | database:update_status:126 - Status → 'completed' | magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…
+2026-04-20 10:07:43.611 | INFO     | queue_processor:_process_item:228 - Pipeline complete: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY'
+2026-04-20 10:07:43.612 | DEBUG    | database:update_status:126 - Status → 'downloading' | magnet:?xt=urn:btih:8F54E76D402F7C60D6DCD6C2EAAE271B19570DE6…
+2026-04-20 10:07:43.612 | INFO     | queue_processor:_process_item:183 - Started: 'Rooster S01E07 720p WEB H264 JFF'
+2026-04-20 10:07:43.612 | INFO     | torrent:download_magnet:257 - Torrent added, awaiting metadata…
+2026-04-20 10:07:47.652 | DEBUG    | torrent:_wait_for_metadata:318 - Metadata received.
+2026-04-20 10:07:47.652 | INFO     | torrent:download_magnet:263 - Metadata resolved: 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv' — starting download
+2026-04-20 10:07:47.652 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 0.0% | ↓ 3 KB/s | peers: 5
+2026-04-20 10:07:52.658 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 1.8% | ↓ 2558 KB/s | peers: 16
+2026-04-20 10:07:57.670 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 3.1% | ↓ 2741 KB/s | peers: 30
+2026-04-20 10:08:02.674 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 4.5% | ↓ 2907 KB/s | peers: 37
+2026-04-20 10:08:07.686 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 6.7% | ↓ 4102 KB/s | peers: 40
+2026-04-20 10:08:12.698 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 8.6% | ↓ 3931 KB/s | peers: 42
+2026-04-20 10:08:17.705 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 11.1% | ↓ 5001 KB/s | peers: 43
+2026-04-20 10:08:22.715 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 13.3% | ↓ 4736 KB/s | peers: 44
+2026-04-20 10:08:27.725 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 16.0% | ↓ 5261 KB/s | peers: 51
+2026-04-20 10:08:32.732 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 18.9% | ↓ 6007 KB/s | peers: 51
+2026-04-20 10:08:37.742 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 22.0% | ↓ 6378 KB/s | peers: 54
+2026-04-20 10:08:42.755 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 25.3% | ↓ 6624 KB/s | peers: 55
+2026-04-20 10:08:47.769 | DEBUG    | torrent:_run_download_loop:369 - 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv': 28.4% | ↓ 6624 KB/s | peers: 55
+2026-04-20 10:08:49.390 | INFO     | __main__:main:191 - Cancelling background tasks…
+2026-04-20 10:08:49.390 | WARNING  | queue_processor:_process_item:238 - Task cancelled: 'Rooster S01E07 720p WEB H264 JFF' — resetting to queued.
+2026-04-20 10:08:49.392 | DEBUG    | database:update_status:126 - Status → 'queued' | magnet:?xt=urn:btih:8F54E76D402F7C60D6DCD6C2EAAE271B19570DE6…
+2026-04-20 10:08:49.393 | DEBUG    | torrent:_run_download_loop:389 - Download loop interrupted by shutdown signal: 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv'
+2026-04-20 10:08:49.393 | INFO     | torrent:download_magnet:272 - Torrent handle removed for: 'Rooster S01E07 720p WEB H264-JFF[EZTVx.to].mkv'
+2026-04-20 10:08:49.393 | INFO     | torrent:shutdown:282 - TorrentManager: session paused.
+2026-04-20 10:08:49.393 | INFO     | __main__:main:212 - Stopping Telegram bot…
+2026-04-20 10:08:53.166 | INFO     | __main__:main:217 - Shutdown complete.
+2026-04-20 10:27:51.245 | INFO     | database:backfill_episode_keys:222 - backfill_episode_keys: backfilled 62 record(s).
+2026-04-20 10:27:51.247 | INFO     | database:prune_queued_episode_duplicates:265 - Pruned queued duplicate: 'Rooster S01E07 720p WEB H264 JFF' (kept 'Rooster S01E07 1080p WEB h264 ETHEL')
+2026-04-20 10:27:51.249 | INFO     | database:prune_queued_episode_duplicates:265 - Pruned queued duplicate: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU' (kept 'Euphoria US S03E02 1080p WEB h264 ETHEL')
+2026-04-20 10:27:51.250 | INFO     | database:prune_queued_episode_duplicates:265 - Pruned queued duplicate: 'DTF St Louis S01E07 720p WEB H264 JFF' (kept 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA')
+2026-04-20 10:27:51.253 | INFO     | database:prune_queued_episode_duplicates:265 - Pruned queued duplicate: 'dtf st louis s01e06 720p web h264 sylix' (kept 'DTF St Louis S01E06 1080p WEB h264 ETHEL')
+2026-04-20 10:27:51.253 | INFO     | database:prune_queued_episode_duplicates:272 - prune_queued_episode_duplicates: removed 4 duplicate record(s).
+2026-04-20 10:27:51.261 | INFO     | torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-20 10:27:51.283 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-20 10:27:51.941 | INFO     | __main__:main:149 - Telegram bot started.
+2026-04-20 10:27:51.942 | INFO     | __main__:main:166 - All services running. Press Ctrl-C to stop.
+2026-04-20 10:27:51.942 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-20 10:27:51.943 | INFO     | queue_processor:run_queue_processor:94 - Queue processor started — max concurrent downloads: 1
+2026-04-20 10:27:51.943 | INFO     | api:run_server:293 - API server starting on 0.0.0.0:8080
+2026-04-20 10:27:51.962 | DEBUG    | database:update_status:147 - Status → 'downloading' | magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…
+2026-04-20 10:27:51.963 | INFO     | queue_processor:_process_item:183 - Started: 'Rooster S01E07 1080p WEB h264 ETHEL'
+2026-04-20 10:27:51.963 | INFO     | torrent:download_magnet:292 - Torrent added, awaiting metadata…
+2026-04-20 10:27:52.110 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 10:27:52.111 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 10:27:52.111 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 10:27:52.111 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 10:27:52.112 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 10:27:52.112 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 10:27:52.112 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 10:27:52.113 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 10:27:52.114 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 10:27:52.114 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 10:27:52.114 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 10:27:52.115 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 10:27:52.115 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 10:27:52.116 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 10:27:52.116 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 10:27:52.117 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 10:27:52.118 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 10:27:52.118 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 10:27:52.118 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 10:27:52.119 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 10:27:52.119 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 10:27:52.119 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 10:27:52.120 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 10:27:52.120 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 10:27:52.120 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 10:27:52.121 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 10:27:52.121 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 10:27:52.121 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 10:27:52.122 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 10:27:52.122 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 10:27:52.122 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 10:27:52.122 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 10:27:52.123 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 10:27:52.123 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 10:27:52.123 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 10:27:52.124 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 10:27:52.124 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 10:27:52.124 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 10:27:52.125 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 10:27:52.125 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 10:27:52.125 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 10:27:52.125 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 10:27:52.126 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 10:27:52.126 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 10:27:52.126 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 10:27:52.127 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 10:27:52.127 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 10:27:52.127 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 10:27:52.128 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 10:27:52.128 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 10:27:52.128 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 10:27:52.128 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 10:27:52.129 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 10:27:52.129 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 10:27:52.129 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 10:27:52.130 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 10:27:52.130 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 10:27:52.130 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 10:27:52.130 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 10:27:52.131 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 10:27:52.131 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 10:27:52.132 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 10:27:52.132 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-20 10:27:55.995 | DEBUG    | torrent:_wait_for_metadata:353 - Metadata received.
+2026-04-20 10:27:55.995 | INFO     | torrent:download_magnet:298 - Metadata resolved: 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv' — starting download
+2026-04-20 10:27:55.995 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.0% | ↓ 20 KB/s | peers: 6
+2026-04-20 10:28:01.008 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.2% | ↓ 690 KB/s | peers: 15
+2026-04-20 10:28:06.024 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.5% | ↓ 957 KB/s | peers: 16
+2026-04-20 10:28:11.034 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.1% | ↓ 2178 KB/s | peers: 18
+2026-04-20 10:28:16.048 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.8% | ↓ 3127 KB/s | peers: 19
+2026-04-20 10:28:21.060 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 2.6% | ↓ 3668 KB/s | peers: 28
+2026-04-20 10:28:26.061 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 3.5% | ↓ 3680 KB/s | peers: 35
+2026-04-20 10:28:31.065 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 4.6% | ↓ 4841 KB/s | peers: 36
+2026-04-20 10:28:36.073 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 5.6% | ↓ 4697 KB/s | peers: 39
+2026-04-20 10:28:41.082 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 6.7% | ↓ 5294 KB/s | peers: 41
+2026-04-20 10:28:46.090 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 7.8% | ↓ 5003 KB/s | peers: 48
+2026-04-20 10:28:51.098 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 8.8% | ↓ 4977 KB/s | peers: 51
+2026-04-20 10:28:56.113 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 10.2% | ↓ 5805 KB/s | peers: 55
+2026-04-20 10:29:01.118 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 11.6% | ↓ 6141 KB/s | peers: 58
+2026-04-20 10:29:06.125 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 12.8% | ↓ 5868 KB/s | peers: 61
+2026-04-20 10:29:11.133 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 14.0% | ↓ 5621 KB/s | peers: 64
+2026-04-20 10:29:16.133 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 15.2% | ↓ 5540 KB/s | peers: 72
+2026-04-20 10:29:21.146 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 16.3% | ↓ 5432 KB/s | peers: 77
+2026-04-20 10:29:26.154 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 17.7% | ↓ 6130 KB/s | peers: 74
+2026-04-20 10:29:31.165 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 19.0% | ↓ 6177 KB/s | peers: 79
+2026-04-20 10:29:36.174 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 20.2% | ↓ 5969 KB/s | peers: 83
+2026-04-20 10:29:41.178 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 21.5% | ↓ 5964 KB/s | peers: 86
+2026-04-20 10:29:46.179 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 22.1% | ↓ 4178 KB/s | peers: 95
+2026-04-20 10:29:51.187 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 23.1% | ↓ 4325 KB/s | peers: 110
+2026-04-20 10:29:56.196 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 24.4% | ↓ 5496 KB/s | peers: 124
+2026-04-20 10:30:01.196 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 25.7% | ↓ 5841 KB/s | peers: 134
+2026-04-20 10:30:06.198 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 27.0% | ↓ 5855 KB/s | peers: 145
+2026-04-20 10:30:11.199 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 28.5% | ↓ 6795 KB/s | peers: 145
+2026-04-20 10:30:16.209 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 30.1% | ↓ 7050 KB/s | peers: 149
+2026-04-20 10:30:21.218 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 31.8% | ↓ 7422 KB/s | peers: 156
+2026-04-20 10:30:26.227 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 33.3% | ↓ 7198 KB/s | peers: 160
+2026-04-20 10:30:31.236 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 34.9% | ↓ 7452 KB/s | peers: 162
+2026-04-20 10:30:36.242 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 36.5% | ↓ 7639 KB/s | peers: 167
+2026-04-20 10:30:41.253 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 38.2% | ↓ 7796 KB/s | peers: 165
+2026-04-20 10:30:46.267 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 39.7% | ↓ 7168 KB/s | peers: 170
+2026-04-20 10:30:51.278 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 41.1% | ↓ 7126 KB/s | peers: 165
+2026-04-20 10:30:56.280 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 42.5% | ↓ 6793 KB/s | peers: 166
+2026-04-20 10:31:01.292 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 43.6% | ↓ 6004 KB/s | peers: 164
+2026-04-20 10:31:06.293 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 45.0% | ↓ 6552 KB/s | peers: 167
+2026-04-20 10:31:11.302 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 46.2% | ↓ 6094 KB/s | peers: 170
+2026-04-20 10:31:16.312 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 47.6% | ↓ 6391 KB/s | peers: 168
+2026-04-20 10:31:21.322 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 49.0% | ↓ 6323 KB/s | peers: 168
+2026-04-20 10:31:26.331 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 50.4% | ↓ 6566 KB/s | peers: 170
+2026-04-20 10:31:31.334 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 51.9% | ↓ 6827 KB/s | peers: 171
+2026-04-20 10:31:36.343 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 53.2% | ↓ 6774 KB/s | peers: 163
+2026-04-20 10:31:41.357 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 54.6% | ↓ 6712 KB/s | peers: 167
+2026-04-20 10:31:46.371 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 56.0% | ↓ 6773 KB/s | peers: 171
+2026-04-20 10:31:51.377 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 57.5% | ↓ 6844 KB/s | peers: 170
+2026-04-20 10:31:56.392 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 59.0% | ↓ 6810 KB/s | peers: 172
+2026-04-20 10:32:01.402 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 60.6% | ↓ 7171 KB/s | peers: 176
+2026-04-20 10:32:06.415 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 62.1% | ↓ 7331 KB/s | peers: 180
+2026-04-20 10:32:11.421 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 63.7% | ↓ 6998 KB/s | peers: 180
+2026-04-20 10:32:16.436 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 65.3% | ↓ 6968 KB/s | peers: 185
+2026-04-20 10:32:21.450 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 66.8% | ↓ 7090 KB/s | peers: 185
+2026-04-20 10:32:26.452 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 68.6% | ↓ 7991 KB/s | peers: 187
+2026-04-20 10:32:31.457 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 70.2% | ↓ 7981 KB/s | peers: 184
+2026-04-20 10:32:36.468 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 71.9% | ↓ 7711 KB/s | peers: 186
+2026-04-20 10:32:41.474 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 73.8% | ↓ 8476 KB/s | peers: 190
+2026-04-20 10:32:46.484 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 75.6% | ↓ 8612 KB/s | peers: 191
+2026-04-20 10:32:51.495 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 77.3% | ↓ 8366 KB/s | peers: 193
+2026-04-20 10:32:56.506 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 79.0% | ↓ 8108 KB/s | peers: 196
+2026-04-20 10:33:01.517 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 80.7% | ↓ 8126 KB/s | peers: 197
+2026-04-20 10:33:06.523 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 82.1% | ↓ 7557 KB/s | peers: 197
+2026-04-20 10:33:11.528 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 83.2% | ↓ 5681 KB/s | peers: 198
+2026-04-20 10:33:16.532 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 84.7% | ↓ 6352 KB/s | peers: 198
+2026-04-20 10:33:21.542 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 86.6% | ↓ 7601 KB/s | peers: 199
+2026-04-20 10:33:26.546 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 88.2% | ↓ 8087 KB/s | peers: 199
+2026-04-20 10:33:31.546 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 90.1% | ↓ 8311 KB/s | peers: 196
+2026-04-20 10:33:36.558 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 91.6% | ↓ 7484 KB/s | peers: 196
+2026-04-20 10:33:41.563 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 92.9% | ↓ 6842 KB/s | peers: 198
+2026-04-20 10:33:46.576 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 94.3% | ↓ 6394 KB/s | peers: 195
+2026-04-20 10:33:51.581 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 95.6% | ↓ 6588 KB/s | peers: 185
+2026-04-20 10:33:56.592 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 96.7% | ↓ 5918 KB/s | peers: 181
+2026-04-20 10:34:01.607 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 98.1% | ↓ 6460 KB/s | peers: 184
+2026-04-20 10:34:06.617 | DEBUG    | torrent:_run_download_loop:404 - 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 99.6% | ↓ 7487 KB/s | peers: 177
+2026-04-20 10:34:11.630 | INFO     | torrent:_run_download_loop:388 - Download complete: 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:34:11.630 | INFO     | torrent:download_magnet:307 - Torrent handle removed for: 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:34:11.632 | DEBUG    | database:update_status:147 - Status → 'uploading' | magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…
+2026-04-20 10:34:11.632 | INFO     | queue_processor:_process_item:216 - Uploading to Dropbox: 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:34:11.633 | DEBUG    | dropbox_sync:_sync_blocking:252 - TV show folder: 'Rooster.'
+2026-04-20 10:34:11.633 | DEBUG    | dropbox_sync:_upload_file:152 - Uploading (chunked, 2.15 GB): ./downloads\Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv → /Podrick/Shows/Current/Rooster./Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv
+2026-04-20 10:42:53.180 | INFO     | database:add_download:121 - Queued [TV] 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' via rss
+2026-04-20 10:42:53.184 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL'
+2026-04-20 10:42:53.184 | INFO     | database:add_download:121 - Queued [TV] 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' via rss
+2026-04-20 10:42:53.187 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL'
+2026-04-20 10:42:53.188 | INFO     | database:add_download:121 - Queued [TV] 'Krapopolis S03E13 1080p WEB h264 EDITH' via rss
+2026-04-20 10:42:53.189 | INFO     | rss_worker:_process_feed:167 - RSS queued [TV]: 'Krapopolis S03E13 1080p WEB h264 EDITH'
+2026-04-20 10:42:53.189 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 10:42:53.189 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 10:42:53.191 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 10:42:53.191 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 10:42:53.191 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 10:42:53.191 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 10:42:53.192 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 10:42:53.193 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 10:42:53.196 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 10:42:53.196 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 10:42:53.196 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 10:42:53.196 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 10:42:53.196 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 10:42:53.198 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 10:42:53.198 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 10:42:53.198 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 10:42:53.198 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 10:42:53.198 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 10:42:53.200 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 10:42:53.200 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 10:42:53.200 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 10:42:53.200 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 10:42:53.200 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 10:42:53.202 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 10:42:53.202 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 10:42:53.202 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 10:42:53.202 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 10:42:53.202 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 10:42:53.202 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 10:42:53.204 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 10:42:53.204 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 10:42:53.205 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 10:42:53.208 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 10:42:53.208 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 10:42:53.208 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 10:42:53.208 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 10:42:53.210 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 10:42:53.210 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 3 new item(s) queued.
+2026-04-20 10:47:22.423 | INFO     | dropbox_sync:_upload_file:201 - Uploaded and cleaned up: ./downloads\Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv
+2026-04-20 10:47:22.424 | INFO     | dropbox_sync:_sync_blocking:292 - Dropbox sync complete for: 'Rooster.S01E07.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:47:22.426 | DEBUG    | database:update_status:147 - Status → 'completed' | magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…
+2026-04-20 10:47:22.426 | INFO     | queue_processor:_process_item:228 - Pipeline complete: 'Rooster S01E07 1080p WEB h264 ETHEL'
+2026-04-20 10:47:22.431 | DEBUG    | database:update_status:147 - Status → 'downloading' | magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…
+2026-04-20 10:47:22.431 | INFO     | queue_processor:_process_item:183 - Started: 'Euphoria US S03E02 1080p WEB h264 ETHEL'
+2026-04-20 10:47:22.431 | INFO     | torrent:download_magnet:292 - Torrent added, awaiting metadata…
+2026-04-20 10:47:26.465 | DEBUG    | torrent:_wait_for_metadata:353 - Metadata received.
+2026-04-20 10:47:26.465 | INFO     | torrent:download_magnet:298 - Metadata resolved: 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv' — starting download
+2026-04-20 10:47:26.465 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.0% | ↓ 7 KB/s | peers: 11
+2026-04-20 10:47:31.476 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.2% | ↓ 1396 KB/s | peers: 24
+2026-04-20 10:47:36.484 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.5% | ↓ 2298 KB/s | peers: 39
+2026-04-20 10:47:41.485 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.0% | ↓ 3568 KB/s | peers: 50
+2026-04-20 10:47:46.494 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.3% | ↓ 3158 KB/s | peers: 65
+2026-04-20 10:47:51.497 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.6% | ↓ 2839 KB/s | peers: 74
+2026-04-20 10:47:56.507 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 2.0% | ↓ 3445 KB/s | peers: 78
+2026-04-20 10:48:01.511 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 2.5% | ↓ 3989 KB/s | peers: 88
+2026-04-20 10:48:06.519 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 3.0% | ↓ 4166 KB/s | peers: 90
+2026-04-20 10:48:11.527 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 3.4% | ↓ 3783 KB/s | peers: 109
+2026-04-20 10:48:11.619 | INFO     | __main__:main:197 - Cancelling background tasks…
+2026-04-20 10:48:11.619 | WARNING  | queue_processor:_process_item:238 - Task cancelled: 'Euphoria US S03E02 1080p WEB h264 ETHEL' — resetting to queued.
+2026-04-20 10:48:11.621 | DEBUG    | database:update_status:147 - Status → 'queued' | magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…
+2026-04-20 10:48:11.622 | DEBUG    | torrent:_run_download_loop:424 - Download loop interrupted by shutdown signal: 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:48:11.622 | INFO     | torrent:download_magnet:307 - Torrent handle removed for: 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:48:11.622 | INFO     | torrent:shutdown:317 - TorrentManager: session paused.
+2026-04-20 10:48:11.622 | INFO     | __main__:main:218 - Stopping Telegram bot…
+2026-04-20 10:54:56.717 | INFO     | torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-20 10:54:56.736 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-20 10:54:57.360 | INFO     | __main__:main:149 - Telegram bot started.
+2026-04-20 10:54:57.361 | INFO     | __main__:main:166 - All services running. Press Ctrl-C to stop.
+2026-04-20 10:54:57.362 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-20 10:54:57.362 | INFO     | queue_processor:run_queue_processor:94 - Queue processor started — max concurrent downloads: 1
+2026-04-20 10:54:57.363 | INFO     | api:run_server:293 - API server starting on 0.0.0.0:8080
+2026-04-20 10:54:57.384 | DEBUG    | database:update_status:147 - Status → 'downloading' | magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…
+2026-04-20 10:54:57.384 | INFO     | queue_processor:_process_item:183 - Started: 'Euphoria US S03E02 1080p WEB h264 ETHEL'
+2026-04-20 10:54:57.385 | INFO     | torrent:download_magnet:292 - Torrent added, awaiting metadata…
+2026-04-20 10:54:57.517 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E1FC93993BA20C612C95AB7ED3F501FE5062BAF…)
+2026-04-20 10:54:57.518 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:298A36D0A125B8249A19DC5FADDB60E4DF0C1D64…)
+2026-04-20 10:54:57.518 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Krapopolis S03E13 1080p WEB h264 EDITH' (magnet:?xt=urn:btih:A45F13FE04AC62FDE801C82DBEBD09704071825B…)
+2026-04-20 10:54:57.519 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 10:54:57.519 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 10:54:57.519 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 10:54:57.520 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 10:54:57.520 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 10:54:57.520 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 10:54:57.521 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 10:54:57.521 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 10:54:57.522 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 10:54:57.522 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 10:54:57.522 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 10:54:57.522 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 10:54:57.524 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 10:54:57.524 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 10:54:57.524 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 10:54:57.524 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 10:54:57.524 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 10:54:57.525 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 10:54:57.525 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 10:54:57.525 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 10:54:57.526 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 10:54:57.526 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 10:54:57.526 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 10:54:57.527 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 10:54:57.527 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 10:54:57.527 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 10:54:57.528 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 10:54:57.528 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 10:54:57.528 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 10:54:57.528 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 10:54:57.529 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 10:54:57.529 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 10:54:57.529 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 10:54:57.530 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 10:54:57.530 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 10:54:57.530 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 10:54:57.531 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 10:54:57.531 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 10:54:57.531 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 10:54:57.532 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 10:54:57.532 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 10:54:57.532 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 10:54:57.533 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 10:54:57.533 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 10:54:57.533 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 10:54:57.534 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 10:54:57.534 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 10:54:57.534 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 10:54:57.535 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 10:54:57.535 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 10:54:57.535 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 10:54:57.536 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 10:54:57.536 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 10:54:57.536 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 10:54:57.537 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 10:54:57.538 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 10:54:57.538 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 10:54:57.538 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 10:54:57.539 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 10:54:57.539 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 10:54:57.539 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 10:54:57.539 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 10:54:57.539 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-20 10:55:00.406 | DEBUG    | torrent:_wait_for_metadata:353 - Metadata received.
+2026-04-20 10:55:00.406 | INFO     | torrent:download_magnet:298 - Metadata resolved: 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv' — starting download
+2026-04-20 10:55:00.406 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.0% | ↓ 8 KB/s | peers: 3
+2026-04-20 10:55:05.416 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 0.4% | ↓ 2503 KB/s | peers: 35
+2026-04-20 10:55:10.429 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.3% | ↓ 5473 KB/s | peers: 50
+2026-04-20 10:55:15.444 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 1.9% | ↓ 5786 KB/s | peers: 50
+2026-04-20 10:55:20.449 | DEBUG    | torrent:_run_download_loop:404 - 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv': 2.6% | ↓ 5963 KB/s | peers: 52
+2026-04-20 10:55:23.474 | INFO     | __main__:main:197 - Cancelling background tasks…
+2026-04-20 10:55:23.474 | WARNING  | queue_processor:_process_item:238 - Task cancelled: 'Euphoria US S03E02 1080p WEB h264 ETHEL' — resetting to queued.
+2026-04-20 10:55:23.476 | DEBUG    | database:update_status:147 - Status → 'queued' | magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…
+2026-04-20 10:55:23.476 | DEBUG    | torrent:_run_download_loop:424 - Download loop interrupted by shutdown signal: 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:55:23.476 | INFO     | torrent:shutdown:317 - TorrentManager: session paused.
+2026-04-20 10:55:23.477 | INFO     | torrent:download_magnet:307 - Torrent handle removed for: 'Euphoria.US.S03E02.1080p.WEB.h264-ETHEL[EZTVx.to].mkv'
+2026-04-20 10:55:23.477 | INFO     | __main__:main:218 - Stopping Telegram bot…
+2026-04-20 10:55:23.949 | INFO     | __main__:main:223 - Shutdown complete.
+2026-04-20 10:56:10.549 | INFO     | torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-20 10:56:10.575 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-20 10:56:11.216 | INFO     | __main__:main:149 - Telegram bot started.
+2026-04-20 10:56:11.217 | INFO     | __main__:main:166 - All services running. Press Ctrl-C to stop.
+2026-04-20 10:56:11.217 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-20 10:56:11.218 | INFO     | queue_processor:run_queue_processor:94 - Queue processor started — max concurrent downloads: 1
+2026-04-20 10:56:11.219 | INFO     | api:run_server:293 - API server starting on 0.0.0.0:8080
+2026-04-20 10:56:11.238 | DEBUG    | database:update_status:147 - Status → 'downloading' | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 10:56:11.238 | INFO     | queue_processor:_process_item:183 - Started: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA'
+2026-04-20 10:56:11.239 | INFO     | torrent:download_magnet:292 - Torrent added, awaiting metadata…
+2026-04-20 10:56:11.374 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E1FC93993BA20C612C95AB7ED3F501FE5062BAF…)
+2026-04-20 10:56:11.374 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:298A36D0A125B8249A19DC5FADDB60E4DF0C1D64…)
+2026-04-20 10:56:11.374 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Krapopolis S03E13 1080p WEB h264 EDITH' (magnet:?xt=urn:btih:A45F13FE04AC62FDE801C82DBEBD09704071825B…)
+2026-04-20 10:56:11.375 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 10:56:11.375 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 10:56:11.376 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 10:56:11.376 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 10:56:11.376 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 10:56:11.377 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 10:56:11.377 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 10:56:11.377 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 10:56:11.378 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 10:56:11.378 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 10:56:11.378 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 10:56:11.379 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 10:56:11.380 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 10:56:11.380 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 10:56:11.381 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 10:56:11.381 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 10:56:11.381 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 10:56:11.381 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 10:56:11.382 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 10:56:11.382 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 10:56:11.382 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 10:56:11.383 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 10:56:11.383 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 10:56:11.383 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 10:56:11.383 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 10:56:11.385 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 10:56:11.385 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 10:56:11.385 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 10:56:11.386 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 10:56:11.386 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 10:56:11.386 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 10:56:11.387 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 10:56:11.387 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 10:56:11.387 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 10:56:11.388 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 10:56:11.388 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 10:56:11.388 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 10:56:11.389 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 10:56:11.389 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 10:56:11.389 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 10:56:11.389 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 10:56:11.389 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 10:56:11.390 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 10:56:11.390 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 10:56:11.391 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 10:56:11.391 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 10:56:11.391 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 10:56:11.391 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 10:56:11.393 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 10:56:11.393 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 10:56:11.394 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 10:56:11.394 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 10:56:11.394 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 10:56:11.395 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 10:56:11.395 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 10:56:11.395 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 10:56:11.396 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 10:56:11.397 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 10:56:11.397 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 10:56:11.397 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 10:56:11.398 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 10:56:11.398 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 10:56:11.398 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-20 10:56:15.284 | DEBUG    | torrent:_wait_for_metadata:353 - Metadata received.
+2026-04-20 10:56:15.284 | INFO     | torrent:download_magnet:298 - Metadata resolved: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' — starting download
+2026-04-20 10:56:15.284 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.0% | ↓ 5 KB/s | peers: 3
+2026-04-20 10:56:20.297 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.0% | ↓ 203 KB/s | peers: 5
+2026-04-20 10:56:25.297 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.0% | ↓ 84 KB/s | peers: 4
+2026-04-20 10:56:30.301 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.0% | ↓ 31 KB/s | peers: 4
+2026-04-20 10:56:35.312 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.0% | ↓ 48 KB/s | peers: 4
+2026-04-20 10:56:40.326 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.1% | ↓ 82 KB/s | peers: 4
+2026-04-20 10:56:45.326 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.1% | ↓ 98 KB/s | peers: 4
+2026-04-20 10:56:50.338 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.1% | ↓ 145 KB/s | peers: 4
+2026-04-20 10:56:55.347 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.1% | ↓ 235 KB/s | peers: 4
+2026-04-20 10:57:00.350 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.1% | ↓ 249 KB/s | peers: 3
+2026-04-20 10:57:05.355 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.2% | ↓ 283 KB/s | peers: 3
+2026-04-20 10:57:10.362 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.2% | ↓ 209 KB/s | peers: 3
+2026-04-20 10:57:15.369 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.2% | ↓ 303 KB/s | peers: 4
+2026-04-20 10:57:20.381 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.5% | ↓ 1555 KB/s | peers: 4
+2026-04-20 10:57:25.388 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 0.8% | ↓ 2307 KB/s | peers: 6
+2026-04-20 10:57:30.392 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 1.4% | ↓ 4570 KB/s | peers: 5
+2026-04-20 10:57:35.403 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 2.3% | ↓ 6790 KB/s | peers: 5
+2026-04-20 10:57:40.406 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 3.2% | ↓ 7584 KB/s | peers: 5
+2026-04-20 10:57:45.422 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 4.0% | ↓ 7712 KB/s | peers: 5
+2026-04-20 10:57:50.428 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 4.8% | ↓ 7696 KB/s | peers: 5
+2026-04-20 10:57:55.430 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 5.6% | ↓ 8126 KB/s | peers: 5
+2026-04-20 10:58:00.444 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 6.3% | ↓ 6741 KB/s | peers: 6
+2026-04-20 10:58:05.450 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 7.0% | ↓ 6729 KB/s | peers: 6
+2026-04-20 10:58:10.463 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 7.7% | ↓ 6931 KB/s | peers: 6
+2026-04-20 10:58:15.473 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 8.4% | ↓ 6586 KB/s | peers: 7
+2026-04-20 10:58:20.474 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 9.2% | ↓ 6750 KB/s | peers: 8
+2026-04-20 10:58:25.488 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 9.8% | ↓ 6430 KB/s | peers: 8
+2026-04-20 10:58:30.503 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 10.6% | ↓ 7265 KB/s | peers: 9
+2026-04-20 10:58:35.516 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 11.5% | ↓ 8107 KB/s | peers: 8
+2026-04-20 10:58:40.522 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 12.4% | ↓ 8169 KB/s | peers: 8
+2026-04-20 10:58:45.529 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 13.3% | ↓ 7974 KB/s | peers: 8
+2026-04-20 10:58:50.542 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 14.1% | ↓ 8071 KB/s | peers: 8
+2026-04-20 10:58:55.545 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 15.0% | ↓ 8073 KB/s | peers: 8
+2026-04-20 10:59:00.549 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 15.9% | ↓ 8028 KB/s | peers: 8
+2026-04-20 10:59:05.549 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 16.7% | ↓ 7828 KB/s | peers: 8
+2026-04-20 10:59:10.562 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 17.6% | ↓ 8159 KB/s | peers: 8
+2026-04-20 10:59:15.572 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 18.4% | ↓ 8017 KB/s | peers: 10
+2026-04-20 10:59:20.580 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 18.8% | ↓ 5169 KB/s | peers: 10
+2026-04-20 10:59:25.591 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 19.4% | ↓ 5632 KB/s | peers: 10
+2026-04-20 10:59:30.597 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 20.0% | ↓ 5603 KB/s | peers: 9
+2026-04-20 10:59:35.597 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 20.6% | ↓ 5524 KB/s | peers: 9
+2026-04-20 10:59:40.609 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 21.2% | ↓ 5660 KB/s | peers: 9
+2026-04-20 10:59:45.617 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 21.8% | ↓ 5399 KB/s | peers: 9
+2026-04-20 10:59:50.632 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 22.4% | ↓ 5531 KB/s | peers: 9
+2026-04-20 10:59:55.637 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 23.0% | ↓ 5938 KB/s | peers: 9
+2026-04-20 11:00:00.646 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 23.7% | ↓ 5884 KB/s | peers: 9
+2026-04-20 11:00:05.650 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 24.3% | ↓ 6255 KB/s | peers: 9
+2026-04-20 11:00:10.653 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 25.1% | ↓ 6884 KB/s | peers: 9
+2026-04-20 11:00:15.655 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 25.9% | ↓ 7310 KB/s | peers: 9
+2026-04-20 11:00:20.659 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 26.7% | ↓ 7387 KB/s | peers: 10
+2026-04-20 11:00:25.662 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 27.5% | ↓ 7436 KB/s | peers: 9
+2026-04-20 11:00:30.674 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 28.4% | ↓ 8123 KB/s | peers: 10
+2026-04-20 11:00:35.689 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 29.3% | ↓ 8236 KB/s | peers: 11
+2026-04-20 11:00:40.705 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 30.1% | ↓ 7545 KB/s | peers: 9
+2026-04-20 11:00:45.714 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 30.7% | ↓ 6184 KB/s | peers: 9
+2026-04-20 11:00:50.729 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 31.3% | ↓ 6057 KB/s | peers: 9
+2026-04-20 11:00:55.734 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 32.0% | ↓ 6133 KB/s | peers: 10
+2026-04-20 11:01:00.747 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 32.7% | ↓ 6408 KB/s | peers: 10
+2026-04-20 11:01:05.748 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 33.4% | ↓ 6634 KB/s | peers: 10
+2026-04-20 11:01:10.751 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 34.1% | ↓ 7050 KB/s | peers: 10
+2026-04-20 11:01:15.752 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 34.8% | ↓ 6406 KB/s | peers: 10
+2026-04-20 11:01:20.761 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 35.4% | ↓ 6075 KB/s | peers: 9
+2026-04-20 11:01:25.775 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 36.0% | ↓ 5738 KB/s | peers: 9
+2026-04-20 11:01:30.778 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 36.6% | ↓ 5878 KB/s | peers: 9
+2026-04-20 11:01:35.788 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 37.3% | ↓ 6468 KB/s | peers: 9
+2026-04-20 11:01:40.790 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 38.0% | ↓ 6328 KB/s | peers: 11
+2026-04-20 11:01:45.804 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 38.8% | ↓ 6907 KB/s | peers: 10
+2026-04-20 11:01:50.806 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 39.6% | ↓ 7295 KB/s | peers: 10
+2026-04-20 11:01:55.822 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 40.4% | ↓ 7496 KB/s | peers: 10
+2026-04-20 11:02:00.830 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 41.1% | ↓ 7316 KB/s | peers: 10
+2026-04-20 11:02:05.836 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 41.9% | ↓ 7504 KB/s | peers: 10
+2026-04-20 11:02:10.843 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 42.6% | ↓ 6972 KB/s | peers: 10
+2026-04-20 11:02:15.851 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 43.4% | ↓ 7186 KB/s | peers: 9
+2026-04-20 11:02:20.853 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 44.1% | ↓ 6734 KB/s | peers: 9
+2026-04-20 11:02:25.858 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 44.8% | ↓ 6497 KB/s | peers: 10
+2026-04-20 11:02:30.868 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 45.5% | ↓ 6655 KB/s | peers: 10
+2026-04-20 11:02:35.882 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 46.2% | ↓ 6237 KB/s | peers: 10
+2026-04-20 11:02:40.894 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 46.5% | ↓ 3907 KB/s | peers: 10
+2026-04-20 11:02:45.904 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 46.9% | ↓ 3694 KB/s | peers: 11
+2026-04-20 11:02:50.906 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 47.6% | ↓ 5955 KB/s | peers: 9
+2026-04-20 11:02:55.918 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 48.5% | ↓ 7663 KB/s | peers: 9
+2026-04-20 11:03:00.930 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 49.3% | ↓ 7627 KB/s | peers: 9
+2026-04-20 11:03:05.945 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 50.1% | ↓ 7670 KB/s | peers: 9
+2026-04-20 11:03:10.952 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 50.9% | ↓ 7155 KB/s | peers: 8
+2026-04-20 11:03:15.958 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 51.6% | ↓ 7314 KB/s | peers: 9
+2026-04-20 11:03:20.959 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 52.5% | ↓ 7624 KB/s | peers: 9
+2026-04-20 11:03:25.960 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 53.4% | ↓ 8216 KB/s | peers: 9
+2026-04-20 11:03:30.966 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 54.2% | ↓ 7524 KB/s | peers: 9
+2026-04-20 11:03:35.978 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 54.9% | ↓ 6870 KB/s | peers: 9
+2026-04-20 11:03:40.986 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 55.5% | ↓ 6288 KB/s | peers: 9
+2026-04-20 11:03:45.995 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 56.1% | ↓ 5833 KB/s | peers: 9
+2026-04-20 11:03:51.008 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 56.6% | ↓ 5487 KB/s | peers: 10
+2026-04-20 11:03:56.013 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 57.4% | ↓ 6266 KB/s | peers: 10
+2026-04-20 11:04:01.015 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 58.1% | ↓ 6907 KB/s | peers: 10
+2026-04-20 11:04:06.021 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 59.0% | ↓ 7829 KB/s | peers: 10
+2026-04-20 11:04:11.033 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 59.9% | ↓ 8203 KB/s | peers: 11
+2026-04-20 11:04:16.043 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 60.6% | ↓ 7331 KB/s | peers: 11
+2026-04-20 11:04:21.055 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 60.7% | ↓ 3194 KB/s | peers: 11
+2026-04-20 11:04:26.060 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 61.0% | ↓ 2865 KB/s | peers: 12
+2026-04-20 11:04:31.067 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 61.5% | ↓ 3735 KB/s | peers: 12
+2026-04-20 11:04:36.069 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 62.0% | ↓ 4736 KB/s | peers: 12
+2026-04-20 11:04:41.072 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 62.6% | ↓ 5344 KB/s | peers: 12
+2026-04-20 11:04:46.078 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 63.4% | ↓ 6365 KB/s | peers: 12
+2026-04-20 11:04:51.080 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 64.1% | ↓ 6592 KB/s | peers: 13
+2026-04-20 11:04:56.090 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 64.7% | ↓ 6050 KB/s | peers: 12
+2026-04-20 11:05:01.097 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 65.2% | ↓ 5207 KB/s | peers: 12
+2026-04-20 11:05:06.103 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 65.8% | ↓ 5305 KB/s | peers: 12
+2026-04-20 11:05:11.103 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 66.3% | ↓ 5350 KB/s | peers: 12
+2026-04-20 11:05:16.104 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 67.0% | ↓ 5933 KB/s | peers: 12
+2026-04-20 11:05:21.107 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 67.8% | ↓ 7047 KB/s | peers: 12
+2026-04-20 11:05:26.119 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 68.7% | ↓ 7670 KB/s | peers: 12
+2026-04-20 11:05:31.120 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 69.3% | ↓ 6713 KB/s | peers: 12
+2026-04-20 11:05:36.134 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 70.0% | ↓ 6723 KB/s | peers: 12
+2026-04-20 11:05:41.140 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 70.7% | ↓ 6504 KB/s | peers: 12
+2026-04-20 11:05:46.152 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 71.3% | ↓ 6199 KB/s | peers: 12
+2026-04-20 11:05:51.159 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 71.9% | ↓ 5178 KB/s | peers: 12
+2026-04-20 11:05:56.161 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 72.4% | ↓ 5008 KB/s | peers: 13
+2026-04-20 11:06:01.164 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 72.9% | ↓ 5182 KB/s | peers: 12
+2026-04-20 11:06:06.174 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 73.5% | ↓ 5345 KB/s | peers: 12
+2026-04-20 11:06:11.188 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 74.2% | ↓ 5787 KB/s | peers: 12
+2026-04-20 11:06:16.203 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 74.7% | ↓ 5721 KB/s | peers: 12
+2026-04-20 11:06:21.217 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 75.3% | ↓ 5471 KB/s | peers: 12
+2026-04-20 11:06:26.229 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 76.0% | ↓ 5896 KB/s | peers: 12
+2026-04-20 11:06:31.229 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 76.7% | ↓ 6584 KB/s | peers: 12
+2026-04-20 11:06:36.234 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 77.2% | ↓ 5462 KB/s | peers: 12
+2026-04-20 11:06:41.239 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 77.7% | ↓ 4629 KB/s | peers: 12
+2026-04-20 11:06:46.242 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 78.1% | ↓ 4456 KB/s | peers: 12
+2026-04-20 11:06:51.249 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 78.7% | ↓ 4703 KB/s | peers: 12
+2026-04-20 11:06:56.264 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 79.3% | ↓ 5411 KB/s | peers: 12
+2026-04-20 11:07:01.271 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 80.0% | ↓ 6143 KB/s | peers: 13
+2026-04-20 11:07:06.272 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 80.6% | ↓ 6055 KB/s | peers: 12
+2026-04-20 11:07:11.272 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 81.3% | ↓ 6103 KB/s | peers: 12
+2026-04-20 11:07:16.284 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 81.9% | ↓ 6018 KB/s | peers: 13
+2026-04-20 11:07:21.287 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 82.6% | ↓ 6290 KB/s | peers: 12
+2026-04-20 11:07:26.292 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 83.3% | ↓ 6567 KB/s | peers: 12
+2026-04-20 11:07:31.305 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 84.0% | ↓ 6332 KB/s | peers: 12
+2026-04-20 11:07:36.309 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 84.6% | ↓ 6436 KB/s | peers: 12
+2026-04-20 11:07:41.312 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 85.3% | ↓ 6437 KB/s | peers: 12
+2026-04-20 11:07:46.326 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 86.0% | ↓ 6454 KB/s | peers: 12
+2026-04-20 11:07:51.341 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 86.8% | ↓ 6749 KB/s | peers: 12
+2026-04-20 11:07:56.344 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 87.4% | ↓ 6025 KB/s | peers: 12
+2026-04-20 11:08:01.349 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 88.1% | ↓ 6871 KB/s | peers: 12
+2026-04-20 11:08:06.360 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 88.9% | ↓ 6868 KB/s | peers: 12
+2026-04-20 11:08:11.374 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 89.5% | ↓ 6246 KB/s | peers: 12
+2026-04-20 11:08:16.388 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 90.2% | ↓ 6512 KB/s | peers: 12
+2026-04-20 11:08:21.395 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 90.9% | ↓ 6389 KB/s | peers: 12
+2026-04-20 11:08:26.405 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 91.5% | ↓ 5822 KB/s | peers: 11
+2026-04-20 11:08:31.407 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 92.1% | ↓ 5968 KB/s | peers: 11
+2026-04-20 11:08:36.419 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 92.8% | ↓ 5894 KB/s | peers: 10
+2026-04-20 11:08:41.430 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 93.3% | ↓ 5602 KB/s | peers: 10
+2026-04-20 11:08:46.441 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 93.8% | ↓ 4847 KB/s | peers: 9
+2026-04-20 11:08:51.449 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 94.3% | ↓ 4537 KB/s | peers: 9
+2026-04-20 11:08:56.450 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 94.7% | ↓ 4373 KB/s | peers: 9
+2026-04-20 11:09:01.466 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 95.3% | ↓ 4985 KB/s | peers: 9
+2026-04-20 11:09:06.470 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 95.9% | ↓ 5569 KB/s | peers: 10
+2026-04-20 11:09:11.484 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 96.7% | ↓ 7024 KB/s | peers: 10
+2026-04-20 11:09:16.498 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 97.5% | ↓ 7056 KB/s | peers: 9
+2026-04-20 11:09:21.511 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 98.2% | ↓ 6799 KB/s | peers: 9
+2026-04-20 11:09:26.526 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 98.8% | ↓ 6234 KB/s | peers: 10
+2026-04-20 11:09:31.539 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 99.4% | ↓ 5984 KB/s | peers: 9
+2026-04-20 11:09:36.541 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 99.9% | ↓ 5085 KB/s | peers: 10
+2026-04-20 11:09:41.544 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 100.0% | ↓ 2266 KB/s | peers: 10
+2026-04-20 11:09:46.549 | INFO     | torrent:_run_download_loop:388 - Download complete: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:09:46.571 | INFO     | torrent:download_magnet:307 - Torrent handle removed for: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:09:46.574 | DEBUG    | database:update_status:147 - Status → 'uploading' | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 11:09:46.574 | INFO     | queue_processor:_process_item:216 - Uploading to Dropbox: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:09:46.575 | DEBUG    | dropbox_sync:_sync_blocking:252 - TV show folder: 'DTF St Louis'
+2026-04-20 11:09:46.575 | INFO     | dropbox_sync:_sync_blocking:266 - Syncing folder: './downloads\\www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' → Dropbox:/Podrick/Shows/Current/DTF St Louis/
+2026-04-20 11:09:47.182 | DEBUG    | dropbox_sync:_upload_file:152 - Uploading (chunked, 4.35 GB): ./downloads\www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA\DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA.mkv → /Podrick/Shows/Current/DTF St Louis/www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA/DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA.mkv
+2026-04-20 11:11:11.765 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E1FC93993BA20C612C95AB7ED3F501FE5062BAF…)
+2026-04-20 11:11:11.765 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:298A36D0A125B8249A19DC5FADDB60E4DF0C1D64…)
+2026-04-20 11:11:11.765 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Krapopolis S03E13 1080p WEB h264 EDITH' (magnet:?xt=urn:btih:A45F13FE04AC62FDE801C82DBEBD09704071825B…)
+2026-04-20 11:11:11.765 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 11:11:11.768 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 11:11:11.768 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 11:11:11.768 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 11:11:11.769 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 11:11:11.769 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 11:11:11.769 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 11:11:11.769 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 11:11:11.769 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 11:11:11.769 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 11:11:11.771 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 11:11:11.771 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 11:11:11.771 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 11:11:11.771 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 11:11:11.771 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 11:11:11.773 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 11:11:11.773 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 11:11:11.773 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 11:11:11.773 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 11:11:11.775 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 11:11:11.775 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 11:11:11.775 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 11:11:11.775 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 11:11:11.775 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 11:11:11.775 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 11:11:11.777 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 11:11:11.777 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 11:11:11.778 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 11:11:11.778 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 11:11:11.778 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 11:11:11.778 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 11:11:11.778 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 11:11:11.778 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 11:11:11.780 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 11:11:11.780 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 11:11:11.780 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 11:11:11.780 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 11:11:11.780 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 11:11:11.780 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 11:11:11.781 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 11:11:11.783 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 11:11:11.783 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 11:11:11.783 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 11:11:11.783 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 11:11:11.783 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 11:11:11.783 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 11:11:11.785 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 11:11:11.787 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 11:11:11.787 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 11:11:11.787 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 11:11:11.787 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-20 11:26:12.792 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E1FC93993BA20C612C95AB7ED3F501FE5062BAF…)
+2026-04-20 11:26:12.792 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:298A36D0A125B8249A19DC5FADDB60E4DF0C1D64…)
+2026-04-20 11:26:12.792 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Krapopolis S03E13 1080p WEB h264 EDITH' (magnet:?xt=urn:btih:A45F13FE04AC62FDE801C82DBEBD09704071825B…)
+2026-04-20 11:26:12.793 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 11:26:12.794 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 11:26:12.794 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 11:26:12.794 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 11:26:12.794 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 11:26:12.795 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 11:26:12.795 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 11:26:12.795 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 11:26:12.796 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 11:26:12.796 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 11:26:12.797 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 11:26:12.797 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 11:26:12.797 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 11:26:12.798 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 11:26:12.798 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 11:26:12.799 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 11:26:12.799 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 11:26:12.799 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 11:26:12.799 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 11:26:12.799 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 11:26:12.801 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 11:26:12.801 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 11:26:12.801 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 11:26:12.802 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 11:26:12.802 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 11:26:12.802 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 11:26:12.802 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 11:26:12.803 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 11:26:12.803 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 11:26:12.803 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 11:26:12.804 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 11:26:12.804 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 11:26:12.804 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 11:26:12.805 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 11:26:12.805 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 11:26:12.805 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 11:26:12.806 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 11:26:12.806 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 11:26:12.806 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 11:26:12.806 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 11:26:12.807 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 11:26:12.807 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 11:26:12.807 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 11:26:12.808 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 11:26:12.808 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 11:26:12.809 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 11:26:12.809 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 11:26:12.809 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 11:26:12.810 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 11:26:12.810 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 11:26:12.810 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 11:26:12.811 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 11:26:12.811 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 11:26:12.811 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 11:26:12.812 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 11:26:12.812 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 11:26:12.812 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 11:26:12.812 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 11:26:12.813 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 11:26:12.813 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 11:26:12.813 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 11:26:12.814 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 11:26:12.814 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-20 11:39:11.536 | DEBUG    | database:update_status:147 - Status → 'queued' | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 11:39:11.537 | INFO     | __main__:_reset_in_progress:105 - Reset stuck item to queued: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' (was 'uploading')
+2026-04-20 11:39:11.556 | INFO     | torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-20 11:39:11.611 | INFO     | bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-20 11:39:12.249 | INFO     | __main__:main:149 - Telegram bot started.
+2026-04-20 11:39:12.249 | INFO     | __main__:main:166 - All services running. Press Ctrl-C to stop.
+2026-04-20 11:39:12.250 | INFO     | rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-20 11:39:12.250 | INFO     | queue_processor:run_queue_processor:94 - Queue processor started — max concurrent downloads: 1
+2026-04-20 11:39:12.251 | INFO     | api:run_server:293 - API server starting on 0.0.0.0:8080
+2026-04-20 11:39:12.273 | DEBUG    | database:update_status:147 - Status → 'downloading' | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 11:39:12.273 | INFO     | queue_processor:_process_item:183 - Started: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:39:12.273 | INFO     | torrent:download_magnet:292 - Torrent added, awaiting metadata…
+2026-04-20 11:39:12.415 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E1FC93993BA20C612C95AB7ED3F501FE5062BAF…)
+2026-04-20 11:39:12.415 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:298A36D0A125B8249A19DC5FADDB60E4DF0C1D64…)
+2026-04-20 11:39:12.415 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Krapopolis S03E13 1080p WEB h264 EDITH' (magnet:?xt=urn:btih:A45F13FE04AC62FDE801C82DBEBD09704071825B…)
+2026-04-20 11:39:12.416 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-20 11:39:12.417 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-20 11:39:12.417 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-20 11:39:12.417 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-20 11:39:12.417 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-20 11:39:12.418 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-20 11:39:12.418 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-20 11:39:12.418 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-20 11:39:12.419 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-20 11:39:12.419 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-20 11:39:12.420 | DEBUG    | database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-20 11:39:12.420 | DEBUG    | database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-20 11:39:12.420 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-20 11:39:12.421 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-20 11:39:12.421 | DEBUG    | database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-20 11:39:12.421 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-20 11:39:12.421 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-20 11:39:12.422 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-20 11:39:12.422 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-20 11:39:12.422 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-20 11:39:12.423 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-20 11:39:12.423 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-20 11:39:12.424 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-20 11:39:12.424 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-20 11:39:12.425 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-20 11:39:12.425 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-20 11:39:12.425 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-20 11:39:12.426 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-20 11:39:12.426 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-20 11:39:12.426 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-20 11:39:12.427 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-20 11:39:12.427 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-20 11:39:12.427 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-20 11:39:12.428 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-20 11:39:12.428 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-20 11:39:12.429 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-20 11:39:12.429 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-20 11:39:12.429 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-20 11:39:12.430 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-20 11:39:12.430 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-20 11:39:12.430 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-20 11:39:12.431 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-20 11:39:12.431 | DEBUG    | database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-20 11:39:12.432 | DEBUG    | database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-20 11:39:12.432 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-20 11:39:12.433 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-20 11:39:12.433 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-20 11:39:12.433 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-20 11:39:12.434 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-20 11:39:12.434 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-20 11:39:12.435 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-20 11:39:12.435 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-20 11:39:12.436 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-20 11:39:12.436 | DEBUG    | database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-20 11:39:12.436 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-20 11:39:12.436 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-20 11:39:12.440 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-20 11:39:12.442 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-20 11:39:12.442 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 1080p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:DD12F689D939112D2FB37153CA20256853F7D0F2…)
+2026-04-20 11:39:12.442 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E06 Requiem 720p ATVP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:6DA0016B6B979E085D7A1C2EFFBC16A8640FF5D2…)
+2026-04-20 11:39:12.442 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 My Best Friends Barbecue 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FF602AEC43CB24F85D6931795B161D4A64F5074D…)
+2026-04-20 11:39:12.443 | DEBUG    | database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E07 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:24A2D61FC66D684710877270FD50A766C94E678D…)
+2026-04-20 11:39:12.443 | DEBUG    | rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 0 new item(s) queued.
+2026-04-20 11:39:17.326 | DEBUG    | torrent:_wait_for_metadata:353 - Metadata received.
+2026-04-20 11:39:17.326 | INFO     | torrent:download_magnet:298 - Metadata resolved: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' — starting download
+2026-04-20 11:39:17.326 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 7.3% | ↓ 5 KB/s | peers: 3
+2026-04-20 11:39:22.328 | DEBUG    | torrent:_run_download_loop:404 - 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': 83.2% | ↓ 7 KB/s | peers: 3
+2026-04-20 11:39:27.338 | INFO     | torrent:_run_download_loop:388 - Download complete: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:39:27.338 | INFO     | torrent:download_magnet:307 - Torrent handle removed for: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:39:27.340 | DEBUG    | database:update_status:147 - Status → 'uploading' | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 11:39:27.340 | INFO     | queue_processor:_process_item:216 - Uploading to Dropbox: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA'
+2026-04-20 11:39:27.340 | DEBUG    | dropbox_sync:_sync_blocking:252 - TV show folder: 'DTF St Louis'
+2026-04-20 11:39:27.341 | INFO     | dropbox_sync:_sync_blocking:266 - Syncing folder: './downloads\\www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' → Dropbox:/Podrick/Shows/Current/DTF St Louis/
+2026-04-20 11:39:27.341 | DEBUG    | dropbox_sync:_upload_file:152 - Uploading (chunked, 4.35 GB): ./downloads\www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA\DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA.mkv → /Podrick/Shows/Current/DTF St Louis/www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA/DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA.mkv
+2026-04-20 11:40:10.815 | DEBUG    | database:increment_retry:178 - Retry count → 1 | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 11:40:10.815 | WARNING  | queue_processor:_handle_retry:264 - Pipeline error (attempt 1/3) for 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA': SSLError: HTTPSConnectionPool(host='content.dropboxapi.com', port=443): Max retries exceeded with url: /2/files/upload_session/append_v2 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2423)')))
+2026-04-20 11:40:10.815 | INFO     | queue_processor:_handle_retry:271 - Retrying 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' in 30s…
+2026-04-20 11:40:16.098 | INFO     | __main__:main:197 - Cancelling background tasks…
+2026-04-20 11:40:16.101 | DEBUG    | database:update_status:147 - Status → 'queued' | magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…
+2026-04-20 11:40:16.101 | INFO     | __main__:_reset_in_progress:105 - Reset stuck item to queued: 'www.UIndex.org    -    DTF St Louis S01E02 1080p AMZN WEB-DL DDP5 1 H 264 DUAL-BiOMA' (was 'uploading')
+2026-04-20 11:40:16.102 | INFO     | torrent:shutdown:317 - TorrentManager: session paused.
+2026-04-20 11:40:16.102 | INFO     | __main__:main:218 - Stopping Telegram bot…

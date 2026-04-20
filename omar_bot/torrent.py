@@ -150,6 +150,41 @@ def parse_show_name(title: str) -> str:
     return name
 
 
+def parse_episode_key(title: str) -> str | None:
+    """
+    Derive a normalised (show, episode) deduplication key from a title.
+
+    Returns a string of the form ``"show name:sXXeYY"`` (all lowercase),
+    or ``None`` if no SxxExx marker is found (i.e. the title appears to be
+    a movie or does not contain a parseable episode code).
+
+    Examples:
+        "DTF St Louis S01E07 720p WEB H264 JFF"        → "dtf st louis:s01e07"
+        "Invincible 2021 S04E07 DONT DO ANYTHING RASH" → "invincible:s04e07"
+        "The Boys S05E03 Every One of You … 720p …"    → "the boys:s05e03"
+        "Oppenheimer 2023 2160p BluRay REMUX"           → None
+    """
+    # Strip website prefix and file extensions before looking for the marker.
+    cleaned = _WEBSITE_PREFIX_RE.sub("", title).strip()
+    cleaned = _FILE_EXT_RE.sub("", cleaned).strip()
+
+    match = _EPISODE_RE.search(cleaned)
+    if not match:
+        return None
+
+    # Everything before the SxxExx marker is the show name portion.
+    show_raw = cleaned[: match.start()]
+    # Strip a trailing year that sits between the show name and the episode marker.
+    show_raw = _TRAILING_YEAR_RE.sub("", show_raw)
+    # Strip trailing punctuation / separator characters.
+    show = show_raw.strip(" -\u2013\u2014").lower()
+
+    # Use the matched SxxExx text lowercased as the episode code.
+    episode_code = match.group(0).lower()
+
+    return f"{show}:{episode_code}"
+
+
 def get_best_quality_per_show(entries: list) -> dict[str, object]:
     """
     Group RSS feed entries by normalised show/movie name and return a dict

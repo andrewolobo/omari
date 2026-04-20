@@ -5,16 +5,19 @@ Tracks the full lifecycle of every download:
     queued -> downloading -> uploading -> completed -> failed
 
 Each record schema:
-    identifier      str   — magnet URI or RSS entry link (primary key)
-    title           str   — human-readable name
-    source_type     str   — 'magnet' | 'rss'
-    media_type      str   — 'tv' | 'movie' | 'unknown'
-    status          str   — lifecycle state (see above)
-    chat_id         int   — Telegram chat_id to notify on completion/failure
-    target_name     str   — local file/folder name set after download completes
-    retry_count     int   — number of pipeline retries attempted
-    added_at        float — Unix timestamp of initial insert
-    updated_at      float — Unix timestamp of last status change
+    identifier      str        — magnet URI or RSS entry link (primary key)
+    title           str        — human-readable name
+    source_type     str        — 'magnet' | 'rss'
+    media_type      str        — 'tv' | 'movie' | 'unknown'
+    episode_key     str | None — normalised "show name:sXXeYY" key for TV episodes;
+                                 None for movies and manual magnets without an episode
+                                 marker. Used as the episode-level deduplication key.
+    status          str        — lifecycle state (see above)
+    chat_id         int        — Telegram chat_id to notify on completion/failure
+    target_name     str        — local file/folder name set after download completes
+    retry_count     int        — number of pipeline retries attempted
+    added_at        float      — Unix timestamp of initial insert
+    updated_at      float      — Unix timestamp of last status change
 """
 
 import threading
@@ -24,6 +27,8 @@ from typing import Any
 
 from loguru import logger
 from tinydb import TinyDB, Query
+
+from torrent import parse_episode_key, _RESOLUTION_RE, _QUALITY_WEIGHTS
 
 # ---------------------------------------------------------------------------
 # Database setup
@@ -77,10 +82,25 @@ def add_download(
         )
         media_type = "unknown"
 
+    episode_key = parse_episode_key(title) if media_type == "tv" else None
+
     with _lock:
         if _db.search(_Downloads.identifier == identifier):
             logger.debug(f"Duplicate skipped: {title!r} ({identifier[:60]}…)")
             return False
+
+        if episode_key is not None:
+            # Reject if any non-terminal record already covers this episode.
+            # 'failed' and 'cancelled' are considered terminal so a retry is allowed.
+            existing = _db.search(
+                (_Downloads.episode_key == episode_key)
+                & (_Downloads.status.test(lambda s: s not in {"failed", "cancelled"}))
+            )
+            if existing:
+                logger.debug(
+                    f"Episode duplicate skipped: {episode_key!r} (title: {title!r})"
+                )
+                return False
 
         now = time.time()
         _db.insert(
@@ -89,6 +109,7 @@ def add_download(
                 "title": title,
                 "source_type": source_type,
                 "media_type": media_type,
+                "episode_key": episode_key,
                 "status": "queued",
                 "chat_id": chat_id,
                 "target_name": None,
@@ -171,3 +192,82 @@ def get_recent(status: str, limit: int = 10) -> list[dict]:
     """
     records = get_downloads_by_status(status)
     return sorted(records, key=lambda r: r.get("updated_at", 0), reverse=True)[:limit]
+
+
+# ---------------------------------------------------------------------------
+# Startup migrations
+# ---------------------------------------------------------------------------
+
+def backfill_episode_keys() -> int:
+    """
+    Compute and write episode_key for any existing records that are missing
+    the field (e.g. records inserted before this feature was added).
+
+    Returns the number of records updated.
+    """
+    with _lock:
+        missing = _db.search(~_Downloads.episode_key.exists())
+        updated = 0
+        for record in missing:
+            title      = record.get("title", "")
+            media_type = record.get("media_type", "unknown")
+            key        = parse_episode_key(title) if media_type == "tv" else None
+            _db.update(
+                {"episode_key": key},
+                _Downloads.identifier == record["identifier"],
+            )
+            updated += 1
+
+    if updated:
+        logger.info(f"backfill_episode_keys: backfilled {updated} record(s).")
+    return updated
+
+
+def prune_queued_episode_duplicates() -> int:
+    """
+    Remove lower-quality duplicate 'queued' records that share an episode_key.
+
+    For each episode_key that appears in more than one queued record, the
+    highest-resolution release is kept and the rest are deleted from the DB.
+    Quality is ranked by the resolution tag in the title using _QUALITY_WEIGHTS
+    (2160p > 1080p > 720p > 480p; unrecognised → 0).
+
+    Returns the number of records removed.
+    """
+    def _weight(title: str) -> int:
+        m = _RESOLUTION_RE.search(title)
+        return _QUALITY_WEIGHTS.get(m.group(1).lower(), 0) if m else 0
+
+    queued = _db.search(
+        (_Downloads.status == "queued")
+        & (_Downloads.episode_key.test(lambda k: k is not None))
+    )
+
+    # Group by episode_key.
+    groups: dict[str, list[dict]] = {}
+    for record in queued:
+        key = record["episode_key"]
+        groups.setdefault(key, []).append(record)
+
+    removed = 0
+    with _lock:
+        for key, records in groups.items():
+            if len(records) <= 1:
+                continue
+
+            # Sort descending by quality weight; keep the first (best).
+            records.sort(key=lambda r: _weight(r.get("title", "")), reverse=True)
+            best = records[0]
+            dupes = records[1:]
+
+            for dupe in dupes:
+                _db.remove(_Downloads.identifier == dupe["identifier"])
+                logger.info(
+                    f"Pruned queued duplicate: {dupe.get('title')!r} "
+                    f"(kept {best.get('title')!r})"
+                )
+                removed += 1
+
+    if removed:
+        logger.info(f"prune_queued_episode_duplicates: removed {removed} duplicate record(s).")
+    return removed
