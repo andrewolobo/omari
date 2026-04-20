@@ -24,9 +24,19 @@ Design notes:
 
 import asyncio
 import html
+import warnings
 from typing import Optional
 
 import uvicorn
+
+# Dropbox SDK 11.x imports pkg_resources, which emits a deprecation warning.
+# Keep runtime logs clean while requirements pin setuptools<81.
+warnings.filterwarnings(
+    "ignore",
+    message=r"pkg_resources is deprecated as an API.*",
+    category=UserWarning,
+)
+
 from dropbox.oauth import (
     DropboxOAuth2Flow,
     BadRequestException,
@@ -252,6 +262,11 @@ def _error_page(message: str) -> str:
 # Server runner
 # ---------------------------------------------------------------------------
 
+# Module-level reference so stop_server() can signal uvicorn from main.py
+# without needing a separate out-of-band communication channel.
+_server: Optional[uvicorn.Server] = None
+
+
 async def run_server() -> None:
     """
     Run the FastAPI app under uvicorn as an asyncio coroutine.
@@ -259,14 +274,37 @@ async def run_server() -> None:
     Intended to be launched via asyncio.create_task() in main.py alongside
     the Telegram bot and RSS worker tasks. uvicorn access logs are suppressed;
     application-level events are logged through loguru.
+
+    CancelledError is caught and suppressed so that cancelling this task
+    during shutdown does not produce a spurious ERROR traceback from inside
+    Starlette's lifespan handler.
     """
+    global _server
     uvicorn_config = uvicorn.Config(
         app=app,
         host=config.API_HOST,
         port=config.API_PORT,
         log_level="warning",
         access_log=False,
+        lifespan="off",  # App has no lifespan hooks; disabling avoids a
+                         # CancelledError traceback from starlette on shutdown.
     )
-    server = uvicorn.Server(uvicorn_config)
+    _server = uvicorn.Server(uvicorn_config)
     logger.info(f"API server starting on {config.API_HOST}:{config.API_PORT}")
-    await server.serve()
+    try:
+        await _server.serve()
+    except asyncio.CancelledError:
+        pass  # Expected during graceful shutdown — not an error.
+
+
+async def stop_server() -> None:
+    """
+    Signal uvicorn to begin its own graceful shutdown sequence.
+
+    Call this before cancelling the api_task so uvicorn can drain open
+    connections and run the ASGI lifespan shutdown hook cleanly, avoiding
+    the CancelledError traceback that starlette emits when the task is
+    cancelled mid-lifespan.
+    """
+    if _server is not None:
+        _server.should_exit = True

@@ -22,11 +22,17 @@ Design notes:
       unintended seeding after the file has been uploaded to Dropbox.
 """
 
+from __future__ import annotations
+
 import re
+import threading
 import time
 from typing import Callable, Optional
 
-import libtorrent as lt
+try:
+    import libtorrent as lt
+except ModuleNotFoundError:  # pragma: no cover - environment-dependent
+    lt = None
 from loguru import logger
 
 import config
@@ -77,6 +83,18 @@ _STRIP_PATTERNS = [
 # Regex that matches a TV episode marker (S01E01 / s01e01) used to detect media type.
 _EPISODE_RE = re.compile(r"\bS\d{1,2}E\d{1,2}\b", re.IGNORECASE)
 
+# Strips "www.site.org    -   " style website prefixes embedded in some torrent names.
+_WEBSITE_PREFIX_RE = re.compile(
+    r"^[\w.-]+\.(com|org|net|to|io|ru|cc)\s*[-\u2013\u2014]+\s*", re.IGNORECASE
+)
+
+# Strips a trailing 4-digit year sitting between the show name and SxxExx,
+# e.g. "Invincible 2021 S04E07" → "Invincible".
+_TRAILING_YEAR_RE = re.compile(r"\s+(19|20)\d{2}\s*$")
+
+# Common media file extensions to strip from the resolved torrent filename.
+_FILE_EXT_RE = re.compile(r"\.(mkv|mp4|avi|mov|wmv|m4v|ts|flv)$", re.IGNORECASE)
+
 
 def _normalise_title(raw: str) -> str:
     """
@@ -96,6 +114,40 @@ def detect_media_type(title: str) -> str:
     Used by rss_worker when calling add_download().
     """
     return "tv" if _EPISODE_RE.search(title) else "movie"
+
+
+def parse_show_name(title: str) -> str:
+    """
+    Extract the show name from a TV episode torrent title.
+
+    Handles the following variations observed in practice:
+        - Website prefixes:    "www.UIndex.org    -    DTF St Louis S01E02 ..."
+        - File extensions:     "Hacks S05E02 720p WEB H264-JFF[EZTVx.to].mkv"
+        - Year before SxxExx:  "Invincible 2021 S04E07 ..." → "Invincible"
+        - All-lowercase titles: "hacks s05e01 720p web h264 sylix" → "Hacks"
+        - Multi-word titles:   "Monarch Legacy of Monsters S02E08 ..."
+
+    Returns the raw title stripped of its prefix/extension if no SxxExx marker
+    is found (safe fallback — the name is still useful as a folder label).
+    """
+    # Strip website prefix (e.g. "www.UIndex.org    -    ").
+    name = _WEBSITE_PREFIX_RE.sub("", title).strip()
+    # Strip common media file extensions.
+    name = _FILE_EXT_RE.sub("", name).strip()
+    # Find the SxxExx marker and take everything before it.
+    match = _EPISODE_RE.search(name)
+    if not match:
+        return name.strip()
+    name = name[: match.start()]
+    # Strip a trailing year that appeared between the show name and SxxExx.
+    name = _TRAILING_YEAR_RE.sub("", name)
+    # Strip any trailing punctuation/separator characters left behind.
+    name = name.strip(" -\u2013\u2014")
+    # Normalise case for fully lowercase or fully uppercase titles.
+    # e.g. "hacks" → "Hacks", "INVINCIBLE" → "Invincible"
+    if name == name.lower() or name == name.upper():
+        name = name.title()
+    return name
 
 
 def get_best_quality_per_show(entries: list) -> dict[str, object]:
@@ -144,6 +196,12 @@ class TorrentManager:
     """
 
     def __init__(self, save_path: Optional[str] = None) -> None:
+        if lt is None:
+            raise RuntimeError(
+                "libtorrent Python bindings are not installed. "
+                "On Fedora install: sudo dnf install rb_libtorrent-python3"
+            )
+
         self.save_path = save_path or config.DOWNLOAD_PATH
 
         # libtorrent 2.x session initialisation — listen_on() is removed.
@@ -152,6 +210,8 @@ class TorrentManager:
             "alert_mask": lt.alert.category_t.all_categories,
         }
         self.session = lt.session(settings)
+        # Set by shutdown() to signal all blocking thread-pool workers to exit.
+        self._stop = threading.Event()
         logger.info(f"TorrentManager: session started, save_path={self.save_path!r}")
 
     # ------------------------------------------------------------------
@@ -197,14 +257,14 @@ class TorrentManager:
         logger.info(f"Torrent added, awaiting metadata…")
 
         # --- Wait for metadata ---
-        _wait_for_metadata(handle)
+        _wait_for_metadata(handle, self._stop)
 
         name = handle.name()
         logger.info(f"Metadata resolved: {name!r} — starting download")
 
         # --- Download loop ---
         try:
-            _run_download_loop(handle, name, progress_cb)
+            _run_download_loop(handle, name, progress_cb, self._stop)
         finally:
             # Always remove the handle to stop seeding after we are done,
             # even if an exception is raised.
@@ -214,7 +274,10 @@ class TorrentManager:
         return name
 
     def shutdown(self) -> None:
-        """Pause the session cleanly (called from main.py on SIGINT/SIGTERM)."""
+        """Signal all download threads to stop, then pause the libtorrent session."""
+        # Set the stop flag first so any thread blocking in Event.wait() wakes
+        # up immediately and exits its loop before we pause the session.
+        self._stop.set()
         self.session.pause()
         logger.info("TorrentManager: session paused.")
 
@@ -227,13 +290,15 @@ _METADATA_POLL_INTERVAL = 1   # seconds between metadata-wait polls
 _DOWNLOAD_POLL_INTERVAL = 5   # seconds between progress polls
 
 
-def _wait_for_metadata(handle: lt.torrent_handle) -> None:
+def _wait_for_metadata(handle: lt.torrent_handle, stop: threading.Event) -> None:
     """
     Block until torrent metadata is resolved.
 
     Respects DOWNLOAD_TIMEOUT_MINUTES: if metadata is not received in that
     window (which can happen if a magnet has zero peers), DownloadTimeoutError
     is raised so the item can be moved to 'failed' and retried later.
+
+    Returns immediately if stop is set (shutdown signal).
     """
     timeout_secs = config.DOWNLOAD_TIMEOUT_MINUTES * 60
     deadline = time.monotonic() + timeout_secs
@@ -244,7 +309,11 @@ def _wait_for_metadata(handle: lt.torrent_handle) -> None:
                 f"Metadata not received within {config.DOWNLOAD_TIMEOUT_MINUTES} minutes. "
                 "The torrent may have no active peers."
             )
-        time.sleep(_METADATA_POLL_INTERVAL)
+        # Event.wait() blocks for up to the poll interval but wakes instantly
+        # when stop.set() is called from TorrentManager.shutdown().
+        if stop.wait(timeout=_METADATA_POLL_INTERVAL):
+            logger.debug("Metadata wait interrupted by shutdown signal.")
+            return
 
     logger.debug("Metadata received.")
 
@@ -253,12 +322,15 @@ def _run_download_loop(
     handle: lt.torrent_handle,
     name: str,
     progress_cb: Optional[Callable[[float], None]],
+    stop: threading.Event,
 ) -> None:
     """
     Poll download progress until the torrent is fully seeded.
 
     Stall detection: if the downloaded byte count does not increase for
     DOWNLOAD_TIMEOUT_MINUTES, DownloadTimeoutError is raised.
+
+    Exits immediately when stop is set (shutdown signal).
 
     Progress callback is fired at most once per percentage point to avoid
     flooding the Telegram API.
@@ -310,4 +382,9 @@ def _run_download_loop(
                 logger.warning(f"progress_cb raised: {exc}")
             last_progress_pct = pct
 
-        time.sleep(_DOWNLOAD_POLL_INTERVAL)
+        # Block for the poll interval but return immediately if shutdown is
+        # signalled. This replaces time.sleep() so the thread never sits idle
+        # for up to 5 seconds after Ctrl-C.
+        if stop.wait(timeout=_DOWNLOAD_POLL_INTERVAL):
+            logger.debug(f"Download loop interrupted by shutdown signal: {name!r}")
+            return
