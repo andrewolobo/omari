@@ -31,9 +31,9 @@ import asyncio
 import feedparser
 from loguru import logger
 
-import config
-from database import add_download
-from torrent import detect_media_type, get_best_quality_per_show, _RESOLUTION_RE, _QUALITY_WEIGHTS
+from . import config
+from .database import add_download
+from .torrent import detect_media_type, get_best_quality_per_show, _RESOLUTION_RE, _QUALITY_WEIGHTS
 
 # ---------------------------------------------------------------------------
 # Helpers

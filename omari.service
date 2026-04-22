@@ -1,0 +1,24 @@
+[Unit]
+Description=Omari Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=omari
+Group=omari
+
+# Absolute paths — update these to match your deployment directory.
+WorkingDirectory=/opt/omari
+ExecStart=/opt/omari/omar_bot/.venv/bin/omari
+
+# Restart automatically on crash; wait 10 s between attempts.
+Restart=on-failure
+RestartSec=10
+
+# Write stdout/stderr to the system journal (view with: journalctl -u omari -f)
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -24,9 +24,9 @@ from telegram import Bot, Update
 from telegram.constants import ParseMode
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-import auth_store
-import config
-from database import (
+from . import auth_store
+from . import config
+from .database import (
     MEDIA_TYPES,
     add_download,
     get_download,

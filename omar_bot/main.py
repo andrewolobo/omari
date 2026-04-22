@@ -22,17 +22,18 @@ Usage:
 import asyncio
 import signal
 import sys
+from pathlib import Path
 
 from loguru import logger
 
-import api
-import auth_store
-import config  # noqa: F401 — imported for side-effects (dir creation, validation)
-from bot import get_bot_application
-from database import get_downloads_by_status, update_status, backfill_episode_keys, prune_queued_episode_duplicates
-from queue_processor import run_queue_processor
-from rss_worker import rss_worker
-from torrent import TorrentManager
+from . import api
+from . import auth_store
+from . import config  # noqa: F401 — imported for side-effects (dir creation, validation)
+from .bot import get_bot_application
+from .database import get_downloads_by_status, update_status, backfill_episode_keys, prune_queued_episode_duplicates
+from .queue_processor import run_queue_processor
+from .rss_worker import rss_worker
+from .torrent import TorrentManager
 
 # ---------------------------------------------------------------------------
 # Logging configuration
@@ -46,7 +47,7 @@ logger.add(
     colorize=True,
 )
 logger.add(
-    "data/omari.log",
+    str(Path(__file__).parent / "data" / "omari.log"),
     rotation="10 MB",
     retention="14 days",
     level="DEBUG",
@@ -227,8 +228,13 @@ async def main() -> None:
 # Entrypoint
 # ---------------------------------------------------------------------------
 
-if __name__ == "__main__":
+def run() -> None:
+    """Synchronous entry point registered as the 'omari' console script."""
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
         pass  # Already handled inside main(); suppress the traceback.
+
+
+if __name__ == "__main__":
+    run()

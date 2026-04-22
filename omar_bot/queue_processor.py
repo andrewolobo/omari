@@ -35,12 +35,12 @@ from typing import Callable
 from loguru import logger
 from telegram import Bot
 
-import auth_store
-import config
-from bot import notify_user
-from database import get_download, get_downloads_by_status, increment_retry, update_status
-from dropbox_sync import sync_to_dropbox
-from torrent import DownloadTimeoutError, InvalidMagnetError, TorrentManager, detect_media_type
+from . import auth_store
+from . import config
+from .bot import notify_user
+from .database import get_download, get_downloads_by_status, increment_retry, update_status
+from .dropbox_sync import sync_to_dropbox
+from .torrent import DownloadTimeoutError, InvalidMagnetError, TorrentManager, detect_media_type
 
 # ---------------------------------------------------------------------------
 # Constants

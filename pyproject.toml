@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools<81", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omari"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot>=22,<23",
+    "tinydb==4.8.0",
+    "feedparser==6.0.11",
+    "dropbox==11.36.2",
+    "setuptools<81",
+    "python-dotenv",
+    "aiofiles",
+    "loguru",
+    "fastapi",
+    "uvicorn[standard]",
+]
+
+[project.scripts]
+omari = "omar_bot.main:run"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["omar_bot*"]

@@ -35,7 +35,7 @@ except ModuleNotFoundError:  # pragma: no cover - environment-dependent
     lt = None
 from loguru import logger
 
-import config
+from . import config
 
 # ---------------------------------------------------------------------------
 # Exceptions

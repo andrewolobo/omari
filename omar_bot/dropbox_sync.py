@@ -45,9 +45,9 @@ import dropbox.files
 import dropbox.exceptions
 from loguru import logger
 
-import auth_store
-import config
-from torrent import parse_show_name
+from . import auth_store
+from . import config
+from .torrent import parse_show_name
 
 # ---------------------------------------------------------------------------
 # Constants
