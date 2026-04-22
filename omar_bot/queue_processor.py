@@ -30,6 +30,7 @@ Progress notifications:
 """
 
 import asyncio
+import time
 from typing import Callable
 
 from loguru import logger
@@ -59,6 +60,14 @@ _MAX_RETRIES = 3
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
+def _format_duration(seconds: float) -> str:
+    """Format a duration in seconds as a human-readable string."""
+    minutes, secs = divmod(int(seconds), 60)
+    if minutes:
+        return f"{minutes}m {secs}s"
+    return f"{secs}s"
+
 
 def _log_task_exception(t: asyncio.Task) -> None:
     """Done-callback that logs any unhandled exception from a task."""
@@ -181,6 +190,7 @@ async def _process_item(
         # picking this item up again via get_downloads_by_status('queued').
         update_status(identifier, "downloading")
         logger.info(f"Started: {title!r}")
+        await notify_user(bot, chat_id, f"Downloading: {title}")
 
         try:
             # ----------------------------------------------------------
@@ -189,8 +199,14 @@ async def _process_item(
             loop        = asyncio.get_running_loop()
             progress_cb = _make_progress_callback(bot, chat_id, title, loop)
 
+            download_start = time.time()
             target_name: str = await asyncio.to_thread(
                 tm.download_magnet, identifier, progress_cb
+            )
+            download_elapsed = _format_duration(time.time() - download_start)
+            await notify_user(
+                bot, chat_id,
+                f"Download complete: {target_name}\nTook {download_elapsed}"
             )
 
             # Update the record with the resolved torrent name now that we
@@ -218,13 +234,18 @@ async def _process_item(
             # ----------------------------------------------------------
             # Stage 2: Upload to Dropbox (async, non-blocking)
             # ----------------------------------------------------------
+            upload_start = time.time()
             await sync_to_dropbox(target_name, media_type)
+            upload_elapsed = _format_duration(time.time() - upload_start)
+            await notify_user(
+                bot, chat_id,
+                f"Upload complete: {target_name}\nTook {upload_elapsed}"
+            )
 
             # ----------------------------------------------------------
             # Stage 3: Complete
             # ----------------------------------------------------------
             update_status(identifier, "completed")
-            await notify_user(bot, chat_id, f"✅ Done: {target_name}")
             logger.info(f"Pipeline complete: {title!r}")
 
         except InvalidMagnetError as exc:

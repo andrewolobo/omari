@@ -4235,3 +4235,96 @@
 2026-04-22 10:42:50.815 | INFO     | omar_bot.torrent:shutdown:317 - TorrentManager: session paused.
 2026-04-22 10:42:50.815 | INFO     | omar_bot.main:main:219 - Stopping Telegram bot…
 2026-04-22 10:42:51.294 | INFO     | omar_bot.main:main:224 - Shutdown complete.
+2026-04-22 11:29:13.842 | INFO     | omar_bot.torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-22 11:29:14.437 | INFO     | omar_bot.bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-22 11:30:49.563 | INFO     | omar_bot.torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-22 11:30:50.087 | INFO     | omar_bot.bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-22 11:31:01.231 | INFO     | omar_bot.torrent:__init__:250 - TorrentManager: session started, save_path='./downloads'
+2026-04-22 11:31:01.750 | INFO     | omar_bot.bot:get_bot_application:324 - Telegram bot handlers registered.
+2026-04-22 11:31:03.005 | INFO     | omar_bot.main:main:150 - Telegram bot started.
+2026-04-22 11:31:03.011 | INFO     | omar_bot.main:main:167 - All services running. Press Ctrl-C to stop.
+2026-04-22 11:31:03.012 | INFO     | omar_bot.rss_worker:rss_worker:187 - RSS worker started. Polling 1 feed(s) every 900s.
+2026-04-22 11:31:03.012 | INFO     | omar_bot.queue_processor:run_queue_processor:103 - Queue processor started — max concurrent downloads: 1
+2026-04-22 11:31:03.013 | INFO     | omar_bot.api:run_server:293 - API server starting on 0.0.0.0:8080
+2026-04-22 11:31:04.190 | INFO     | omar_bot.database:add_download:121 - Queued [TV] 'Invincible 2021 S04E08 1080p WEB h264 ETHEL' via rss
+2026-04-22 11:31:04.190 | INFO     | omar_bot.rss_worker:_process_feed:167 - RSS queued [TV]: 'Invincible 2021 S04E08 1080p WEB h264 ETHEL'
+2026-04-22 11:31:04.191 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E06 720p WEB H264 SYLiX' (magnet:?xt=urn:btih:F47789DC304D52F8CEEA9DFB71983CEB43CE3DB2…)
+2026-04-22 11:31:04.191 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Criminal Record S02E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5EB9D7D1C7B4637D1BC8C0B31103E1305037794B…)
+2026-04-22 11:31:04.192 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'daredevil born again:s02e06' (title: 'Daredevil Born Again S02E06 1080p WEB h264 ETHEL')
+2026-04-22 11:31:04.193 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'star wars maul shadow lord:s01e05' (title: 'Star Wars Maul Shadow Lord S01E05 Inquisition 720p DSNP WEB DL DDP5 1 H 264')
+2026-04-22 11:31:04.193 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'krapopolis:s03e13' (title: 'Krapopolis S03E13 720p WEB H264 JFF')
+2026-04-22 11:31:04.194 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E1FC93993BA20C612C95AB7ED3F501FE5062BAF…)
+2026-04-22 11:31:04.194 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:298A36D0A125B8249A19DC5FADDB60E4DF0C1D64…)
+2026-04-22 11:31:04.194 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Krapopolis S03E13 1080p WEB h264 EDITH' (magnet:?xt=urn:btih:A45F13FE04AC62FDE801C82DBEBD09704071825B…)
+2026-04-22 11:31:04.195 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'rooster:s01e07' (title: 'Rooster S01E07 720p WEB H264 JFF')
+2026-04-22 11:31:04.195 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'euphoria us:s03e02' (title: 'Euphoria US S03E02 America My Dream 720p AMZN WEB DL DDP5 1 Atmos H 264 FLU')
+2026-04-22 11:31:04.196 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Rooster S01E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:479409340B37DC5E0B13C2A6A9D16108227ECD9D…)
+2026-04-22 11:31:04.196 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Euphoria US S03E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:94799EC03DB7E0D9BBEF66E7AE745EC11C1E8055…)
+2026-04-22 11:31:04.196 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E02 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:44A820EA0DBF8AFFDCE2EA7B92E5407CEA846083…)
+2026-04-22 11:31:04.197 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E01 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:B28188FBC8F301724774647F3146F7A8EC405135…)
+2026-04-22 11:31:04.197 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E03 The Go Getter 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:A26A52DD8F8588AA599B6930EA074618DC34449F…)
+2026-04-22 11:31:04.197 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E05 Amphezyne 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:4B26BDECD596A4809BB1307A8670DAE2D0B1EA3D…)
+2026-04-22 11:31:04.198 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e07' (title: 'DTF St Louis S01E07 720p WEB H264 JFF')
+2026-04-22 11:31:04.199 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E07 1080p AMZN WEB DL DDP5 1 H 264 DUAL BiOMA' (magnet:?xt=urn:btih:7350B792CA847D9C15DDB3506EB29DDB175E5ABF…)
+2026-04-22 11:31:04.199 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'DTF St Louis S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D26DB6BC692AF0D84448EC7CAA534FDA6831942B…)
+2026-04-22 11:31:04.200 | DEBUG    | omar_bot.database:add_download:100 - Episode duplicate skipped: 'dtf st louis:s01e06' (title: 'dtf st louis s01e06 720p web h264 sylix')
+2026-04-22 11:31:04.200 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Hacks S05E02 720p WEB H264 JFF' (magnet:?xt=urn:btih:38DD2E1F52A65B360E2A9F2EAB8473001B9E763B…)
+2026-04-22 11:31:04.201 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E01 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:57F90D4E2E89070692BCE37FFF8DECFE64E1AC9D…)
+2026-04-22 11:31:04.201 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'INVINCIBLE S03E03 2021 1080p AMZN WEB DL DDP5 1 H 264 HHWEB' (magnet:?xt=urn:btih:7A465ECA84DDE25F2BACEF73C14822A4B5842259…)
+2026-04-22 11:31:04.201 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 Separate Ways 720p ATVP WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:979D5059C99F462E16B32EE386FFB37087BFA37A…)
+2026-04-22 11:31:04.202 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Hacks S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:A6B87EA0EDEF6E7666F7D09D552C2CDBE05A1897…)
+2026-04-22 11:31:04.202 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E08 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:C8C1BC0D3CCBA37E13BFD72D4CA2BD2FF80F8647…)
+2026-04-22 11:31:04.202 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:1BA22202FFF4C3AB25A49E084E447097F2091F6E…)
+2026-04-22 11:31:04.203 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E09 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:9644C04781D0C65A434B6EAA5E51EB1B87AE0011…)
+2026-04-22 11:31:04.203 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E03 MULTI 1080p WEB H264 HiggsBoson' (magnet:?xt=urn:btih:60F13A2038828CC5BFF55D07B8F90A8DE332E63E…)
+2026-04-22 11:31:04.203 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E03 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:FB3736CA30F678E8FB92210E30A5562EFA2DE801…)
+2026-04-22 11:31:04.204 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E03 Every One of You Sons of Bitches 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3644F718782CAB3A8C27CB9F7D539D5B0F4EE9B5…)
+2026-04-22 11:31:04.204 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 DONT DO ANYTHING RASH 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:FAED726596C7B91C04570279027808839B17829E…)
+2026-04-22 11:31:04.205 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:4D8DCF92123946520FC4CE9848B6C31ABEC17E07…)
+2026-04-22 11:31:04.205 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 720p DSNP WEB DL DDP5 1 H 264' (magnet:?xt=urn:btih:681B97E5C8E5329357FC0449456EBE73F4E95B0A…)
+2026-04-22 11:31:04.205 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E05 The Grand Design 1080p DSNP WEB DL DDP5 1 H 264 NTb' (magnet:?xt=urn:btih:A4A4B6A4A6FCF70ED0D6439A7E89224F4C2B97B1…)
+2026-04-22 11:31:04.206 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 1080p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:FD2AFFD4BC74C85F81D08E0D67D478D4CC80DFC2…)
+2026-04-22 11:31:04.206 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale REPACK 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:3206B8C8BA8EF1F8261408D93C528D29633E8E54…)
+2026-04-22 11:31:04.206 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 720p WEB H264 JFF' (magnet:?xt=urn:btih:2F649605C2F0DE4198A6623BE1ECAFC081DBE5E1…)
+2026-04-22 11:31:04.207 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:12434BCFF7772CC4BA8A1D43BCB1082DAED75170…)
+2026-04-22 11:31:04.207 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:31D2EDE04455E6D5CA5ACAD0FF0E00DAAC34B5D8…)
+2026-04-22 11:31:04.207 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E03 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:5D147A4F6923BB4C56DB08B3093368132093245C…)
+2026-04-22 11:31:04.208 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Rooster S01E06 Cop Hawk 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C0E51E56B7F110C897D0217CD314F57A344F55D3…)
+2026-04-22 11:31:04.208 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Rooster S01E06 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:B8FFA6982F7FEBE39C5EA36062E7A7626C3DF074…)
+2026-04-22 11:31:04.209 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 720p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:7F6EEB94DF25F09492B8ED8240CD56A2FD39DF1E…)
+2026-04-22 11:31:04.209 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Euphoria US S03E01 Andale 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:2B5B68AEEDB407ADA471BC04DBEFCCEA54222DF0…)
+2026-04-22 11:31:04.210 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 Chapter 2 Sinister Schemes 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:4BC8EA33FED363B98CCAA86FCCB1EF7FA53AD472…)
+2026-04-22 11:31:04.210 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 Chapter 1 The Dark Revenge 720p DSNP WEB DL DD 5 1 Atmos H 264 playWEB' (magnet:?xt=urn:btih:84AD930C33DE8A4B1F5D5F2DE71BAEE7BC275178…)
+2026-04-22 11:31:04.210 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8E2AAC1D06F656624DEEC5ED7745D219B7659D04…)
+2026-04-22 11:31:04.211 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Star Wars Maul Shadow Lord S01E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:02B7EF32614AE47F9BC2D0F2B78FCBB0C00B5AA3…)
+2026-04-22 11:31:04.211 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Monarch Legacy of Monsters S02E07 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:E614444B2C8DC1DCD561D95AAE595280D5D27E09…)
+2026-04-22 11:31:04.212 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'hacks s05e01 720p web h264 sylix' (magnet:?xt=urn:btih:E27D6ED3E1FD8FEB08558E2BF171B07DE3848A7A…)
+2026-04-22 11:31:04.212 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'monarch legacy of monsters s02e07 720p web h264 sylix' (magnet:?xt=urn:btih:CE76A07E2FC5A925A133089C74D5327326E02C85…)
+2026-04-22 11:31:04.213 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Hacks S05E01 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D92D2966C5116E305BF1C74892F01ED10615E59B…)
+2026-04-22 11:31:04.214 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 My Odds 1080p DSNP WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:8EE2FF49F9AD7234D023A9AE515776F66F1923BA…)
+2026-04-22 11:31:04.214 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Scrubs 2026 S01E08 720p HDTV x264 SYNCOPY' (magnet:?xt=urn:btih:8A2DBCA3146E8CECFC439E6B332604F46D499399…)
+2026-04-22 11:31:04.215 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 720p WEB H264 JFF' (magnet:?xt=urn:btih:6A39589ACBCFDFD8C748E1E1F3D1F8135B21E220…)
+2026-04-22 11:31:04.215 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E01 Fifteen Inches of Sheer Dynamite 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:2B6CABF986365649679A45D5319762CAC559B80B…)
+2026-04-22 11:31:04.216 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E02 Teenage Kix 720p AMZN WEB DL DDP5 1 Atmos H 264 FLUX' (magnet:?xt=urn:btih:70190AB140123F58624B817AF5EAFE44EFBBD587…)
+2026-04-22 11:31:04.216 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 1080p AMZN WEB DL DDP5 1 H 264 FLUX' (magnet:?xt=urn:btih:3B19627E9ACF83F72DBD89F1DCFCCB1734164687…)
+2026-04-22 11:31:04.217 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Invincible 2021 S04E06 YOU LOOK HORRIBLE 720p AMZN WEB DL DD 5 1 H 264 playWEB' (magnet:?xt=urn:btih:CAFFEC5E98F42749AA8D8F1F802FBD4C0DBB92BC…)
+2026-04-22 11:31:04.217 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E01 REPACK 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:D51B63E2ECD67237A373AC20B1B7CC79ACA8F500…)
+2026-04-22 11:31:04.218 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'The Boys S05E02 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3D890859F4981299B115EF312FA84C198A6C8617…)
+2026-04-22 11:31:04.218 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 720p WEB H264 JFF' (magnet:?xt=urn:btih:7D2E601734078C1E2D45F172AC2201F991C21125…)
+2026-04-22 11:31:04.219 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Daredevil Born Again S02E04 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:3A921E930147771255429EC0DE45A846163B6684…)
+2026-04-22 11:31:04.219 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Rooster S01E05 Mr Razzles 720p AMZN WEB DL DDP5 1 Atmos H 264 RAWR' (magnet:?xt=urn:btih:C93CADCD3C101AD649016AB80FAF84708218E958…)
+2026-04-22 11:31:04.220 | DEBUG    | omar_bot.database:add_download:89 - Duplicate skipped: 'Rooster S01E05 1080p WEB h264 ETHEL' (magnet:?xt=urn:btih:8019F3F93CE0768FB7925AFDC45C7A778EF91575…)
+2026-04-22 11:31:04.220 | DEBUG    | omar_bot.rss_worker:_poll_single_feed:215 - RSS poll complete: 'https://showrss.info/user/207327.rss?magnets=true&namespaces=true&name=null&quality=anyhd&re=null' — 1 new item(s) queued.
+2026-04-22 11:31:13.031 | DEBUG    | omar_bot.database:update_status:147 - Status → 'downloading' | magnet:?xt=urn:btih:1A0FAA2EF05FF9B90994DF89E1935341A4B03187…
+2026-04-22 11:31:13.031 | INFO     | omar_bot.queue_processor:_process_item:192 - Started: 'Invincible 2021 S04E08 1080p WEB h264 ETHEL'
+2026-04-22 11:31:14.320 | INFO     | omar_bot.torrent:download_magnet:292 - Torrent added, awaiting metadata…
+2026-04-22 11:32:00.063 | INFO     | omar_bot.main:main:198 - Cancelling background tasks…
+2026-04-22 11:32:00.063 | WARNING  | omar_bot.queue_processor:_process_item:259 - Task cancelled: 'Invincible 2021 S04E08 1080p WEB h264 ETHEL' — resetting to queued.
+2026-04-22 11:32:00.066 | DEBUG    | omar_bot.database:update_status:147 - Status → 'queued' | magnet:?xt=urn:btih:1A0FAA2EF05FF9B90994DF89E1935341A4B03187…
+2026-04-22 11:32:00.067 | DEBUG    | omar_bot.torrent:_wait_for_metadata:350 - Metadata wait interrupted by shutdown signal.
+2026-04-22 11:32:00.067 | INFO     | omar_bot.torrent:shutdown:317 - TorrentManager: session paused.
+2026-04-22 11:32:00.067 | INFO     | omar_bot.torrent:download_magnet:298 - Metadata resolved: 'Invincible 2021 S04E08 1080p WEB h264 ETHEL' — starting download
+2026-04-22 11:32:00.067 | INFO     | omar_bot.main:main:219 - Stopping Telegram bot…
+2026-04-22 11:32:00.067 | DEBUG    | omar_bot.torrent:_run_download_loop:404 - 'Invincible 2021 S04E08 1080p WEB h264 ETHEL': 0.0% | ↓ 0 KB/s | peers: 0
+2026-04-22 11:32:00.067 | DEBUG    | omar_bot.torrent:_run_download_loop:424 - Download loop interrupted by shutdown signal: 'Invincible 2021 S04E08 1080p WEB h264 ETHEL'
+2026-04-22 11:32:00.068 | INFO     | omar_bot.torrent:download_magnet:307 - Torrent handle removed for: 'Invincible 2021 S04E08 1080p WEB h264 ETHEL'
