@@ -134,6 +134,7 @@ async def main() -> None:
         logger.error(str(exc))
         logger.error(
             "Install the system package, then rerun. "
+            "Ubuntu/Debian: sudo apt install python3-libtorrent. "
             "Fedora: sudo dnf install rb_libtorrent-python3"
         )
         return

@@ -252,7 +252,7 @@ async def _process_item(
             # A bad magnet will never succeed — skip retries entirely.
             logger.error(f"Invalid magnet for {title!r}: {exc}")
             update_status(identifier, "failed")
-            await notify_user(bot, chat_id, f"❌ Failed (bad magnet): {title}")
+            await notify_user(bot, chat_id, f" Failed (bad magnet): {title}")
 
         except asyncio.CancelledError:
             # Graceful shutdown — reset so the item retries on next startup.
@@ -295,7 +295,7 @@ async def _handle_retry(
     else:
         logger.error(f"Permanently failed after {_MAX_RETRIES} retries: {title!r}")
         update_status(identifier, "failed")
-        await notify_user(bot, chat_id, f"❌ Failed after {_MAX_RETRIES} retries: {title}")
+        await notify_user(bot, chat_id, f" Failed after {_MAX_RETRIES} retries: {title}")
 
 
 # ---------------------------------------------------------------------------
@@ -339,7 +339,7 @@ def _make_progress_callback(
             return
 
         last_milestone[0] = milestone
-        message = f"⬇️ {title}: {milestone}%"
+        message = f" {title}: {milestone}%"
 
         future = asyncio.run_coroutine_threadsafe(
             notify_user(bot, chat_id, message),

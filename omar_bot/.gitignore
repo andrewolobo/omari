@@ -4,6 +4,8 @@
 # Runtime data
 data/db.json
 downloads/
+data/omari.log
+data/dropbox_token.json
 
 # Python
 __pycache__/

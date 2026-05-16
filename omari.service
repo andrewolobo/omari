@@ -1,22 +1,27 @@
-[Unit]
-Description=Omari Telegram Bot
-After=network-online.target
-Wants=network-online.target
-
 [Service]
 Type=simple
 User=azureuser
 Group=azureuser
 
-# Absolute paths — update these to match your deployment directory.
+LimitNOFILE=65536
+TasksMax=infinity
+LimitNPROC=infinity
+
+Nice=-5
+AmbientCapabilities=CAP_SYS_NICE
+IOSchedulingClass=best-effort
+IOSchedulingPriority=2
+
+Environment="HOME=/home/azureuser"
+Environment="USER=azureuser"
+# EnvironmentFile=/var/apps/omari/omar_bot/.env
+
 WorkingDirectory=/var/apps/omari
 ExecStart=/var/apps/omari/omar_bot/.venv/bin/omari
 
-# Restart automatically on crash; wait 10 s between attempts.
 Restart=on-failure
 RestartSec=10
 
-# Write stdout/stderr to the system journal (view with: journalctl -u omari -f)
 StandardOutput=journal
 StandardError=journal
 
