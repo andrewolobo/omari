@@ -224,7 +224,7 @@ async def _process_item(
             # Stage 3: Complete
             # ----------------------------------------------------------
             update_status(identifier, "completed")
-            await notify_user(bot, chat_id, f"✅ Done: {target_name}")
+            await notify_user(bot, chat_id, f"Done: {target_name}")
             logger.info(f"Pipeline complete: {title!r}")
 
         except InvalidMagnetError as exc:
@@ -318,7 +318,7 @@ def _make_progress_callback(
             return
 
         last_milestone[0] = milestone
-        message = f"⬇️ {title}: {milestone}%"
+        message = f" {title}: {milestone}%"
 
         future = asyncio.run_coroutine_threadsafe(
             notify_user(bot, chat_id, message),

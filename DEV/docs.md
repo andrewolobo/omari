@@ -290,7 +290,7 @@ await sync_to_dropbox(name)
 update_status('completed')
         │
         ▼
-notify_user(bot, chat_id, "✅ Done: {name}")
+notify_user(bot, chat_id, "Done: {name}")
 ```
 
 #### Retry logic

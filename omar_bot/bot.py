@@ -118,7 +118,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
     if auth_store.is_linked():
         await update.message.reply_text(
-            "✅ Dropbox is already linked. Use /help to see available commands."
+            " Dropbox is already linked. Use /help to see available commands."
         )
         return
 
