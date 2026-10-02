@@ -28,15 +28,15 @@ from typing import Any
 from loguru import logger
 from tinydb import TinyDB, Query
 
-from torrent import parse_episode_key, _RESOLUTION_RE, _QUALITY_WEIGHTS
+from .torrent import parse_episode_key, _RESOLUTION_RE, _QUALITY_WEIGHTS
 
 # ---------------------------------------------------------------------------
 # Database setup
 # ---------------------------------------------------------------------------
 
-Path("data").mkdir(exist_ok=True)
+(Path(__file__).parent / "data").mkdir(exist_ok=True)
 
-_db = TinyDB("data/db.json")
+_db = TinyDB(Path(__file__).parent / "data" / "db.json")
 _Downloads = Query()
 
 # Lock to make the search-then-insert in add_download() atomic across

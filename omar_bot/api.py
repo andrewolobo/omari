@@ -48,8 +48,8 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, RedirectResponse
 from loguru import logger
 
-import auth_store
-import config
+from . import auth_store
+from . import config
 
 # ---------------------------------------------------------------------------
 # Module-level state

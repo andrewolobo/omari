@@ -35,7 +35,7 @@ except ModuleNotFoundError:  # pragma: no cover - environment-dependent
     lt = None
 from loguru import logger
 
-import config
+from . import config
 
 # ---------------------------------------------------------------------------
 # Exceptions
@@ -234,6 +234,7 @@ class TorrentManager:
         if lt is None:
             raise RuntimeError(
                 "libtorrent Python bindings are not installed. "
+                "On Ubuntu/Debian install: sudo apt install python3-libtorrent. "
                 "On Fedora install: sudo dnf install rb_libtorrent-python3"
             )
 

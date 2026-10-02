@@ -15,7 +15,7 @@ import json
 import os
 from pathlib import Path
 
-import config
+from . import config
 
 # ---------------------------------------------------------------------------
 # Constants

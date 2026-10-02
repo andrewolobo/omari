@@ -127,7 +127,7 @@ RSS_POLL_INTERVAL: int = _int("RSS_POLL_INTERVAL", default=900)
 # ---------------------------------------------------------------------------
 
 MAX_CONCURRENT_DOWNLOADS: int = _int("MAX_CONCURRENT_DOWNLOADS", default=1)
-DOWNLOAD_PATH: str = _optional("DOWNLOAD_PATH", default="./downloads")
+DOWNLOAD_PATH: str = _optional("DOWNLOAD_PATH", default=str(Path(__file__).parent / "downloads"))
 DOWNLOAD_TIMEOUT_MINUTES: int = _int("DOWNLOAD_TIMEOUT_MINUTES", default=30)
 
 # ---------------------------------------------------------------------------
@@ -142,4 +142,4 @@ MOVIES_DIRECTORY: str = _optional("MOVIES_DIRECTORY", default="Movies")
 # ---------------------------------------------------------------------------
 
 Path(DOWNLOAD_PATH).mkdir(parents=True, exist_ok=True)
-Path("data").mkdir(exist_ok=True)
+(Path(__file__).parent / "data").mkdir(exist_ok=True)
